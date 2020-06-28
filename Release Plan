@@ -1,0 +1,35 @@
+Release Plan
+product name: The Nutritional Slug
+release name: 
+release date: June 29,2020
+revision number: 1
+revision date: 
+
+HIGH LEVEL GOALS: 
+(prototype testing,
+continuous integration, and website must be included)
+
+USER STORY FOR RELEASE:
+Sprint 1:
+(story points) User story 1: "As a {user role}, I want {goal} [so that{reason}]" (highest priority for Sprint 1)
+(story points) User story 2
+...
+(story points) User story N (lowest priority for Sprint 1, but might get bumped
+down into Sprint 2 if not implemented in Sprint 1)
+
+Sprint 2:
+(story points) User story 1 (highest priority for Sprint 2)
+(story points) User story 2
+...
+(story points) User story N (lowest priority for Sprint 2, but might bump down to
+Sprint 3)
+
+Sprint 3:
+(story points) User story 1 (highest priority for Sprint 3)
+(story points) User story 2
+...
+(story points) User story N (lowest priority for Sprint 3, and would be pushed into
+an independent study or another class if not implemented)
+
+Product backlog:
+( A listing of all high level goals and user stories that were discussed in the release planning meeting, but which did not make it into the release. )
