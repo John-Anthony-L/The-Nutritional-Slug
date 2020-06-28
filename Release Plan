@@ -6,6 +6,12 @@ revision number: 1
 revision date: 
 
 HIGH LEVEL GOALS: 
+- Ability to type in a genre, specifying what macros to choose (Proteins, Carbs, and Fats)
+- This will return a list of recommended brands/food items which are more in line with your focus as well as not being too calorie-dense
+- If Connecting to Amazon, then puts into a list for shopping cart
+- If Spoonacular then perhaps find a way to get the nearest store with the selected item, (perhaps integrated google maps [super stretch goal])
+- Gives you a report on your total progress, and a pie chart breaking down your current food intake, including the number of calories per day, as well as your macro goal and how close you are to reaching it.
+- Have a personal “diary” of each day’s chosen food
 (prototype testing,
 continuous integration, and website must be included)
 
