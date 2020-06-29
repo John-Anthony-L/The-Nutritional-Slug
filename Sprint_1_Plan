@@ -1,48 +1,43 @@
 Sprint 1 Plan
 product name: The Nutritional Slug
+Team Name: Gold Team 
+Project Owner: John Lara 
+Scrum Master: John Lara
+Developers: Roberto Oregon, Sanyam Sachdeva, Vidisha Nevatia, Dylan Salak
 sprint completion date: Monday, June 6, 2020
 revision number: 0 
 revision date: - 
 
-GOAL: (Short, 1-2 sentence description of the high-level goal(s) for the sprint)
+GOAL: - create a user friendly UI that allows for clean and simple searching
+     - API database access and relevant utilization (i.e., don’t give the user ALL the information about a product, just the relevant stuff like selected macros)
 
 
 Task listing, organized by user story:
 
-User story 1 ("As a {user role}, I want {goal} [so that {reason}]")
+User story 1: As a health concious user, I want to optimize a selected food to fit their macros so that I can eat the healthiest option available
 Task 1 description (time estimate for task 1)
 Task 2 description (time estimate for task 2)
 ...
 Task N description (time estimate for task N of user story 1)
 Total for user story 1: XX hours
-User story 2
-Task 1 description (time estimate for task 1)
-Task 2 description (time estimate for task 2)
-...
-Task N description (time estimate for task N of user story 2)
-Total for user story 2: YY hours
-...
-User story M
-Task 1 description (time estimate for task 1)
-Task 2 description (time estimate for task 2)
-...
-Task N description (time estimate for task N of user story M)
 Total for user story M: ZZ hours
 
 Team roles: 
-Team member 1: role 1 {, role 2, role 3}
-Team member 2: role 1 {, role 2, role 3}
-...
-Team member N: role 1 {, role 2, role 3}
+John Lara: Project Owner, Scrum Master
+Roberto Oregon: Developer
+Sanyam Sachdeva: Developer 
+Vidisha Nevatia: Developer
+Dylan Salak: Developer
 
 
- Initial task assignment: 
+Initial task assignment: 
+
+John Lara: user story, initial task
+Roberto Oregon: user story, initial task
+Sanyam Sachdeva: user story, initial task 
+Vidisha Nevatia: user story, initial task
+Dylan Salak: user story, initial task
  
-Team member 1: user story, initial task
-Team member 2: user story, initial task
-...
-Team member N: user story, initial task
-
 Initial burnup chart: 
 
 Initial scrum board: 
