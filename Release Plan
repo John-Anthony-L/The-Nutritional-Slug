@@ -1,32 +1,45 @@
 Release Plan
+
+HEADING:
 product name: The Nutritional Slug
 Team Name: Gold Team
 Team Member Names: John Lara, Roberto Oregon, Sanyam Sachdeva, Vidisha Nevatia, Dylan Salak
-release name: 
-release date: June 29,2020
+release name: Nutri-Slug v.1 
+release date: July 22,2020
 revision number: 0
 revision date: 
 
 HIGH LEVEL GOALS: 
 - Ability to type in a type of food (i.e. pasta, dairy, bread, etc), specifying what macros to choose (Proteins, Carbs, and Fats) and select a food product 
 with those macros selected.
-- This will return a list of recommended brands/food items which are more in line with your focus as well as not being too calorie-dense
+- This will return a list of recommended brands/food items which are more in line with your dietary goals
 - Gives you a report on your total progress, and a pie chart breaking down your current food intake, including the number of calories per day, as well
  as your macro goal and how close you are to reaching it.
 - Have a personal “diary” of each day’s chosen food
-- prototype testing, continuous integration 
+- prototype testing
+- continuous integration
 
 USER STORY FOR RELEASE:
+
 Sprint 1:
-(8?) User story 1: As a health conscious user, I want to optimize a selected food to fit their macros so that I can eat the healthiest option available **Should we revise this to instead aim for making a simple query for a product through the API? Rather than doing the actual calculations for the healthiest option**
-(5?) User story 2: As a user of the app itself, I want to be able to easily navigate through an intuitive user interface.
+(8) User story 1: As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the 
+healthiest option available
+(5) User story 2: As a user of the app itself, I want to be able to easily navigate through an intuitive user interface so that I know where to search for food, 
+look at my progress, see my daily nutritional goals, and to be able to calculate my required macronutrients.
+
 Sprint 2:
-(8?) User story 1: As a health conscious user, I want to be able to calculate the Macros based on personal goals and current weight so that I know exactly what I macro I have to cut down on. 
+(5) User story 1: As a health conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly 
+what my target daily intake should be. 
+
 Sprint 3:
-(story points) User story 1: As a user trying to see health changes, I wants to see progress and daily meal plan/diary so that I can stay motivated. 
+(3) User story 1: As a user trying to see health changes, I want to see my daily meal plan/diary so that I can see my progress and stay motivated. 
 
 Product backlog:
-- Ordering with Amazon Pantry
-- Integration with GPS to locate nearest stores with specified foods
-- Accompanying workout/exercise routines that follow a chosen diet
+- User Story: As a user of the app, I want to be able to order the food I have found on this app on Amazon Pantry (or some other online vendor) so that I don't have to
+leave my home to get my products.
+- User Story: As a user of the app, I want to be able to find which stores closest to me (likely with GPS integration) have my products so that I can streamline my 
+shopping.
+- User Story: As a health conscious user, I want to know which workout/exercise routines I should follow so that I am working on my health from aspects besides 
+nutrition.
 
+Presentation is submitted in Class Presentation folder.
