@@ -30,9 +30,10 @@ look at my progress, see my daily nutritional goals, and to be able to calculate
 Sprint 2:
 (5) User story 1: As a health conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly 
 what my target daily intake should be. 
+(3) User story 2: As a user I want the app to be able hide irrelevant information or sections by having a dropdown menue for major options.
 
 Sprint 3:
-(3) User story 1: As a user trying to see health changes, I want to see my daily meal plan/diary so that I can see my progress and stay motivated. 
+(3) User story 1: As a user trying to see health changes, I want to see my daily meal plan/diary so that I can see my progress and stay motivated.
 
 Product backlog:
 - User Story: As a user of the app, I want to be able to order the food I have found on this app on Amazon Pantry (or some other online vendor) so that I don't have to
