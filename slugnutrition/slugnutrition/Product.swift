@@ -4,7 +4,9 @@
 //
 //  Created by Roberto on 7/1/20.
 //  Copyright © 2020 Roberto. All rights reserved.
-//
+// 
+// This file holds the variables of the Product produced by the API json
+// 
 
 import Foundation
 
