@@ -14,8 +14,8 @@ enum ProductError:Error{
 }
 struct ProductRequest {
     let resourceURL:URL
-    let API_KEY2 = "3954daf7ed03476db8320da92fe83b61"
-    let API_KEY = "08de5518f568fd9cc2c27b447e0ec202024168e8"
+    let API_KEY2 = "{SPOONACULAR API}"
+    let API_KEY = "{CALENDER API}"
     
     init(productSearch:String){
         
