@@ -15,7 +15,7 @@ class ProductsTableViewController: UITableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var listOfProducts = [ProductDetail]() {
+    var listOfProducts = [ProductResponse.ProductDetail]() {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -47,7 +47,7 @@ class ProductsTableViewController: UITableViewController {
         let product = listOfProducts[indexPath.row]
         
         cell.textLabel?.text = product.title
-        cell.detailTextLabel?.text = product.id
+        cell.detailTextLabel?.text = String(product.id)
 
         return cell
     }
@@ -62,7 +62,7 @@ extension ProductsTableViewController : UISearchBarDelegate {
             case .failure(let error):
                 print(error)
             case .success(let products):
-                self?.listOfProducts = products
+                self?.listOfProducts = products.products
             }
         }
     }
