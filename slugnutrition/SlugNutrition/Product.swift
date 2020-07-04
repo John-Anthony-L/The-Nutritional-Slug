@@ -10,12 +10,21 @@
 //
 
 import Foundation
-
+/*
 struct ProductResponse:Decodable {
-    let products:[ProductDetail]
+    var products:[ProductDetail]
 }
 
 struct ProductDetail:Decodable {
     var id:String
     var title:String
+}
+*/
+
+struct ProductResponse:Codable{
+    struct ProductDetail: Codable{
+        let id: Int
+        let title:String
+    }
+    let products:[ProductDetail]
 }
