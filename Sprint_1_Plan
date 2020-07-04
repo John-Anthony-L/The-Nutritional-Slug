@@ -1,0 +1,69 @@
+Sprint 1 Plan
+
+product name: The Nutritional Slug
+Team Name: Gold Team 
+Project Owner: John Lara 
+Scrum Master: Roberto Oregon
+Developers: Sanyam Sachdeva, Vidisha Nevatia, Dylan Salak
+sprint completion date: Monday, June 6, 2020
+revision number: 0 
+revision date: - 
+
+GOAL: - create a user friendly UI that allows for clean and simple searching
+     - API database access and relevant utilization (i.e., don’t give the user ALL the information about a product, just the relevant stuff like selected macros)
+
+
+Task listing, organized by user story:
+
+(8) User story 1: As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the 
+healthiest option available
+
+Task 1: (1) BUILD A SEARCH FUNCTION
+Task 2: (3) CONNECT TO THE API
+Task 3: (3) FILTER OUT IRRELEVANT DATA
+Task 4: (1) LIST PRODUCTS WITH THEIR RELEVANT DATA, DISPLAY ALL PRODUCTS IN 100g increments with serving size in parenthesis
+-- EX: frozen strawberry 100g (140g serving size)
+          1g protein
+          8g carb
+          0g fat
+Task 5: (0) DEFAULT SORT ON CALORIE
+
+Total for user story 1: 16 hours
+
+(5) User story 2: As a user of the app itself, I want to be able to easily navigate through an intuitive user interface so that I know where to search for food, 
+look at my progress, see my daily nutritional goals, and to be able to calculate my required macronutrients.
+Task 1: (2) MULTIPLE SKETCH DESIGNS FOR UI ( we're thinking having a home page, with sections you can select and then the page moves to that selection)
+Task 2: (1) COLOR SCHEME(S)
+Task 3: (1) CREATE SECTIONS FOR MACRO CALCULATION, FOOD DAILY DIARY ( breakfast, lunch, dinner, snacks), FOOD SEARCH, MACRO OVERVIEW ( pie chart) 
+Task 4: (1) GROUP DECISION ON UI
+
+Total for user story 2: 10 hours
+Total time for Sprint 1: 26 hours
+
+Team roles: 
+John Lara: Developer, {Project Owner}
+Roberto Oregon: Developer, {Scrum Master}
+Dylan Salak: Developer
+Sanyam Sachdeva: UI/UX, {Developer}
+Vidisha Nevatia: UI/UX, {Developer}
+
+
+Initial task assignment: 
+
+John Lara: User story 1, task 1,2
+Roberto Oregon: User story 1, task 1,2
+Dylan Salak: User story 1, task 1,2
+Sanyam Sachdeva: User story 2, task 1
+Vidisha Nevatia: User story 2, task 1
+
+ 
+Initial burnup chart: (uploaded as a secondary file): https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Burnup%20chart.pdf
+
+Initial scrum board:  (On Trello) https://trello.com/b/LFxNyiNI/gold-team
+
+Scrum times:
+  Meeting 1: Monday, 3:30PM -  4:30PM
+  Meeting 2: Wednesday: 4:00PM - 5:00PM (with TA Rishi)
+  Meeting 2: Thursday,3:00PM - 4:00PM (with TA Rishi) 
+  Meeting 3: Saturday, 9:30AM - 10:30AM
+
