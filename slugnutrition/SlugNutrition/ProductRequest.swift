@@ -30,31 +30,22 @@ struct ProductRequest {
         
     }
     
-    func getProducts (completion: @escaping(Result<[ProductDetail], ProductError>) -> Void) {
-        let dataTask = URLSession.shared.dataTask(with: resourceURL) { data, _, _ in
-            guard let jsonData = data else {
-                completion(.failure(.noDataAvailable))
-                return
-            }
-
-            print(jsonData)
-            print("test")
-            do {
-                let decoder = JSONDecoder()
-                
-                let productsResponse = try decoder.decode(ProductResponse.self, from: jsonData)
-                print("test2")
-                let productDetails = productsResponse.products
-                print("test3")
-                completion(.success(productDetails))
-            }catch{
-                completion(.failure(.canNotProcessData))
-            }
+    func getProducts (completion: @escaping(Result<ProductResponse, Error>) -> Void) {
+        let dataTask = URLSession.shared.dataTask(with: resourceURL) { data, response, error in
+            if let error = error { completion(.failure(error));  return }
             
+            
+            do {
+                //print("entered do")
+                let productsResponse = try JSONDecoder().decode(ProductResponse.self, from: data!)
+                //print("test1")
+                //let productDetails = productsResponse.products
+                //print("test2")
+                completion(.success(productsResponse))
+            }catch{
+                completion(.failure(error))
+            }
         }
         dataTask.resume()
     }
-    
-    
-    
 }
