@@ -36,11 +36,11 @@ struct ProductRequest {
             
             
             do {
-                //print("entered do")
+                print("entered do")
                 let productsResponse = try JSONDecoder().decode(ProductResponse.self, from: data!)
-                //print("test1")
+                print("test1")
                 //let productDetails = productsResponse.products
-                //print("test2")
+                print("test2")
                 completion(.success(productsResponse))
             }catch{
                 completion(.failure(error))

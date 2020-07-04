@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  HolidayCalendar
 //
-//  Created by Brian Advent on 09.05.19.
-//  Copyright © 2019 Brian Advent. All rights reserved.
+//  Created by Roberto Oregon on 07.03.20.
+//  Copyright © 2020 Roberto Oregon. All rights reserved.
 //
 
 import UIKit
