@@ -478,9 +478,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldn-8u-Eop">
-                                                        <rect key="frame" x="253" y="0.0" width="121" height="117.5"/>
-                                                        <state key="normal" title="HIDDEN BUTTON">
-                                                            <color key="titleColor" red="0.16470588235294117" green="0.20392156862745098" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <rect key="frame" x="215" y="0.0" width="159" height="117.5"/>
+                                                        <state key="normal" title="PRESS ME TO SEARCH">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="3oR-ss-cXj" kind="show" id="RDq-Qb-lcz"/>

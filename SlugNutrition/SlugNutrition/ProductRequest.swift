@@ -18,11 +18,13 @@ enum ProductError:Error {
 
 struct ProductRequest {
     let resourceURL:URL
-    let API_KEY = "3954daf7ed03476db8320da92fe83b61"
+    let APP_ID = "9af5b2b9"
+    let API_KEY = "97ac8bd3653616517f0d52cb9a4fc5e3"
     
     init(productSearch:String) {
         
-        let resourceString = "https://api.spoonacular.com/food/products/search?query=\(productSearch)&apiKey=\(API_KEY)"
+        //let resourceString = "https://api.spoonacular.com/food/products/search?query=\(productSearch)&apiKey=\(API_KEY)"
+        let resourceString = "https://api.nutritionix.com/v1_1/search/\(productSearch)?results=0:5&fields=item_name,brand_name,item_id,nf_calories,nf_protein,nf_total_carbohydrate,nf_total_fat,nf_serving_weight_grams&appId=\(APP_ID)&appKey=\(API_KEY)"
         guard let resourceURL = URL(string: resourceString) else {fatalError()}
         
         print(resourceString)

@@ -46,8 +46,8 @@ class ProductsTableViewController: UITableViewController {
         
         let product = listOfProducts[indexPath.row]
         
-        cell.textLabel?.text = product.title
-        cell.detailTextLabel?.text = String(product.id)
+        cell.textLabel?.text = product.fields.item_name
+        cell.detailTextLabel?.text = "\(product.fields.nf_calories) kcal per \(product.fields.nf_serving_weight_grams) grams"
 
         return cell
     }
@@ -62,7 +62,7 @@ extension ProductsTableViewController : UISearchBarDelegate {
             case .failure(let error):
                 print(error)
             case .success(let products):
-                self?.listOfProducts = products.products
+                self?.listOfProducts = products.hits
             }
         }
     }
