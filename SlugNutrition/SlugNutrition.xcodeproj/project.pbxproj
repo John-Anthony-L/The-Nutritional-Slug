@@ -16,6 +16,8 @@
 		52A621B32285612B00127CD4 /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A621B22285612B00127CD4 /* ProductRequest.swift */; };
 		623C3A0F24B1D78E00D84CA2 /* customViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C3A0E24B1D78E00D84CA2 /* customViewController.swift */; };
 		F46A3A0124B2268D002AB77A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0024B2268D002AB77A /* RoundButton.swift */; };
+		F46A3A0524B2729F002AB77A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0424B2729F002AB77A /* SettingsViewController.swift */; };
+		F46A3A0724B29B04002AB77A /* FoodSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		52A621B22285612B00127CD4 /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
 		623C3A0E24B1D78E00D84CA2 /* customViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewController.swift; sourceTree = "<group>"; };
 		F46A3A0024B2268D002AB77A /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F46A3A0424B2729F002AB77A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 				52A621962284779200127CD4 /* AppDelegate.swift */,
 				52A621AE2284A70200127CD4 /* ProductsTableViewController.swift */,
 				52A621B022855FDD00127CD4 /* Product.swift */,
+				F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */,
 				52A621B22285612B00127CD4 /* ProductRequest.swift */,
+				F46A3A0424B2729F002AB77A /* SettingsViewController.swift */,
 				52A6219A2284779200127CD4 /* Main.storyboard */,
 				F46A3A0024B2268D002AB77A /* RoundButton.swift */,
 				623C3A0E24B1D78E00D84CA2 /* customViewController.swift */,
@@ -149,9 +155,11 @@
 			files = (
 				F46A3A0124B2268D002AB77A /* RoundButton.swift in Sources */,
 				52A621B122855FDD00127CD4 /* Product.swift in Sources */,
+				F46A3A0524B2729F002AB77A /* SettingsViewController.swift in Sources */,
 				52A621AF2284A70200127CD4 /* ProductsTableViewController.swift in Sources */,
 				52A621B32285612B00127CD4 /* ProductRequest.swift in Sources */,
 				623C3A0F24B1D78E00D84CA2 /* customViewController.swift in Sources */,
+				F46A3A0724B29B04002AB77A /* FoodSearchViewController.swift in Sources */,
 				52A621972284779200127CD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

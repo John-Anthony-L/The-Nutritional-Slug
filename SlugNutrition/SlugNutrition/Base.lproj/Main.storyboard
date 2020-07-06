@@ -109,12 +109,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNp-y3-HX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43" y="844"/>
+            <point key="canvasLocation" x="-84" y="818"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ZJB-Td-u0g">
             <objects>
-                <viewController id="rtJ-RZ-bKk" sceneMemberID="viewController">
+                <viewController id="rtJ-RZ-bKk" customClass="SettingsViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="InQ-61-1lZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,9 +226,17 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYG-ZD-V5O">
+                                            <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="rYG-ZD-V5O">
                                                 <rect key="frame" x="0.0" y="43" width="374" height="43.5"/>
                                                 <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="textSize">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </pickerView>
                                         </subviews>
                                     </stackView>
@@ -251,6 +259,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="goButton:" destination="rtJ-RZ-bKk" eventType="touchUpInside" id="UyQ-G9-bj7"/>
                                             <segue destination="tBn-uK-tnE" kind="presentation" modalPresentationStyle="fullScreen" id="byS-TE-isv"/>
                                         </connections>
                                     </button>
@@ -267,6 +276,14 @@
                         <viewLayoutGuide key="safeArea" id="YBx-7N-igQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="swu-gf-9i4"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="IXn-o6-YoJ" id="pIs-tT-aHK"/>
+                        <outlet property="genderSegmentedControl" destination="LHb-jc-cZh" id="Kmt-o0-7pk"/>
+                        <outlet property="goalPickerView" destination="rYG-ZD-V5O" id="xU1-PW-eOh"/>
+                        <outlet property="heightTextField" destination="c7f-ZP-2l2" id="xCa-QX-RTt"/>
+                        <outlet property="nameTextField" destination="YEM-GV-suf" id="gvD-mw-vh3"/>
+                        <outlet property="weightTextField" destination="xcp-TD-MIu" id="3aX-fF-SFC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R17-He-Gdq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -593,12 +610,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vae-ux-Dhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2508.6956521739135" y="1670.7589285714284"/>
+            <point key="canvasLocation" x="2529" y="1570"/>
         </scene>
-        <!--Look for a healthy alterntive-->
+        <!--Look for a healthy alternative-->
         <scene sceneID="yjm-od-KbD">
             <objects>
-                <viewController id="3oR-ss-cXj" sceneMemberID="viewController">
+                <viewController id="3oR-ss-cXj" customClass="FoodSearchViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HYm-71-R4N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -660,9 +677,14 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-IY-u7a">
+                                                    <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-IY-u7a">
                                                         <rect key="frame" x="0.0" y="60" width="374" height="60"/>
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </pickerView>
                                                 </subviews>
                                             </stackView>
@@ -675,9 +697,14 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-z3-JO5">
+                                                    <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-z3-JO5">
                                                         <rect key="frame" x="0.0" y="60" width="374" height="60"/>
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </pickerView>
                                                 </subviews>
                                             </stackView>
@@ -1178,7 +1205,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JsI-mI-K15"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Look for a healthy alterntive" id="wpp-js-Jii"/>
+                    <navigationItem key="navigationItem" title="Look for a healthy alternative" id="wpp-js-Jii"/>
+                    <connections>
+                        <outlet property="goalPicker" destination="ng8-z3-JO5" id="ljm-7o-XTS"/>
+                        <outlet property="mealPickerView" destination="DJr-IY-u7a" id="mA2-pB-QpR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yl3-41-ydb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1201,7 +1232,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUj-uh-Pkw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="844"/>
+            <point key="canvasLocation" x="819" y="842"/>
         </scene>
         <!--Today-->
         <scene sceneID="yuI-V1-oWr">
@@ -1227,7 +1258,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KSa-k2-u8x"/>
         <segue reference="byS-TE-isv"/>
     </inferredMetricsTieBreakers>
     <resources>
