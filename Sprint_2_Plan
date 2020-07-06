@@ -1,0 +1,78 @@
+Sprint 2 Plan
+
+product name: The Nutritional Slug
+Team Name: Gold Team 
+Project Owner: John Lara 
+Scrum Master: Roberto Oregon
+Developers: Sanyam Sachdeva, Vidisha Nevatia, Dylan Salak
+sprint completion date: Monday, July 13, 2020
+revision number: 0 
+revision date: - 
+
+GOAL: - Calculate macros and let the user view their goals/progress by macros
+	  - Get web scraping done because of Nutritionix API lacking foods
+	  - Clean up the UI
+
+
+Task listing, organized by user story:
+
+(5) User story 1: As a health conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly what my target daily intake should be. 
+
+Task 1: (3) MACRO CALCULATOR
+Task 2: (1) UPDATE DAILY GOALS BASED ON MACRO CALCULATOR
+Task 3: (1) PROGRESS PAGE WHERE DAYS ARE TRACKED AND DISPLAYED IN A CHART
+
+Total for user story 1: 10 hours
+
+----------
+
+(5) User story 2: As a product tester, I need to be able to see that the search function works with most, if not all, searches.
+
+Task 1: (5) WEB SCRAPING (reverse engineering Safeway's private API)
+
+Total for user story 2: X hours
+
+----------
+
+(3) User story 3: As a user, I want to be able to select brands and add to my daily diet.
+
+Task 1: (3) UI CLEANUP (Make sure results from search show up in UI for the user to select and add)
+
+Total for user story 3: X hours
+
+----------
+
+(1) User story 4: As a user who already knows what they want to eat, I should be able to just enter my chosen food instead of searching for it. 
+
+Total for user story 4: X hours
+
+----------
+
+Total time for Sprint 2: 26 hours
+
+Team roles: 
+John Lara: Developer, {Project Owner}
+Roberto Oregon: Developer 
+Dylan Salak: Developer
+Sanyam Sachdeva: UI/UX, {Scrum Master}
+Vidisha Nevatia: UI/UX, {Developer}
+
+
+Initial task assignment: 
+
+John Lara: User story 1, task 1,2
+Roberto Oregon: User story 1, task 1,2
+Dylan Salak: User story 1, task 1,2
+Sanyam Sachdeva: User story 2, task 1
+Vidisha Nevatia: User story 2, task 1
+
+ 
+Initial burnup chart: (uploaded as a secondary file): https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Burnup%20chart.pdf
+
+Initial scrum board:  (On Trello) https://trello.com/b/LFxNyiNI/gold-team
+
+Scrum times:
+  Meeting 1: Monday, 3:30PM -  4:30PM (with TA Rishi)
+  Meeting 2: Wednesday: 4:00PM - 5:00PM 
+  Meeting 2: Thursday,3:00PM - 4:00PM (with TA Rishi) 
+  Meeting 3: Saturday, 9:30AM - 10:30AM
