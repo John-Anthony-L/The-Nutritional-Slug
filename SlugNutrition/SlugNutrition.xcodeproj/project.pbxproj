@@ -18,6 +18,7 @@
 		F46A3A0124B2268D002AB77A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0024B2268D002AB77A /* RoundButton.swift */; };
 		F46A3A0524B2729F002AB77A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0424B2729F002AB77A /* SettingsViewController.swift */; };
 		F46A3A0724B29B04002AB77A /* FoodSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */; };
+		F46A3A0924B317F7002AB77A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A3A0824B317F7002AB77A /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F46A3A0024B2268D002AB77A /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F46A3A0424B2729F002AB77A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchViewController.swift; sourceTree = "<group>"; };
+		F46A3A0824B317F7002AB77A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				52A621B022855FDD00127CD4 /* Product.swift */,
 				F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */,
 				52A621B22285612B00127CD4 /* ProductRequest.swift */,
+				F46A3A0824B317F7002AB77A /* UserData.swift */,
 				F46A3A0424B2729F002AB77A /* SettingsViewController.swift */,
 				52A6219A2284779200127CD4 /* Main.storyboard */,
 				F46A3A0024B2268D002AB77A /* RoundButton.swift */,
@@ -155,6 +158,7 @@
 			files = (
 				F46A3A0124B2268D002AB77A /* RoundButton.swift in Sources */,
 				52A621B122855FDD00127CD4 /* Product.swift in Sources */,
+				F46A3A0924B317F7002AB77A /* UserData.swift in Sources */,
 				F46A3A0524B2729F002AB77A /* SettingsViewController.swift in Sources */,
 				52A621AF2284A70200127CD4 /* ProductsTableViewController.swift in Sources */,
 				52A621B32285612B00127CD4 /* ProductRequest.swift in Sources */,

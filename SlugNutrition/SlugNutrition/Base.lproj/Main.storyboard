@@ -137,6 +137,9 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                <connections>
+                                                    <action selector="textEditingChangedWith_sender:" destination="rtJ-RZ-bKk" eventType="editingChanged" id="csz-eW-M5V"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -178,6 +181,9 @@
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="textEditingChangedWith_sender:" destination="rtJ-RZ-bKk" eventType="editingChanged" id="kPG-lQ-NeD"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -195,6 +201,9 @@
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                        <connections>
+                                                            <action selector="textEditingChangedWith_sender:" destination="rtJ-RZ-bKk" eventType="editingChanged" id="NOB-rt-3sK"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -212,6 +221,9 @@
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                        <connections>
+                                                            <action selector="textEditingChangedWith_sender:" destination="rtJ-RZ-bKk" eventType="editingChanged" id="hLk-NB-qz7"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -282,6 +294,7 @@
                         <outlet property="goalPickerView" destination="rYG-ZD-V5O" id="xU1-PW-eOh"/>
                         <outlet property="heightTextField" destination="c7f-ZP-2l2" id="xCa-QX-RTt"/>
                         <outlet property="nameTextField" destination="YEM-GV-suf" id="gvD-mw-vh3"/>
+                        <outlet property="saveButton" destination="0Ex-dr-SqE" id="61M-Gx-T69"/>
                         <outlet property="weightTextField" destination="xcp-TD-MIu" id="3aX-fF-SFC"/>
                     </connections>
                 </viewController>
@@ -1205,7 +1218,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JsI-mI-K15"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Look for a healthy alternative" id="wpp-js-Jii"/>
+                    <navigationItem key="navigationItem" title="Look for a healthy alternative" id="wpp-js-Jii">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cBi-Nd-bY4"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="goalPicker" destination="ng8-z3-JO5" id="ljm-7o-XTS"/>
                         <outlet property="mealPickerView" destination="DJr-IY-u7a" id="mA2-pB-QpR"/>
