@@ -16,7 +16,7 @@ GOAL: - Calculate macros and let the user view their goals/progress by macros
 
 Task listing, organized by user story:
 
-(5) User story 1: As a health-conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly what my target daily intake should be. 
+(10) User story 1: As a health-conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly what my target daily intake should be. 
 
 Task 1: (5) CREATE A UI FOR THE PROGRESS PAGE WHERE DAYS ARE TRACKED AND DISPLAYED IN A CALCULATOR VIEW
 Task 2: (3) MACRO CALCULATOR USING A FORMULA FOR EACH OF THE THREE GOALS
@@ -27,10 +27,10 @@ Total for user story 1: 10 hours
 
 ----------
 
-(5) User story 2: As a product tester, I need to be able to see that the search function works with most, if not all, searches.
+(16) User story 2: As a product tester, I need to be able to see that the search function works with most, if not all, searches.
 
 Task 1: (8) WEB SCRAPING (reverse engineering Safeway's private API)
-TASK 2: (5) Create an online database to tore web scraping data.
+TASK 2: (5) Create an online database to store web scraping data.
 TASK 3: (3) SYNC THAT DATABASE WITH THE APP FOR IT TO BE WORKING PROPERLY
  
 
@@ -38,9 +38,9 @@ Total for user story 2: 16 hours
 
 ----------
 
-(3) User story 3: As a user, I want to be able to select brands and add to my daily diet.
+(5) User story 3: As a user, I want to be able to select brands and add to my daily diet.
 
-Task 1: (5) Allow the user to custom some items in a seperate page. 
+Task 1: (5) Allow the user to custom some items in a separate page. 
 
 Total for user story 3: 5 hours
 
