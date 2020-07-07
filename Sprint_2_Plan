@@ -18,34 +18,36 @@ Task listing, organized by user story:
 
 (5) User story 1: As a health-conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly what my target daily intake should be. 
 
-Task 1: (3) MACRO CALCULATOR USING A FORMULA FOR EACH OF THE THREE GOALS
-Task 2: (3) CREATE A UI FOR THE PROGRESS PAGE WHERE DAYS ARE TRACKED AND DISPLAYED IN A CALCULATOR VIEW
+Task 1: (5) CREATE A UI FOR THE PROGRESS PAGE WHERE DAYS ARE TRACKED AND DISPLAYED IN A CALCULATOR VIEW
+Task 2: (3) MACRO CALCULATOR USING A FORMULA FOR EACH OF THE THREE GOALS
 Task 3: (2) UPDATE DAILY GOALS LIMIT BASED ON MACRO CALCULATOR
 
 
-Total for user story 1: 8 hours
+Total for user story 1: 10 hours
 
 ----------
 
 (5) User story 2: As a product tester, I need to be able to see that the search function works with most, if not all, searches.
 
-Task 1: (6) WEB SCRAPING (reverse engineering Safeway's private API)
-TASK 2: (2) SYNC THAT DATABASE WITH THE APP FOR IT TO BE WORKING PROPERLY
+Task 1: (8) WEB SCRAPING (reverse engineering Safeway's private API)
+TASK 2: (5) Create an online database to tore web scraping data.
+TASK 3: (3) SYNC THAT DATABASE WITH THE APP FOR IT TO BE WORKING PROPERLY
+ 
 
-Total for user story 2: 8 hours
+Total for user story 2: 16 hours
 
 ----------
 
 (3) User story 3: As a user, I want to be able to select brands and add to my daily diet.
 
-Task 1: (5) UI CLEANUP (Make sure results from search show up in UI for the user to select and add)
+Task 1: (5) Allow the user to custom some items in a seperate page. 
 
 Total for user story 3: 5 hours
 
 
 ----------
 
-Total time for Sprint 2: 21 hours
+Total time for Sprint 2: 31 hours
 
 Team roles: 
 John Lara: Developer, {Project Owner}
@@ -57,11 +59,11 @@ Vidisha Nevatia: UI/UX, {Developer}
 
 Initial task assignment: 
 
-John Lara: User story 2, task 1,2
+John Lara: User story 2, task 1,2; story 1, task 1 
 Roberto Oregon: User story 12, task 1,2
 Dylan Salak: User story 2, task 1,2
-Sanyam Sachdeva: User story 1, task 1,2,3
-Vidisha Nevatia: User story 1, task 1,2,3
+Sanyam Sachdeva: User story 1, task 2,3
+Vidisha Nevatia: User story 1, task 2,3
 
  
 Initial burnup chart: (uploaded as a secondary file): https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Burnup%20chart.pdf
