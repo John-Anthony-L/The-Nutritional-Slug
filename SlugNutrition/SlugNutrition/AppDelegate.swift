@@ -45,3 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//Just an extension to better configure our Table
+extension UIView{
+    func pin(to superView: UIView){
+        translatesAutoresizingMaskIntoConstraints = false
+        topAnchor.constraint(equalTo: superView.topAnchor).isActive = true
+        leadingAnchor.constraint(equalTo: superView.leadingAnchor).isActive = true
+        trailingAnchor.constraint(equalTo: superView.trailingAnchor).isActive = true
+        bottomAnchor.constraint(equalTo: superView.bottomAnchor).isActive = true
+    }
+}
+
