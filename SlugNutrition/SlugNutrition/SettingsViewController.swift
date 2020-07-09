@@ -28,6 +28,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     var defaultHeight: NSString = ""
     var goal:Int = 0
     var selected: NSString = ""
+    
 
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -42,7 +43,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         return goalpicker[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-           UserDefaults.standard.set(goalpicker[row], forKey: "defaultGoal")
+           UserDefaults.standard.set(row, forKey: "defaultGoal")
         UserDefaults.standard.synchronize()
         goal = row
         
@@ -88,6 +89,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         ageTextField.text = UserDefaults.standard.value(forKey:"defaultAge") as? String
         weightTextField.text = UserDefaults.standard.value(forKey:"defaultWeight") as? String
         heightTextField.text = UserDefaults.standard.value(forKey: "defaultHeight") as? String
+        goal = UserDefaults.standard.value(forKey: "defaultGoal") as? Int ?? 0
         self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
         }
     
