@@ -22,6 +22,12 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     let goalpicker = ["To shred some weight", "To gain weight","To become stronger"]
     
     @IBOutlet var saveButton: UIButton!
+    var defaultName:NSString = ""
+    var defaultAge: NSString = ""
+    var defaultWeight: NSString = ""
+    var defaultHeight: NSString = ""
+    var goal:Int = 0
+    var selected: NSString = ""
 
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -35,84 +41,91 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return goalpicker[row]
     }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+           UserDefaults.standard.set(goalpicker[row], forKey: "defaultGoal")
+        UserDefaults.standard.synchronize()
+        goal = row
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.goalPickerView.delegate = self
         self.goalPickerView.dataSource = self
-        if let savedUserData = UserData.loadFromFile(){
-                          userData = savedUserData
-                      }
-        if let userData = userData{
-            nameTextField.text =  userData.name
-//            genderSegmentedControl.titleForSegment(at: genderSegmentedControl.selectedSegmentIndex) = userData.gender
-            ageTextField.text = String(userData.age)
-            heightTextField.text = String(userData.height)
-            weightTextField.text = String(userData.weight)
-//            goalPickerView.selectedRow(inComponent: 0)= userData.goal
-            
-        }
-       
         updateSaveButtonState()
-
-        // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        reloadInputViews()
+    
+    @IBAction func NameTextFieldChanged(_ sender: UITextField) {
+        UserDefaults.standard.set(nameTextField.text, forKey: "defaultName") // saves text field text
+        UserDefaults.standard.synchronize()
+              
     }
     
-    func updateSaveButtonState() {
-        let name = nameTextField.text ?? ""
-       let age = ageTextField.text ?? ""
-        let height = heightTextField.text ?? ""
-       let weight = weightTextField.text ?? ""
-        saveButton.isEnabled = !name.isEmpty && !age.isEmpty && !height.isEmpty && !weight.isEmpty
+    @IBAction func genderSegmentedControlChanged(_ sender: UISegmentedControl) {
+        UserDefaults.standard.set(sender.selectedSegmentIndex, forKey: "defaultGender")
+    }
+    
+    @IBAction func ageTextFieldChanged(_ sender: UITextField) {
+        UserDefaults.standard.set(ageTextField.text, forKey: "defaultAge") // saves text field text
+        UserDefaults.standard.synchronize()
         
     }
+    @IBAction func weightTextFieldChanged(_ sender: UITextField) {
+        UserDefaults.standard.set(weightTextField.text, forKey: "defaultWeight") // saves text field text
+        UserDefaults.standard.synchronize()
+    }
+    
+    
+    @IBAction func heightTextFieldChanged(_ sender: UITextField) {
+        UserDefaults.standard.set(heightTextField.text, forKey: "defaultHeight") // saves text field text
+        UserDefaults.standard.synchronize()
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        nameTextField.text = UserDefaults.standard.value(forKey:"defaultName") as? String
+        genderSegmentedControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "defaultGender")
+        ageTextField.text = UserDefaults.standard.value(forKey:"defaultAge") as? String
+        weightTextField.text = UserDefaults.standard.value(forKey:"defaultWeight") as? String
+        heightTextField.text = UserDefaults.standard.value(forKey: "defaultHeight") as? String
+        self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
+        }
+    
+    
+    func updateSaveButtonState()
+    {
+        let name = nameTextField.text ?? ""
+        let age = ageTextField.text ?? ""
+        let height = heightTextField.text ?? ""
+        let weight = weightTextField.text ?? ""
+        saveButton.isEnabled = !name.isEmpty && !age.isEmpty && !height.isEmpty && !weight.isEmpty
+    }
+    
    @IBAction func textEditingChanged(_sender: UITextField)
       {
           updateSaveButtonState()
       }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           super.prepare(for: segue, sender: sender)
-
-           guard segue.identifier == "saveUnwind" else { return }
-        let name = nameTextField.text ?? ""
-        let gender = genderSegmentedControl.titleForSegment(at: genderSegmentedControl.selectedSegmentIndex) ?? ""
-         let age = tointeger(from: ageTextField)
-       
-             let height = toDouble(from: heightTextField)
-            let weight = toDouble(from: weightTextField)
-        let goal = goalPickerView.selectedRow(inComponent: 0)
-            userData = UserData(name: name,
-                            gender: gender,
-                            age: age,
-                            height: height,
-                            weight: weight,
-                            goal: goal
-                              )
-       }
     
-    func tointeger(from textField: UITextField) -> Int {
-        guard let text = textField.text, let number = Int(text) else {
+    func tointeger(from textField: UITextField) -> Int
+    {
+        guard let text = textField.text, let number = Int(text) else
+        {
             return 0
         }
         return number
     }
-   func toDouble(from textField: UITextField) -> Double {
-       guard let text = textField.text, let number = Double(text) else {
+    
+   func toDouble(from textField: UITextField) -> Double
+   {
+       guard let text = textField.text, let number = Double(text) else
+       {
         return 0.0
        }
        return number
    }
     
+    @IBAction func saveButton(_ sender: Any) {
     
-    @IBAction func goButton(_ sender: UIButton) {
-        
-    }
-    
-   
-        
-    
-
+      
+}
 }
