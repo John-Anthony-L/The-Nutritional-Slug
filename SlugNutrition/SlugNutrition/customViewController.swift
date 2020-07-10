@@ -10,6 +10,10 @@ import UIKit
 
 class customViewController: UIViewController {
 
+    @IBOutlet weak var CarbsDailyProgress: UIProgressView!
+    @IBOutlet weak var FatsDailyProgress: UIProgressView!
+    @IBOutlet weak var ProteinDailyProgress: UIProgressView!
+    @IBOutlet weak var CaloriesDailyProgress: UIProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
         

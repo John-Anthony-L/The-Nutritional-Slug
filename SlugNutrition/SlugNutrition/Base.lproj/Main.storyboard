@@ -354,7 +354,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lro-pT-8fl">
                                                 <rect key="frame" x="0.0" y="104" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-WK-Cfc" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-WK-Cfc">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -391,7 +391,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COh-F0-pId">
                                                 <rect key="frame" x="0.0" y="208" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-sL-vs4" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-sL-vs4">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -428,7 +428,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-do-zNd">
                                                 <rect key="frame" x="0.0" y="312" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-7D-pVD" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-7D-pVD">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -467,7 +467,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-s0-ZFe">
                                                 <rect key="frame" x="0.0" y="416" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iug-LB-vBZ" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iug-LB-vBZ">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -627,6 +627,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="DUM-7Y-0m2"/>
                     <size key="freeformSize" width="414" height="1400"/>
+                    <connections>
+                        <outlet property="CaloriesDailyProgress" destination="iug-LB-vBZ" id="7GO-83-e35"/>
+                        <outlet property="CarbsDailyProgress" destination="LJ0-WK-Cfc" id="kgv-zO-POD"/>
+                        <outlet property="FatsDailyProgress" destination="MfY-sL-vs4" id="Zur-Fd-B30"/>
+                        <outlet property="ProteinDailyProgress" destination="Z0D-7D-pVD" id="7kt-en-ba8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vae-ux-Dhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1286,6 +1292,6 @@
         <image name="sunset.fill" catalog="system" width="64" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="byS-TE-isv"/>
+        <segue reference="mcI-zp-zKJ"/>
     </inferredMetricsTieBreakers>
 </document>
