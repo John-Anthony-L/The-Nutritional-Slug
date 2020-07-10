@@ -24,10 +24,10 @@ class ProductsTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.navigationItem.title = "\(self.listOfProducts.count) Products found"
-                
             }
         }
     }
+    
     
     
     
@@ -58,6 +58,8 @@ class ProductsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        listOfProducts.sort{convertAPIValToInt (name: $0.fields.nf_calories) < convertAPIValToInt(name: $1.fields.nf_calories) }
         let product = listOfProducts[indexPath.row]
         
         // ## kcal oer 100g --> Equation is just x = weight_grams/100
