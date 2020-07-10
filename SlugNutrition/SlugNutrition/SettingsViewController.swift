@@ -22,10 +22,10 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     let goalpicker = ["To shred some weight", "To gain weight","To become stronger"]
     
     @IBOutlet var saveButton: UIButton!
-    var defaultName:NSString = ""
-    var defaultAge: NSString = ""
-    var defaultWeight: NSString = ""
-    var defaultHeight: NSString = ""
+    var defaultName:NSString = "Name"
+    var defaultAge: NSString = "20"
+    var defaultWeight: NSString = "140"
+    var defaultHeight: NSString = "64"
     var goal:Int = 0
     var selected: NSString = ""
     

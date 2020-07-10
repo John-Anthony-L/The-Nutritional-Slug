@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEU-Gf-uE2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEU-Gf-uE2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -354,7 +354,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lro-pT-8fl">
                                                 <rect key="frame" x="0.0" y="104" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-WK-Cfc">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-WK-Cfc" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -385,13 +385,13 @@
                                                     <constraint firstItem="66l-YF-2Dy" firstAttribute="top" secondItem="LJ0-WK-Cfc" secondAttribute="bottom" constant="-40.5" id="dZQ-q8-z1d"/>
                                                     <constraint firstItem="NYu-Jm-m4p" firstAttribute="trailing" secondItem="66l-YF-2Dy" secondAttribute="trailing" id="ees-pq-DdA"/>
                                                     <constraint firstItem="66l-YF-2Dy" firstAttribute="trailing" secondItem="lro-pT-8fl" secondAttribute="trailingMargin" id="iiY-PJ-hOb"/>
-                                                    <constraint firstItem="66l-YF-2Dy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lro-pT-8fl" secondAttribute="leading" symbolic="YES" id="xrC-vb-GOp"/>
+                                                    <constraint firstItem="66l-YF-2Dy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lro-pT-8fl" secondAttribute="leading" constant="20" symbolic="YES" id="xrC-vb-GOp"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COh-F0-pId">
                                                 <rect key="frame" x="0.0" y="208" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-sL-vs4">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-sL-vs4" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -428,7 +428,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-do-zNd">
                                                 <rect key="frame" x="0.0" y="312" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-7D-pVD">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-7D-pVD" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -467,7 +467,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-s0-ZFe">
                                                 <rect key="frame" x="0.0" y="416" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iug-LB-vBZ">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iug-LB-vBZ" customClass="DailyGoalsProgressView" customModule="SlugNutrition" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -1279,13 +1279,13 @@
             <point key="canvasLocation" x="1597" y="1570"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="gear" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
+        <image name="sunset.fill" catalog="system" width="64" height="48"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="byS-TE-isv"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="sunset.fill" catalog="system" width="128" height="97"/>
-    </resources>
 </document>
