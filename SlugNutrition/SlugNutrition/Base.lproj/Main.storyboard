@@ -467,7 +467,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lro-pT-8fl">
                                                 <rect key="frame" x="0.0" y="104" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-WK-Cfc">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.125" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-WK-Cfc">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -504,7 +504,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COh-F0-pId">
                                                 <rect key="frame" x="0.0" y="208" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-sL-vs4">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.19" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-sL-vs4">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -541,7 +541,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-do-zNd">
                                                 <rect key="frame" x="0.0" y="312" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-7D-pVD">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-7D-pVD">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -580,7 +580,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-s0-ZFe">
                                                 <rect key="frame" x="0.0" y="416" width="374" height="95"/>
                                                 <subviews>
-                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iug-LB-vBZ">
+                                                    <progressView autoresizesSubviews="NO" opaque="NO" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.066000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="iug-LB-vBZ">
                                                         <rect key="frame" x="0.0" y="-0.5" width="374" height="61"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
