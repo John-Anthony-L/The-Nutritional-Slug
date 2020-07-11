@@ -1,7 +1,6 @@
-#to get this to work, you are going to need to intall bs4 and requests
+#to get this to work, you are going to need to intall bs4
 
 import bs4
-import requests
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
