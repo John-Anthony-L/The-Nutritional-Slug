@@ -19,7 +19,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     @IBOutlet var weightTextField: UITextField!
     @IBOutlet var heightTextField: UITextField!
     @IBOutlet var goalPickerView: UIPickerView!
-    let goalpicker = ["To shred some weight", "To gain weight","To become stronger"]
+    @IBOutlet var dailyAcitivityLevelPickerView: UIPickerView!
+    let goalpicker = ["Maintain", "Muscle Gain","Fat Loss"]
+    let activitypicker = ["Average","Sedentary","Moderate","High","Very High"]
     
     @IBOutlet var saveButton: UIButton!
     var defaultName:NSString = "Name"
@@ -27,6 +29,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     var defaultWeight: NSString = "140"
     var defaultHeight: NSString = "64"
     var goal:Int = 0
+    var activity: Int = 0
     var selected: NSString = ""
     
 
@@ -36,22 +39,48 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
        }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
-        return goalpicker.count
+        var a:Int = 0
+        if pickerView == goalPickerView{
+           a = goalpicker.count
+        }
+        else if(pickerView == dailyAcitivityLevelPickerView)
+        {
+            a = activitypicker.count
+        }
+        return a
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return goalpicker[row]
+        var a: String = ""
+        if pickerView == goalPickerView{
+                  a = goalpicker[row]
+               }
+               else if(pickerView == dailyAcitivityLevelPickerView)
+               {
+                   a = activitypicker[row]
+               }
+        return a
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == goalPickerView{
            UserDefaults.standard.set(row, forKey: "defaultGoal")
-        UserDefaults.standard.synchronize()
-        goal = row
-        
+           UserDefaults.standard.synchronize()
+           goal = row
+        }
+        else if(pickerView == dailyAcitivityLevelPickerView)
+        {
+             UserDefaults.standard.set(row, forKey: "defaultActivity")
+                      UserDefaults.standard.synchronize()
+                      activity = row
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.goalPickerView.delegate = self
-        self.goalPickerView.dataSource = self
+      self.goalPickerView.dataSource = self
+        self.dailyAcitivityLevelPickerView.delegate = self
+        self.dailyAcitivityLevelPickerView.dataSource = self
         updateSaveButtonState()
     }
     
@@ -91,6 +120,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         heightTextField.text = UserDefaults.standard.value(forKey: "defaultHeight") as? String
         goal = UserDefaults.standard.value(forKey: "defaultGoal") as? Int ?? 0
         self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
+        activity = UserDefaults.standard.value(forKey: "defaultActivity") as? Int ?? 0
+        self.dailyAcitivityLevelPickerView.selectRow(activity, inComponent: 0, animated: true)
         }
     
     
@@ -127,7 +158,5 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
    }
     
     @IBAction func saveButton(_ sender: Any) {
-    
-      
 }
 }

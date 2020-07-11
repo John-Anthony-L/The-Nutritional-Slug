@@ -122,11 +122,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-uX-Quz">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-uX-Quz">
                                 <rect key="frame" x="20" y="110" width="374" height="663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-kE-g0n">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="86.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4im-dL-kTr">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
@@ -135,7 +135,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Your Name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEM-GV-suf">
-                                                <rect key="frame" x="0.0" y="43" width="374" height="43"/>
+                                                <rect key="frame" x="0.0" y="43" width="374" height="43.5"/>
                                                 <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -148,16 +148,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fd6-xp-SVS">
-                                        <rect key="frame" x="0.0" y="144" width="374" height="86.5"/>
+                                        <rect key="frame" x="0.0" y="115.5" width="374" height="86"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GENDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voJ-aN-mKl">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
                                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LHb-jc-cZh">
-                                                <rect key="frame" x="0.0" y="43.5" width="374" height="44"/>
+                                                <rect key="frame" x="0.0" y="43" width="374" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <segments>
                                                     <segment title="Male"/>
@@ -172,19 +172,19 @@
                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="sZe-Yj-z2P">
-                                        <rect key="frame" x="0.0" y="288.5" width="374" height="86"/>
+                                        <rect key="frame" x="0.0" y="230.5" width="374" height="86.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lfi-GM-ovL">
-                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="86"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="86.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwL-Hq-aZg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="43.5"/>
                                                         <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-o6-YoJ">
-                                                        <rect key="frame" x="0.0" y="43" width="105.5" height="43"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="105.5" height="43"/>
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -196,16 +196,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RKz-QS-dXw">
-                                                <rect key="frame" x="134.5" y="0.0" width="105" height="86"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="105" height="86.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfP-8m-Fsp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="43.5"/>
                                                         <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In lbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcp-TD-MIu">
-                                                        <rect key="frame" x="0.0" y="43" width="105" height="43"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="105" height="43"/>
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -217,16 +217,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k2a-G4-ZBL">
-                                                <rect key="frame" x="268.5" y="0.0" width="105.5" height="86"/>
+                                                <rect key="frame" x="268.5" y="0.0" width="105.5" height="86.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0P-vV-rzP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="43.5"/>
                                                         <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="23"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Feet" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7f-ZP-2l2">
-                                                        <rect key="frame" x="0.0" y="43" width="105.5" height="43"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="105.5" height="43"/>
                                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -239,17 +239,17 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3Cm-e7-rEO">
-                                        <rect key="frame" x="0.0" y="432.5" width="374" height="86.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-4" translatesAutoresizingMaskIntoConstraints="NO" id="3Cm-e7-rEO">
+                                        <rect key="frame" x="0.0" y="346" width="374" height="86.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M22-fv-1DA">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="rYG-ZD-V5O">
-                                                <rect key="frame" x="0.0" y="43" width="374" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="41" width="374" height="45.5"/>
                                                 <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
@@ -262,8 +262,31 @@
                                             </pickerView>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-Kh-G9q">
+                                        <rect key="frame" x="0.0" y="461.5" width="374" height="86"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAILY ACTIVITY LEVEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3T-YX-8fh">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
+                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="RnW-o1-nsP">
+                                                <rect key="frame" x="0.0" y="43" width="374" height="43"/>
+                                                <color key="backgroundColor" red="0.83117055890000002" green="0.49050813910000002" blue="0.91055387259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="textSize">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-dr-SqE" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="577" width="374" height="86"/>
+                                        <rect key="frame" x="0.0" y="576.5" width="374" height="86.5"/>
                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="38"/>
                                         <state key="normal" title="LET'S GO!">
@@ -300,6 +323,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="swu-gf-9i4"/>
                     <connections>
                         <outlet property="ageTextField" destination="IXn-o6-YoJ" id="pIs-tT-aHK"/>
+                        <outlet property="dailyAcitivityLevelPickerView" destination="RnW-o1-nsP" id="R5x-Ly-zl9"/>
                         <outlet property="genderSegmentedControl" destination="LHb-jc-cZh" id="Kmt-o0-7pk"/>
                         <outlet property="goalPickerView" destination="rYG-ZD-V5O" id="xU1-PW-eOh"/>
                         <outlet property="heightTextField" destination="c7f-ZP-2l2" id="xCa-QX-RTt"/>
@@ -726,6 +750,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vae-ux-Dhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2529" y="1570"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rzH-2h-aeW">
+            <objects>
+                <viewController id="A7n-EE-ziS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujp-xM-IWK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Zsu-9G-EGt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nei-Er-K7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="2510"/>
         </scene>
         <!--Food Search View Controller-->
         <scene sceneID="yjm-od-KbD">
@@ -1375,7 +1414,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mcI-zp-zKJ"/>
+        <segue reference="byS-TE-isv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="1810" height="1798"/>
