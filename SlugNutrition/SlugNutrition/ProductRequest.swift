@@ -27,7 +27,7 @@ struct ProductRequest {
         let resourceString = "https://api.nutritionix.com/v1_1/search/\(productSearch)?results=0:5&fields=item_name,brand_name,item_id,nf_calories,nf_protein,nf_total_carbohydrate,nf_total_fat,nf_serving_weight_grams&appId=\(APP_ID)&appKey=\(API_KEY)"
         guard let resourceURL = URL(string: resourceString) else {fatalError()}
         
-        print(resourceString)
+        //print(resourceString)
         self.resourceURL = resourceURL
         
     }
@@ -38,11 +38,11 @@ struct ProductRequest {
             
             
             do {
-                print("entered do")
+                //print("entered do")
                 let productsResponse = try JSONDecoder().decode(ProductResponse.self, from: data!)
-                print("test1")
+                //print("test1")
                 //let productDetails = productsResponse.products
-                print("test2")
+                //print("test2")
                 completion(.success(productsResponse))
             }catch{
                 completion(.failure(error))

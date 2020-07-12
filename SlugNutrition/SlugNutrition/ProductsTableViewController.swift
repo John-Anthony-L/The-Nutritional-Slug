@@ -56,7 +56,8 @@ class ProductsTableViewController: UITableViewController {
 
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+        UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         //listOfProducts.sort{convertAPIValToInt (name: $0.fields.nf_calories) < convertAPIValToInt(name: $1.fields.nf_calories) }

@@ -22,6 +22,7 @@ class CustomizedViewController: UIViewController {
     @IBOutlet var proteinSlider: UISlider!
     
     @IBOutlet var saveButton: UIButton!
+    
     var defaultName = ""
     var defaultBrand = ""
     var defaultCarbs = 0

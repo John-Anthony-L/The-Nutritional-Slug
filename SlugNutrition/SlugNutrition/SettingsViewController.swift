@@ -20,16 +20,27 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     @IBOutlet var heightTextField: UITextField!
     @IBOutlet var goalPickerView: UIPickerView!
     @IBOutlet var dailyAcitivityLevelPickerView: UIPickerView!
+    
     let goalpicker = ["Maintain", "Muscle Gain","Fat Loss"]
+    // Maintain = Calories + 0
+    // Muscle Gain = Calories + 300
+    // Fat Loss = Calories + (-300)
+    
     let activitypicker = ["Average","Sedentary","Moderate","High","Very High"]
+    // Average = 1.375
+    // Sedentary = 1.2
+    // Moderate = 1.55
+    // High = 1.725
+    // Very High = 1.9
     
     @IBOutlet var saveButton: UIButton!
+    
     var defaultName:NSString = "Name"
     var defaultAge: NSString = "20"
     var defaultWeight: NSString = "140"
     var defaultHeight: NSString = "64"
     var goal:Int = 0
-    var activity: Int = 0
+    var activity: Double = 0.0
     var selected: NSString = ""
     
 
@@ -71,7 +82,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         {
              UserDefaults.standard.set(row, forKey: "defaultActivity")
                       UserDefaults.standard.synchronize()
-                      activity = row
+                      activity = Double(row)
         }
     }
     
@@ -120,8 +131,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         heightTextField.text = UserDefaults.standard.value(forKey: "defaultHeight") as? String
         goal = UserDefaults.standard.value(forKey: "defaultGoal") as? Int ?? 0
         self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
-        activity = UserDefaults.standard.value(forKey: "defaultActivity") as? Int ?? 0
-        self.dailyAcitivityLevelPickerView.selectRow(activity, inComponent: 0, animated: true)
+        activity = UserDefaults.standard.value(forKey: "defaultActivity") as? Double ?? 0
+        self.dailyAcitivityLevelPickerView.selectRow(Int(activity), inComponent: 0, animated: true)
         }
     
     
