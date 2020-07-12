@@ -57,6 +57,14 @@ class CustomizedViewController: UIViewController {
          defaults.set(defaultCarbs, forKey: "defaultCarbs")
          defaults.synchronize()
      }
+    @IBAction func CarbstextFieldDidChange(textField: UITextField) {
+        if let stringValue = textField.text{
+            if let intValue = Int(stringValue){
+                carbsSlider.setValue(Float(intValue), animated: true)
+            }
+        }
+            updateCarbsValue()
+    }
      
      func updateFatsValue()
      {
@@ -66,6 +74,15 @@ class CustomizedViewController: UIViewController {
           defaults.set(defaultFats, forKey: "defaultFats")
           defaults.synchronize()
      }
+    
+    @IBAction func FatstextFieldDidChange(textField: UITextField) {
+        if let stringValue = textField.text{
+            if let intValue = Int(stringValue){
+                fatSlider.setValue(Float(intValue), animated: true)
+            }
+        }
+            updateFatsValue()
+    }
      
      func updateCalsValue()
          {
@@ -75,6 +92,15 @@ class CustomizedViewController: UIViewController {
               defaults.set(defaultCals, forKey: "defaultCals")
               defaults.synchronize()
          }
+    
+   @IBAction func CalstextFieldDidChange(textField: UITextField) {
+           if let stringValue = textField.text{
+               if let intValue = Int(stringValue){
+                   caloriesSlider.setValue(Float(intValue), animated: true)
+               }
+           }
+               updateCalsValue()
+       }
 
     func updateProsValue()
     {
@@ -84,6 +110,15 @@ class CustomizedViewController: UIViewController {
          defaults.set(defaultPros, forKey: "defaultPros")
          defaults.synchronize()
     }
+    
+    @IBAction func ProstextFieldDidChange(textField: UITextField) {
+           if let stringValue = textField.text{
+               if let intValue = Int(stringValue){
+                   proteinSlider.setValue(Float(intValue), animated: true)
+               }
+           }
+               updateProsValue()
+       }
     
     @IBAction func textEditingChanged(_sender: UITextField)
        {

@@ -850,6 +850,9 @@
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="CarbstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="e6Q-Ry-0oP"/>
+                                                    </connections>
                                                 </textField>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-pb-ew6">
                                                     <rect key="frame" x="245" y="17.5" width="118" height="30"/>
@@ -880,6 +883,9 @@
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="FatstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="CPs-Ku-sCc"/>
+                                                    </connections>
                                                 </textField>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-Tj-7BA">
                                                     <rect key="frame" x="245" y="17" width="118" height="30"/>
@@ -910,6 +916,9 @@
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="CalstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="Itg-cx-ObV"/>
+                                                    </connections>
                                                 </textField>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-GO-onH">
                                                     <rect key="frame" x="245" y="18.5" width="118" height="30"/>
@@ -940,6 +949,9 @@
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="ProstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="D7T-81-FY7"/>
+                                                    </connections>
                                                 </textField>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-Wg-Vzp">
                                                     <rect key="frame" x="253" y="18" width="118" height="30"/>
