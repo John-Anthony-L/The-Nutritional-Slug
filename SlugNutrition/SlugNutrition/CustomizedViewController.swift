@@ -21,6 +21,7 @@ class CustomizedViewController: UIViewController {
     @IBOutlet var proteinTextField: UITextField!
     @IBOutlet var proteinSlider: UISlider!
     
+    @IBOutlet var saveButton: UIButton!
     var defaultName = ""
     var defaultBrand = ""
     var defaultCarbs = 0
@@ -30,6 +31,7 @@ class CustomizedViewController: UIViewController {
     
      override func viewDidLoad() {
          super.viewDidLoad()
+        updateSaveButtonState()
      }
      
     
@@ -82,5 +84,21 @@ class CustomizedViewController: UIViewController {
          defaults.set(defaultPros, forKey: "defaultPros")
          defaults.synchronize()
     }
+    
+    @IBAction func textEditingChanged(_sender: UITextField)
+       {
+           updateSaveButtonState()
+       }
+    
+    func updateSaveButtonState() {
+           let foodText = nameTextField.text ?? ""
+           let brandText = brandTextField.text ?? ""
+           saveButton.isEnabled = !foodText.isEmpty && !brandText.isEmpty
+       }
+    
+    @IBAction func saveButton(_ sender: UIButton) {
+    }
+    
+
     
 }
