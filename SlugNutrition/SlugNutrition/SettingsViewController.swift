@@ -11,8 +11,6 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
     
     
-    var userData: UserData?
-    
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var genderSegmentedControl: UISegmentedControl!
     @IBOutlet var ageTextField: UITextField!
@@ -24,7 +22,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     let goalpicker = ["Maintain", "Muscle Gain","Fat Loss"]
     // Maintain = Calories + 0
     // Muscle Gain = Calories + 300
-    // Fat Loss = Calories + (-300)
+    // Fat Loss = Calories -300
     
     let activitypicker = ["Average","Sedentary","Moderate","High","Very High"]
     // Average = 1.375
@@ -35,13 +33,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     
     @IBOutlet var saveButton: UIButton!
     
-    var defaultName:NSString = "Name"
-    var defaultAge: NSString = "20"
-    var defaultWeight: NSString = "140"
-    var defaultHeight: NSString = "64"
+    var defaultName:String = ""
+    var defaultAge: Int = 0
+    var defaultWeight: Double = 0.0
+    var defaultHeight: Double = 0.0
     var goal:Int = 0
-    var activity: Double = 0.0
-    var selected: NSString = ""
+    var activity: Int = 0
+    var selected: String = ""
     
 
     
@@ -82,7 +80,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         {
              UserDefaults.standard.set(row, forKey: "defaultActivity")
                       UserDefaults.standard.synchronize()
-                      activity = Double(row)
+                      activity = row
         }
     }
     
@@ -107,31 +105,33 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     }
     
     @IBAction func ageTextFieldChanged(_ sender: UITextField) {
-        UserDefaults.standard.set(ageTextField.text, forKey: "defaultAge") // saves text field text
+        let age:Int = tointeger(from: ageTextField)
+        UserDefaults.standard.set(age, forKey: "defaultAge")// saves text field text
         UserDefaults.standard.synchronize()
-        
     }
     @IBAction func weightTextFieldChanged(_ sender: UITextField) {
-        UserDefaults.standard.set(weightTextField.text, forKey: "defaultWeight") // saves text field text
+        let weight:Double = toDouble(from: weightTextField)
+        UserDefaults.standard.set(weight, forKey: "defaultWeight") // saves text field text
         UserDefaults.standard.synchronize()
     }
     
     
     @IBAction func heightTextFieldChanged(_ sender: UITextField) {
-        UserDefaults.standard.set(heightTextField.text, forKey: "defaultHeight") // saves text field text
+        let height: Double = toDouble(from: heightTextField)
+        UserDefaults.standard.set(height, forKey: "defaultHeight") // saves text field text
         UserDefaults.standard.synchronize()
     }
     
     override func viewWillAppear(_ animated: Bool)
     {
-        nameTextField.text = UserDefaults.standard.value(forKey:"defaultName") as? String
+        nameTextField.text = UserDefaults.standard.string(forKey:"defaultName")
         genderSegmentedControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "defaultGender")
-        ageTextField.text = UserDefaults.standard.value(forKey:"defaultAge") as? String
-        weightTextField.text = UserDefaults.standard.value(forKey:"defaultWeight") as? String
-        heightTextField.text = UserDefaults.standard.value(forKey: "defaultHeight") as? String
-        goal = UserDefaults.standard.value(forKey: "defaultGoal") as? Int ?? 0
+        ageTextField.text = String(UserDefaults.standard.integer(forKey:"defaultAge"))
+        weightTextField.text = String( UserDefaults.standard.double(forKey:"defaultWeight"))
+        heightTextField.text = String(UserDefaults.standard.double(forKey: "defaultHeight"))
+        goal = UserDefaults.standard.integer(forKey: "defaultGoal")
         self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
-        activity = UserDefaults.standard.value(forKey: "defaultActivity") as? Double ?? 0
+        activity = UserDefaults.standard.integer(forKey: "defaultActivity")
         self.dailyAcitivityLevelPickerView.selectRow(Int(activity), inComponent: 0, animated: true)
         }
     

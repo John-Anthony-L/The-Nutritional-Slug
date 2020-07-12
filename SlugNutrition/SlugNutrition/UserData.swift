@@ -37,27 +37,27 @@ struct UserData: Codable {
         //print("test")
     }
     
-    static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-    
-    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("userData").appendingPathExtension("plist")
-    
-    
-    static func saveToFile(userData: UserData) {
-        let propertyListEncoder = PropertyListEncoder()
-        let codedData = try? propertyListEncoder.encode(userData)
-        
-        try? codedData?.write(to: ArchiveURL, options: .noFileProtection)
-    }
-    
-    static func loadFromFile() -> UserData? {
-        guard let codedData = try? Data(contentsOf: ArchiveURL) else { return nil }
-        
-        let propertyListDecoder = PropertyListDecoder()
-        print("test")
-        
-        return try? propertyListDecoder.decode(UserData.self, from: codedData)
-    }
-}
+//    static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+//
+//    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("userData").appendingPathExtension("plist")
+//
+//
+//    static func saveToFile(userData: UserData) {
+//        let propertyListEncoder = PropertyListEncoder()
+//        let codedData = try? propertyListEncoder.encode(userData)
+//
+//        try? codedData?.write(to: ArchiveURL, options: .noFileProtection)
+//    }
+//
+//    static func loadFromFile() -> UserData? {
+//        guard let codedData = try? Data(contentsOf: ArchiveURL) else { return nil }
+//
+//        let propertyListDecoder = PropertyListDecoder()
+//        print("test")
+//
+//        return try? propertyListDecoder.decode(UserData.self, from: codedData)
+//    }
+//}
 
 
 func calculateCalories(s: String, w: Double, h: Double, a: Int, g: Int, u: Double ) -> Double {
@@ -90,4 +90,4 @@ func calculateCarbs(c: Double, f: Double, p: Double) -> Double {
     return x
 }
 
-
+}
