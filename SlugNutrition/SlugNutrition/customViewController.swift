@@ -115,22 +115,26 @@ class customViewController: UIViewController {
     func caloriesLabelFunction() {
         cals = calculateCalories(s: defaultGenderIndex,w: defaultWeight,h: defaultHeight,a: defaultAge,g: getGoal(), u: getActivity())
         self.caloriesLabel.text = String(Int(cals))
+        self.CaloriesDailyProgress.setProgress(Float(cals), animated: true)
     }
     
     func proteinLabelFunction() {
         pros = calculateProteins(w: defaultWeight)
             self.proteinLabel.text = String(Int(pros))
+        self.ProteinDailyProgress.setProgress(Float(pros), animated: true)
     }
     
     func fatsLabelFunction() {
         fat = calculateFats(c: cals)
         self.fatsLabel.text = String(Int(fat))
+        self.FatsDailyProgress.setProgress(Float(fat), animated: true)
            
     }
     
     func carbsLabelFunction() {
         let carbs = calculateCarbs(c: cals,f: fat, p: pros)
         self.carbsLabel.text = String(Int(carbs))
+         self.CarbsDailyProgress.setProgress(Float(carbs), animated: true)
     }
     
 
