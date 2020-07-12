@@ -4,6 +4,13 @@ import bs4
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
+filename = "products.csv"
+f = open(filename, "w")
+
+handlers = "fats, carbs, protein\n"
+
+f.write(handlers)
+
 def read_link(url):
     Client = uReq(url)
     page_data = Client.read()
@@ -26,6 +33,8 @@ def Get_Data_from_item_page(page):
         fats = "fats:" + raw_data[4].text
         carbs = "carbs: " + raw_data[24].text
         protien = "protien:" + raw_data[31].text
+
+        f.write(raw_data[4].text.replace("Amount Per serving", "") + "," + raw_data[24].text.replace("Amount Per serving", "") + "," + raw_data[32].text.replace("Amount Per serving", "") + "\n")
         return fats, carbs, protien
     else:
         return 0
