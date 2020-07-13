@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup as soup
 filename = "products.csv"
 f = open(filename, "w")
 
-handlers = "fats, carbs, protein\n"
+handlers = "item, calories,fats, carbs, protein\n"
 
 f.write(handlers)
 
@@ -27,8 +27,7 @@ def Get_Data_from_item_page(page):
     if len(product_containers) != 0:
         product_info = product_containers[0]
         # this will get you the number of calories
-        calories = "calories: " + product_info.find("td", {"class": "table-ingredients-text"}).text
-        print(calories)
+        calories =product_info.find("td", {"class": "table-ingredients-text"}).text
     # This will get you all the data for the table, it returns and array
         raw_data = product_info.findAll("td", {"class": "table-ingredients-text"})
 
@@ -39,13 +38,24 @@ def Get_Data_from_item_page(page):
         else:
             carbs = raw_data[24].text
         if raw_data[30] == '':
-            protien = "protien: 0g"
+            protien = "0g"
         else:
             protien = raw_data[30].text
-        f.write(fats.replace("Amount Per serving", "") + "," + carbs.replace("Amount Per serving","") + "," + protien.replace("Amount Per serving", "") + "\n")
+
+
+        f.write(product_name + "," + CalorieFormat(calories) + "," + FormatInfo(fats) + "," + FormatInfo(carbs) + "," + FormatInfo(protien) + "\n")
         return product_name, calories, fats, carbs, protien
     else:
         return 0
+
+def FormatInfo(macro):
+    macro = macro.replace("Amount Per serving", "")
+    return macro
+
+def CalorieFormat(calorie):
+    new_format = calorie.replace("Amount Per Serving\n", "")
+    new_new_format = new_format.replace(' ', '')
+    return new_new_format
 
 def GetSafewayLink(parital_url_container):
     try:
