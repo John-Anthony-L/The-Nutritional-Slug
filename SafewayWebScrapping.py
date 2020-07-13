@@ -23,7 +23,6 @@ def Get_Data_from_item_page(page):
     product_containers = product_soup.findAll("table", {"class": "tableOfIngredients"})
     product_name_containers = product_soup.find("div", {"class": "product-heading"})
     product_name = product_name_containers.h2.text
-    print(product_name)
     if len(product_containers) != 0:
         product_info = product_containers[0]
         # this will get you the number of calories
@@ -50,7 +49,8 @@ def Get_Data_from_item_page(page):
 
 def FormatInfo(macro):
     macro = macro.replace("Amount Per serving", "")
-    return macro
+    macro2 = macro.replace('(-)', '0g')
+    return macro2.lower()
 
 def CalorieFormat(calorie):
     new_format = calorie.replace("Amount Per Serving\n", "")
