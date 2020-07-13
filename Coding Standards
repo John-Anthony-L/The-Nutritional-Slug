@@ -1,0 +1,16 @@
+1. Proper Intendation
+2. Use proper Variables and not just 1 letters, Make the name descriptive.
+3. Use Swift types whenever possible (Array, Dictionary, Set, String, etc.) as opposed to the NS*
+4. Whenever possible use let instead of var.
+5. Open curly braces on the next line as the statement and close on a new line.
+6. Don't add empty lines after opening braces or before closing braces.
+7. Make all colons left-hugging (no space before but a space after) except when used with the ternary operator (a space both before and after).
+8. Don't put multiple statements on one line
+9. For single conditional statements, do not use parentheses.
+10. Use parentheses around compound conditional statements for clarity or to make the order of operations explicit.
+11. break is not needed between case statements 
+12. Except where necessary, avoid using self.. If you have a local variable that conflicts with a property name or are in a context where self is captured, you may need to use self..
+13. Remove return types of Void and parentheses around single input parameters. This is especialy relevant if the closure takes no input and returns no output.
+14. make your code compile without warnings.
+15. Unused (dead) code, including Xcode template code and placeholder comments should be removed
+16. Parentheses around conditionals are not required and should be omitted.
