@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEU-Gf-uE2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEU-Gf-uE2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter Country Code e.g. US" id="aLR-3a-HHl">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter food name: e.g. pizza, pasta, etc" id="aLR-3a-HHl">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -848,7 +848,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUd-33-7Ll">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUd-33-7Ll">
                                                     <rect key="frame" x="136" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -858,7 +858,7 @@
                                                         <action selector="CarbstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="e6Q-Ry-0oP"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-pb-ew6">
+                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-pb-ew6">
                                                     <rect key="frame" x="245" y="17.5" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -881,7 +881,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-5W-8D5">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-5W-8D5">
                                                     <rect key="frame" x="136" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -891,7 +891,7 @@
                                                         <action selector="FatstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="CPs-Ku-sCc"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-Tj-7BA">
+                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-Tj-7BA">
                                                     <rect key="frame" x="245" y="17" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -914,7 +914,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4i-FE-Rde">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4i-FE-Rde">
                                                     <rect key="frame" x="136" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -924,7 +924,7 @@
                                                         <action selector="CalstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="Itg-cx-ObV"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-GO-onH">
+                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-GO-onH">
                                                     <rect key="frame" x="245" y="18.5" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -947,7 +947,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-lL-aym">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-lL-aym">
                                                     <rect key="frame" x="141" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -957,7 +957,7 @@
                                                         <action selector="ProstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="D7T-81-FY7"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-Wg-Vzp">
+                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-Wg-Vzp">
                                                     <rect key="frame" x="253" y="18" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -1668,16 +1668,16 @@
             <point key="canvasLocation" x="1597" y="1570"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="1810" height="1798"/>
+        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="gear" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
+        <image name="sunset.fill" catalog="system" width="64" height="48"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="byS-TE-isv"/>
         <segue reference="doL-E1-MLx"/>
         <segue reference="Riq-5S-WwY"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="1" width="1810" height="1798"/>
-        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="sunset.fill" catalog="system" width="128" height="97"/>
-    </resources>
 </document>
