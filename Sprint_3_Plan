@@ -1,0 +1,81 @@
+Sprint 3 Plan
+
+product name: The Nutritional Slug
+Team Name: Gold Team 
+Project Owner: John Lara 
+Scrum Master: Vidisha Nevatia,Dylan Salak
+Developers: Sanyam Sachdeva,Roberto Oregon, 
+sprint completion date: Monday, July 20, 2020
+revision number: 0 
+revision date: - 
+
+GOAL: - Connect the data in Today to progess page. 
+      - Connect the search results with the code
+      - Connect SQL to app 
+	    - Clean up the UI
+
+
+Task listing, organized by user story:
+
+(10) User story 1: As a busy user, I want to be see my seach results sync with app so that all information in the app sets up according to my chosen food item. 
+
+Task 1: (7) CONNECT SQL RESULTS TO APP 
+Task 2: (5) GET THE SEARCH RESULTS FROM THE SEARCH PAGE 
+TASK 3: (5) ADDING UP THE PROGRESS IN TODAY PAGE 
+Task 4: (3) ADDING THE FOOD TO THE CORRESPONDING MEAL 
+Task 5: (2) FIX THE UI OF THE SEARCH PAGE
+
+Total for user story 1: 19 hours
+
+----------
+
+(16) User story 2: As a health-conscious user, I need to be able to see that the progress of my daily targets, to stay motivated.
+
+Task 1: (3) HAVE THE DAILY PROGRESS RESET EVERYDAY
+TASK 2: (3) SHIFT THE DAILY TO THE PROGESS PAGE AT THE END OF THE DAY
+TASK 3: (5) SET THE COLORS FOR EACH DATE
+TASK 4: (5) BE ABLE TO CALCULATE THE NO. OF COLORS FROM THE CALENDAR AND SHOW IN LABEL 
+TASK 5: (2) RESET DATA AT THE END END OF THE MONTH 
+  
+
+Total for user story 2: 10 hours
+
+----------
+
+(5) User story 3: As a user, I want to be see a clean UI, that flows perfectly, so that I can use the app easily.
+
+Task 1: (2) FONT SIZES AND TYPES ARE CONSISTENT THROUGHOUT THE APP
+TASK 2: (2) MAKE SURE THE ENTIRE APP WORKS PROPERLY AFTER EVERYTHING IS IN THE APP
+TASK 3: (5) TEST THE APP WITH DIFFERENT INPUTS AND WORST CASE SCENARIOS
+Total for user story 3: 5 hours
+
+
+----------
+
+Total time for Sprint 3: 34 hours
+
+Team roles: 
+John Lara: Developer, {Project Owner}
+Vidisha Nevatia: UI/UX, {Scrum Master} 
+Dylan Salak: Developer, {Scrum Master}
+Sanyam Sachdeva: UI/UX, {Developer}
+Roberto Oregon: Developer
+
+Initial task assignment: 
+
+John Lara: 
+Roberto Oregon: 
+Dylan Salak: 
+Sanyam Sachdeva: 
+Vidisha Nevatia: 
+
+ 
+Initial burnup chart: (uploaded as a secondary file): https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Burnup%20chart.pdf
+
+Initial scrum board:  (On Trello) https://trello.com/b/LFxNyiNI/gold-team
+
+Scrum times:
+  Meeting 1: Monday, 3:30PM -  4:30PM (with TA Rishi)
+  Meeting 2: Wednesday: 4:00PM - 5:00PM 
+  Meeting 2: Thursday,3:00PM - 4:00PM (with TA Rishi) 
+  Meeting 3: Saturday, 9:30AM - 10:30AM

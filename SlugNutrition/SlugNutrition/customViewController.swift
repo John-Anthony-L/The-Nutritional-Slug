@@ -33,38 +33,45 @@ class customViewController: UIViewController {
     var pros:Double = 0.0
     
     
-    func calculateCalories(s: Int, w: Double, h: Double, a: Int, g: Int, u: Double ) -> Double {
-        //let f = floor(w)
-        let x = 10 * (w / 2.2046)
-        let y = 6.25 * (h * 2.54)
-        let z = (5 * a)
-        if s == 0 {
-            return ((x + y - Double(z) + 5) * u - 200) + Double(g)
+    func calculateCalories(sex: Int, weight: Double, height: Double, age: Int, goal: Int, userActivity: Double ) -> Double {
+        let x = 10 * (weight / 2.2046)
+        let y = 6.25 * (height * 2.54)
+        let z = (5 * age)
+        if sex == 0 {
+            return ((x + y - Double(z) + 5) * userActivity - 200) + Double(goal)
         }
         else {
-            return ((x + y - Double(z) - 161) * u - 200) + Double(g)
+            return ((x + y - Double(z) - 161) * userActivity - 200) + Double(goal)
         }
     }
 
-    func calculateProteins(w: Double ) -> Double {
+    func calculateProteins(weight: Double ) -> Double {
         //let f = floor(w)
-        let x = w * 0.9
+        let x = weight * 0.9
         return x
     }
 
-    func calculateFats(c: Double ) -> Double {
+    func calculateFats(calorieGoal: Double ) -> Double {
         //let f = floor(w)
-        let x = 0.25 * c / 9
+        let x = 0.25 * calorieGoal / 9
         return x
     }
 
-    func calculateCarbs(c: Double, f: Double, p: Double) -> Double {
-        let x = (c - 9 * f - 4 * p) / 4
+    func calculateCarbs(calorieGoal: Double, fatsGoal: Double, proteinGoal: Double) -> Double {
+        let x = (calorieGoal - 9 * fatsGoal - 4 * proteinGoal) / 4
         return x
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = getUserDefaults()
+        defaultName = defaults.string(forKey:"defaultName") ?? ""
+        defaultGenderIndex = defaults.integer(forKey: "defaultGender")
+        defaultAge = defaults.integer(forKey:"defaultAge")
+        defaultWeight = defaults.double(forKey:"defaultWeight")
+        defaultHeight = defaults.double(forKey: "defaultHeight")
+        defaultGoalRow = defaults.integer(forKey: "defaultGoal")
+        defaultActivityRow = defaults.integer(forKey: "defaultActivity")
         caloriesLabelFunction()
         proteinLabelFunction()
         fatsLabelFunction()
@@ -113,26 +120,26 @@ class customViewController: UIViewController {
     
     
     func caloriesLabelFunction() {
-        cals = calculateCalories(s: defaultGenderIndex,w: defaultWeight,h: defaultHeight,a: defaultAge,g: getGoal(), u: getActivity())
+        cals = calculateCalories(sex: defaultGenderIndex,weight: defaultWeight,height: defaultHeight,age: defaultAge,goal: getGoal(), userActivity: getActivity())
         self.caloriesLabel.text = String(Int(cals))
 //        self.CaloriesDailyProgress.setProgress(Float(cals), animated: true)
     }
     
     func proteinLabelFunction() {
-        pros = calculateProteins(w: defaultWeight)
+        pros = calculateProteins(weight: defaultWeight)
             self.proteinLabel.text = String(Int(pros))
 //        self.ProteinDailyProgress.setProgress(Float(pros), animated: true)
     }
     
     func fatsLabelFunction() {
-        fat = calculateFats(c: cals)
+        fat = calculateFats(calorieGoal: cals)
         self.fatsLabel.text = String(Int(fat))
 //        self.FatsDailyProgress.setProgress(Float(fat), animated: true)
            
     }
     
     func carbsLabelFunction() {
-        let carbs = calculateCarbs(c: cals,f: fat, p: pros)
+        let carbs = calculateCarbs(calorieGoal: cals,fatsGoal: fat, proteinGoal: pros)
         self.carbsLabel.text = String(Int(carbs))
 //         self.CarbsDailyProgress.setProgress(Float(carbs), animated: true)
     }
