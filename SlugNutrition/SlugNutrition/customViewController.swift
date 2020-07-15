@@ -10,6 +10,7 @@ import UIKit
 
 class customViewController: UIViewController {
 
+    @IBOutlet var userNameLabel: UILabel!
     @IBOutlet weak var CarbsDailyProgress: UIProgressView!
     @IBOutlet weak var FatsDailyProgress: UIProgressView!
     @IBOutlet weak var ProteinDailyProgress: UIProgressView!
@@ -72,6 +73,7 @@ class customViewController: UIViewController {
         defaultHeight = defaults.double(forKey: "defaultHeight")
         defaultGoalRow = defaults.integer(forKey: "defaultGoal")
         defaultActivityRow = defaults.integer(forKey: "defaultActivity")
+     
         caloriesLabelFunction()
         proteinLabelFunction()
         fatsLabelFunction()
@@ -81,16 +83,22 @@ class customViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+ 
         navigationController?.setNavigationBarHidden(true, animated: animated)
-        let defaults = getUserDefaults()
-        defaultName = defaults.string(forKey:"defaultName") ?? ""
-        defaultGenderIndex = defaults.integer(forKey: "defaultGender")
-        defaultAge = defaults.integer(forKey:"defaultAge")
-        defaultWeight = defaults.double(forKey:"defaultWeight")
-        defaultHeight = defaults.double(forKey: "defaultHeight")
-        defaultGoalRow = defaults.integer(forKey: "defaultGoal")
-        defaultActivityRow = defaults.integer(forKey: "defaultActivity")
+        super.viewWillAppear(animated)
+        if (defaultName == "")
+        {
+            
+        }
+        else
+        {
+            userNameLabel.text = defaultName.uppercased() + "'S TODAY"
+        }
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
     }
     func getGoal() -> Int{
         var goal:Int
@@ -108,8 +116,8 @@ class customViewController: UIViewController {
         var activity:Double
         switch defaultActivityRow
         {
-        case 0 : activity = 1.375
-        case 1 :  activity = 1.2
+        case 0 : activity = 1.2
+        case 1 :  activity = 1.375
         case 2 :  activity = 1.55
         case 3 :  activity = 1.725
         case 4 :  activity = 1.9
@@ -121,26 +129,26 @@ class customViewController: UIViewController {
     
     func caloriesLabelFunction() {
         cals = calculateCalories(sex: defaultGenderIndex,weight: defaultWeight,height: defaultHeight,age: defaultAge,goal: getGoal(), userActivity: getActivity())
-        self.caloriesLabel.text = String(Int(cals))
+        self.caloriesLabel.text = String(CaloriesDailyProgress.progress*100) + "/" + String(Int(cals))
 //        self.CaloriesDailyProgress.setProgress(Float(cals), animated: true)
     }
     
     func proteinLabelFunction() {
         pros = calculateProteins(weight: defaultWeight)
-            self.proteinLabel.text = String(Int(pros))
+            self.proteinLabel.text = String(ProteinDailyProgress.progress*100) + "/" + String(Int(pros))
 //        self.ProteinDailyProgress.setProgress(Float(pros), animated: true)
     }
     
     func fatsLabelFunction() {
         fat = calculateFats(calorieGoal: cals)
-        self.fatsLabel.text = String(Int(fat))
+        self.fatsLabel.text = String(FatsDailyProgress.progress*100) + "/" + String(Int(fat))
 //        self.FatsDailyProgress.setProgress(Float(fat), animated: true)
            
     }
     
     func carbsLabelFunction() {
         let carbs = calculateCarbs(calorieGoal: cals,fatsGoal: fat, proteinGoal: pros)
-        self.carbsLabel.text = String(Int(carbs))
+        self.carbsLabel.text = String(CarbsDailyProgress.progress*100) + "/" + String(Int(carbs))
 //         self.CarbsDailyProgress.setProgress(Float(carbs), animated: true)
     }
     

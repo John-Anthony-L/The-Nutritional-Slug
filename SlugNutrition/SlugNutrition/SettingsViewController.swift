@@ -24,7 +24,10 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     // Muscle Gain = Calories + 300
     // Fat Loss = Calories -300
     
-    let activitypicker = ["Average","Sedentary","Moderate","High","Very High"]
+    let activitypicker = ["Sedentary : Little/No exercise",
+                          "Average Exercise 1-2 times/week",
+                          "Moderate : Exercise 4-5 times/week","High : intense exercise 6-7 times/week",
+                          "Very High : very intense exercise daily"]
     // Average = 1.375
     // Sedentary = 1.2
     // Moderate = 1.55
@@ -34,9 +37,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     @IBOutlet var saveButton: UIButton!
     
     var defaultName:String = ""
-    var defaultAge: Int = 0
-    var defaultWeight: Double = 0.0
-    var defaultHeight: Double = 0.0
+    var defaultAge: Int!
+    var defaultWeight: Double!
+    var defaultHeight: Double!
     var goal:Int = 0
     var activity: Int = 0
     var selected: String = ""
@@ -83,6 +86,26 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
                       activity = row
         }
     }
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+         let label = (view as? UILabel) ?? UILabel()
+        if pickerView == goalPickerView{
+        label.font = UIFont(name: "Times New Roman", size: 20)
+            label.textColor = .white
+        label.textAlignment = .center
+      label.text = goalpicker [row]
+   
+    }
+    else if(pickerView == dailyAcitivityLevelPickerView)
+    {
+        label.font = UIFont(name: "Times New Roman", size: 18)
+         label.textAlignment = .center
+        label.textColor = .white
+         label.text = activitypicker [row]
+                         
+                   }
+             return label
+        }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,31 +133,48 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         UserDefaults.standard.synchronize()
     }
     @IBAction func weightTextFieldChanged(_ sender: UITextField) {
-        let weight:Double = toDouble(from: weightTextField)
-        UserDefaults.standard.set(weight, forKey: "defaultWeight") // saves text field text
-        UserDefaults.standard.synchronize()
+        
+             let weight:Double = toDouble(from: weightTextField)
+                   UserDefaults.standard.set(weight, forKey: "defaultWeight") // saves text field text
+                   UserDefaults.standard.synchronize()
+        
+      
     }
     
     
     @IBAction func heightTextFieldChanged(_ sender: UITextField) {
-        let height: Double = toDouble(from: heightTextField)
-        UserDefaults.standard.set(height, forKey: "defaultHeight") // saves text field text
-        UserDefaults.standard.synchronize()
+       
+             let height: Double = toDouble(from: heightTextField)
+            UserDefaults.standard.set(height, forKey: "defaultHeight") // saves text field text
+                   UserDefaults.standard.synchronize()
+       
+       
+       
     }
     
     override func viewWillAppear(_ animated: Bool)
     {
         nameTextField.text = UserDefaults.standard.string(forKey:"defaultName")
         genderSegmentedControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "defaultGender")
-        ageTextField.text = String(UserDefaults.standard.integer(forKey:"defaultAge"))
-        weightTextField.text = String( UserDefaults.standard.double(forKey:"defaultWeight"))
-        heightTextField.text = String(UserDefaults.standard.double(forKey: "defaultHeight"))
+     
+        ageTextField.text =  String(UserDefaults.standard.integer(forKey:"defaultAge"))
+        
+        weightTextField.text =  String(UserDefaults.standard.double(forKey:"defaultWeight"))
+        
+        heightTextField.text =  String(UserDefaults.standard.double(forKey: "defaultHeight"))
         goal = UserDefaults.standard.integer(forKey: "defaultGoal")
         self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
         activity = UserDefaults.standard.integer(forKey: "defaultActivity")
         self.dailyAcitivityLevelPickerView.selectRow(Int(activity), inComponent: 0, animated: true)
         }
     
+    @IBAction func clearBarButtonPressed(_ sender: UIBarButtonItem) {
+        if let bundleID = Bundle.main.bundleIdentifier {
+            UserDefaults.standard.removePersistentDomain(forName: bundleID)
+        }
+        UserDefaults.standard.synchronize()
+        viewWillAppear(true)
+    }
     
     func updateSaveButtonState()
     {
