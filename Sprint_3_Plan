@@ -44,9 +44,16 @@ Total for user story 2: 10 hours
 
 (5) User story 3: As a user, I want to be see a clean UI, that flows perfectly, so that I can use the app easily.
 
-Task 1: (2) FONT SIZES AND TYPES ARE CONSISTENT THROUGHOUT THE APP
-TASK 2: (2) MAKE SURE THE ENTIRE APP WORKS PROPERLY AFTER EVERYTHING IS IN THE APP
-TASK 3: (5) TEST THE APP WITH DIFFERENT INPUTS AND WORST CASE SCENARIOS
+Task 1: (0) Reduce Launch Screen Time 
+Task 2: (3) Reflect Name of the User on Today Page
+Task 3: (2) Be able to show how far the progree label reached
+Taks 4: (5) Create alert for when today limit exceeds 
+Task 5: (5) If new user take the user to the settings page
+Task 6: (5) Add clear button on settings page and clear all NSUserDefaults 
+Task 7: (3) Make UI Changes to the settings page - reduce text size for picker, Add measurements in activity picker. 
+Task 7: (2) FONT SIZES AND TYPES ARE CONSISTENT THROUGHOUT THE APP
+TASK 9: (2) MAKE SURE THE ENTIRE APP WORKS PROPERLY AFTER EVERYTHING IS IN THE APP
+TASK 10: (5) TEST THE APP WITH DIFFERENT INPUTS AND WORST CASE SCENARIOS
 Total for user story 3: 5 hours
 
 
@@ -64,10 +71,10 @@ Roberto Oregon: Developer
 Initial task assignment: 
 
 John Lara: 
-Roberto Oregon: 
-Dylan Salak: 
-Sanyam Sachdeva: 
-Vidisha Nevatia: 
+Roberto Oregon: User Story 1 , Task 4
+Dylan Salak: User Story 1, Task 1 
+Sanyam Sachdeva: User Story 3, Task 1,2,3,6
+Vidisha Nevatia: User Story 3, Task 1,2,3,6
 
  
 Initial burnup chart: (uploaded as a secondary file): https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Burnup%20chart.pdf
