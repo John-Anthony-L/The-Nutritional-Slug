@@ -32,6 +32,7 @@ class customViewController: UIViewController {
     var cals:Double = 0.0
     var fat:Double = 0.0
     var pros:Double = 0.0
+    let controller:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingsViewController") as UIViewController
     
     
     func calculateCalories(sex: Int, weight: Double, height: Double, age: Int, goal: Int, userActivity: Double ) -> Double {
@@ -73,7 +74,6 @@ class customViewController: UIViewController {
         defaultHeight = defaults.double(forKey: "defaultHeight")
         defaultGoalRow = defaults.integer(forKey: "defaultGoal")
         defaultActivityRow = defaults.integer(forKey: "defaultActivity")
-     
         caloriesLabelFunction()
         proteinLabelFunction()
         fatsLabelFunction()
@@ -88,13 +88,15 @@ class customViewController: UIViewController {
         super.viewWillAppear(animated)
         if (defaultName == "")
         {
-            
+            self.present(controller, animated: true, completion: nil)
         }
         else
         {
             userNameLabel.text = defaultName.uppercased() + "'S TODAY"
         }
     }
+    
+    
 
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
