@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController id="Syb-9Y-F6I" userLabel="Products" customClass="ProductsTableViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cxH-bY-wGG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter food name: e.g. pizza, pasta, etc" id="aLR-3a-HHl">
@@ -458,13 +458,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER'S TODAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJA-FD-Tc6">
-                                <rect key="frame" x="20" y="226" width="374" height="35"/>
+                                <rect key="frame" x="20" y="275" width="374" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WR7-Rh-l92">
-                                <rect key="frame" x="20" y="269" width="374" height="1022"/>
+                                <rect key="frame" x="20" y="318" width="374" height="1022"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-DL-Q2B">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="511"/>
@@ -759,6 +759,7 @@
                         <outlet property="CarbsDailyProgress" destination="LJ0-WK-Cfc" id="kgv-zO-POD"/>
                         <outlet property="FatsDailyProgress" destination="MfY-sL-vs4" id="Zur-Fd-B30"/>
                         <outlet property="ProteinDailyProgress" destination="Z0D-7D-pVD" id="7kt-en-ba8"/>
+                        <outlet property="breakfastProducts" destination="KuK-wy-d41" id="7zc-kN-7ox"/>
                         <outlet property="caloriesLabel" destination="gzv-Zf-hkr" id="h82-zG-lRD"/>
                         <outlet property="carbsLabel" destination="NYu-Jm-m4p" id="FNs-Wu-gnR"/>
                         <outlet property="fatsLabel" destination="CkC-bo-MlL" id="NQ2-ON-MYK"/>
@@ -1034,11 +1035,11 @@
         <scene sceneID="yjm-od-KbD">
             <objects>
                 <viewController id="3oR-ss-cXj" customClass="FoodSearchViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HYm-71-R4N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="HYm-71-R4N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-X1-OcD">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-X1-OcD">
                                 <rect key="frame" x="20" y="85" width="374" height="720"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-fm-nFk">
@@ -1669,6 +1670,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="byS-TE-isv"/>
         <segue reference="doL-E1-MLx"/>
-        <segue reference="sp9-6I-02v"/>
+        <segue reference="Riq-5S-WwY"/>
     </inferredMetricsTieBreakers>
 </document>
