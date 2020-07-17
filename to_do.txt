@@ -1,0 +1,35 @@
+To Do List
+
+1. Launch screen 
+    1. Task - reduce time 
+2. Second page 
+    1. Add transitions to slideshow
+    2. Fix one image being cut off (protein)
+    3.. Maybe add rounded edges
+3. Today Tab 
+    1. Add "Welcome, Guest". Guest is a label - replace it with the name of the user. (V,S)
+    2. Create Alert - If guest - set an alert and connect up it to the settings page (V,S)
+    3. Change color scheme of Breakfast, Lunch, and Dinner (R)
+    4. Make Food entries as a scroll view. Add tabs as and when food is entered. (R)
+    5. Sync name from customised view to food entry (R)
+    6. Have a label that sets the value reached (V,S)
+    7. Sync macros from customised views to daily goals (both progress and label should increase) (R)
+    8. Set alert when macros reach limit to say you extended your daily limit (J)
+    9. At midnight automatically reset page and send values to the progress pages and set colors - red, yellow, green (J)
+4. Progress Page
+    1. Increment days label (D)
+    2. Reset values in the end of the month for the days (D)
+5. Search Page
+    1. Add navigation on top again (V,S)
+    2. Change "Enter Country Code" in search bar (R)
+    3. Change meal to “Breakfast ”, … (V,S)
+    4. Change the set goal (V,S)
+    5. Get the default goal from settings to this page (V,S)
+    6. On searching -> select tab to go back to back page and put it in what are you craving for (V,S)
+    7. Put the search values in results and set the values accordingly (R,J)
+    8. Put values in the daily goals -> Increment progress (R)
+    9. Add food in the food entry tab (R)
+    10. Connect SQL results to the app (J,D)
+
+
+    

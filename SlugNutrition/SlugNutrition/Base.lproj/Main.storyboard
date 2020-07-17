@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEU-Gf-uE2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEU-Gf-uE2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +14,7 @@
             <objects>
                 <tableViewController id="Syb-9Y-F6I" userLabel="Products" customClass="ProductsTableViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cxH-bY-wGG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter food name: e.g. pizza, pasta, etc" id="aLR-3a-HHl">
@@ -30,7 +31,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nA6-KJ-Gks">
-                                            <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -69,7 +70,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4h-Bt-Y1i" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4h-Bt-Y1i" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
                                 <rect key="frame" x="20" y="658" width="374" height="61"/>
                                 <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -95,6 +96,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bF3-V1-X9C"/>
                         <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="t4h-Bt-Y1i" firstAttribute="trailing" secondItem="qJA-eZ-hp2" secondAttribute="trailing" id="DT1-eX-gUC"/>
@@ -104,7 +106,6 @@
                             <constraint firstItem="t4h-Bt-Y1i" firstAttribute="leading" secondItem="SJz-3c-abx" secondAttribute="leadingMargin" id="cVf-rB-TkL"/>
                             <constraint firstItem="bF3-V1-X9C" firstAttribute="bottom" secondItem="t4h-Bt-Y1i" secondAttribute="bottom" constant="143" id="j4u-F4-rMZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bF3-V1-X9C"/>
                     </view>
                     <connections>
                         <outlet property="SlideShowViewer" destination="qJA-eZ-hp2" id="cFH-Bx-IT4"/>
@@ -282,7 +283,7 @@
                                             </pickerView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-dr-SqE" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-dr-SqE" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="581.5" width="374" height="81.5"/>
                                         <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="38"/>
@@ -322,6 +323,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="YBx-7N-igQ"/>
                         <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="0Yr-uX-Quz" firstAttribute="trailing" secondItem="InQ-61-1lZ" secondAttribute="trailingMargin" id="9Nu-Mu-Fnd"/>
@@ -329,7 +331,6 @@
                             <constraint firstItem="0Yr-uX-Quz" firstAttribute="leading" secondItem="InQ-61-1lZ" secondAttribute="leadingMargin" id="ZSL-UD-oIK"/>
                             <constraint firstItem="0Yr-uX-Quz" firstAttribute="top" secondItem="YBx-7N-igQ" secondAttribute="top" constant="66" id="sFx-HB-BEF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="YBx-7N-igQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="swu-gf-9i4"/>
                     <connections>
@@ -350,7 +351,7 @@
         <!--Progress-->
         <scene sceneID="czF-3g-Ynk">
             <objects>
-                <viewController id="T4Y-GL-h3u" sceneMemberID="viewController">
+                <viewController id="T4Y-GL-h3u" customClass="ProgressViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dUE-gR-3bl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,16 +377,16 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
-                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemPinkColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="linkColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemGreenColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
-                                        <color key="value" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -413,7 +414,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-Jf-Ffk">
                                 <rect key="frame" x="312" y="572" width="82" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -421,7 +422,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz9-nf-rNp">
                                 <rect key="frame" x="312" y="659" width="82" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -429,7 +430,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUU-qx-vMp">
                                 <rect key="frame" x="312" y="739" width="82" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -440,8 +441,8 @@
                                 <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="lOH-Kx-EM9"/>
+                        <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Progress" image="chart.bar.fill" catalog="system" id="pGy-5z-xJg"/>
                 </viewController>
@@ -458,13 +459,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER'S TODAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJA-FD-Tc6">
-                                <rect key="frame" x="20" y="275" width="374" height="35"/>
+                                <rect key="frame" x="20" y="226" width="374" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WR7-Rh-l92">
-                                <rect key="frame" x="20" y="318" width="374" height="1022"/>
+                                <rect key="frame" x="20" y="269" width="374" height="1022"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-DL-Q2B">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="511"/>
@@ -484,10 +485,10 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="fVz-4B-hSK"/>
                                                         </constraints>
-                                                        <color key="progressTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="progressTintColor" systemColor="systemBlueColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/161" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYu-Jm-m4p">
-                                                        <rect key="frame" x="315" y="38" width="51" height="20.5"/>
+                                                        <rect key="frame" x="315.5" y="38" width="50.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -521,16 +522,16 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="cy4-nD-o56"/>
                                                         </constraints>
-                                                        <color key="progressTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="progressTintColor" systemColor="systemRedColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/103" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkC-bo-MlL">
-                                                        <rect key="frame" x="312" y="38" width="54" height="20.5"/>
+                                                        <rect key="frame" x="313" y="38" width="53" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-uA-QJh">
-                                                        <rect key="frame" x="342" y="19" width="24" height="20.5"/>
+                                                        <rect key="frame" x="342.5" y="19" width="23.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -558,10 +559,10 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="Ixm-4B-Dnu"/>
                                                         </constraints>
-                                                        <color key="progressTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="progressTintColor" systemColor="systemYellowColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id6-AN-gRk">
-                                                        <rect key="frame" x="319" y="38" width="44" height="20.5"/>
+                                                        <rect key="frame" x="320" y="38" width="43" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -594,16 +595,16 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="bPv-cB-S9p"/>
                                                         </constraints>
-                                                        <color key="progressTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="progressTintColor" systemColor="systemGreenColor"/>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100/1512" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzv-Zf-hkr">
-                                                        <rect key="frame" x="297" y="38" width="69" height="20.5"/>
+                                                        <rect key="frame" x="298" y="38" width="68" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWJ-Qq-Km1">
-                                                        <rect key="frame" x="303.5" y="19" width="62.5" height="20.5"/>
+                                                        <rect key="frame" x="304" y="19" width="62" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -637,7 +638,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldn-8u-Eop">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldn-8u-Eop">
                                                         <rect key="frame" x="215" y="0.0" width="159" height="117.5"/>
                                                         <state key="normal" title="PRESS ME TO SEARCH">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -657,7 +658,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmk-7M-LdI">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmk-7M-LdI">
                                                         <rect key="frame" x="20" y="40.5" width="139" height="36"/>
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="23"/>
                                                         <state key="normal" title="BREAKFAST">
@@ -686,7 +687,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-x6-Cgm">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-x6-Cgm">
                                                         <rect key="frame" x="20" y="40.5" width="84" height="36"/>
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="23"/>
                                                         <state key="normal" title="LUNCH">
@@ -715,7 +716,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8k-bv-Qs9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8k-bv-Qs9">
                                                         <rect key="frame" x="20" y="40.5" width="92" height="36"/>
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="23"/>
                                                         <state key="normal" title="DINNER">
@@ -741,6 +742,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XHW-uB-aAz"/>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.20392156862745098" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="WR7-Rh-l92" firstAttribute="trailing" secondItem="xvh-gW-UmM" secondAttribute="trailingMargin" id="EJh-rp-SG1"/>
@@ -750,7 +752,6 @@
                             <constraint firstItem="WR7-Rh-l92" firstAttribute="leading" secondItem="GJA-FD-Tc6" secondAttribute="leading" id="yN6-bq-ilV"/>
                             <constraint firstItem="XHW-uB-aAz" firstAttribute="bottom" secondItem="WR7-Rh-l92" secondAttribute="bottom" constant="26" id="yna-Y9-mnL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XHW-uB-aAz"/>
                     </view>
                     <navigationItem key="navigationItem" id="DUM-7Y-0m2"/>
                     <size key="freeformSize" width="414" height="1400"/>
@@ -858,7 +859,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUd-33-7Ll">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUd-33-7Ll">
                                                     <rect key="frame" x="136" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -868,7 +869,7 @@
                                                         <action selector="CarbstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="e6Q-Ry-0oP"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-pb-ew6">
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-pb-ew6">
                                                     <rect key="frame" x="245" y="17.5" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -891,7 +892,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-5W-8D5">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-5W-8D5">
                                                     <rect key="frame" x="136" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -901,7 +902,7 @@
                                                         <action selector="FatstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="CPs-Ku-sCc"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-Tj-7BA">
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-Tj-7BA">
                                                     <rect key="frame" x="245" y="17" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -924,7 +925,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4i-FE-Rde">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4i-FE-Rde">
                                                     <rect key="frame" x="136" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -934,7 +935,7 @@
                                                         <action selector="CalstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="Itg-cx-ObV"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-GO-onH">
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-GO-onH">
                                                     <rect key="frame" x="245" y="18.5" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -957,7 +958,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-lL-aym">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-lL-aym">
                                                     <rect key="frame" x="141" y="16.5" width="97" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.83117055892944336" green="0.49050813913345337" blue="0.91055387258529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -967,7 +968,7 @@
                                                         <action selector="ProstextFieldDidChangeWithTextField:" destination="A7n-EE-ziS" eventType="editingChanged" id="D7T-81-FY7"/>
                                                     </connections>
                                                 </textField>
-                                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-Wg-Vzp">
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-Wg-Vzp">
                                                     <rect key="frame" x="253" y="18" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
@@ -977,7 +978,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzc-6q-7N8" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzc-6q-7N8" customClass="RoundButton" customModule="SlugNutrition" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="661.5" width="369" height="74.5"/>
                                         <color key="backgroundColor" red="0.83117055890000002" green="0.49050813910000002" blue="0.91055387259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="38"/>
@@ -1003,6 +1004,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zsu-9G-EGt"/>
                         <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Qnp-jQ-FOu" firstAttribute="leadingMargin" secondItem="Zsu-9G-EGt" secondAttribute="leading" constant="25" id="Te8-do-7B8"/>
@@ -1010,7 +1012,6 @@
                             <constraint firstItem="Qnp-jQ-FOu" firstAttribute="trailing" secondItem="Ujp-xM-IWK" secondAttribute="trailingMargin" id="ngI-VU-93Q"/>
                             <constraint firstItem="Qnp-jQ-FOu" firstAttribute="top" secondItem="Ujp-xM-IWK" secondAttribute="top" constant="66" id="ypp-jh-c9D"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Zsu-9G-EGt"/>
                     </view>
                     <connections>
                         <outlet property="brandTextField" destination="SyO-Tr-9kd" id="RNz-bj-L8W"/>
@@ -1035,11 +1036,11 @@
         <scene sceneID="yjm-od-KbD">
             <objects>
                 <viewController id="3oR-ss-cXj" customClass="FoodSearchViewController" customModule="SlugNutrition" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="HYm-71-R4N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                    <view key="view" contentMode="scaleToFill" id="HYm-71-R4N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-X1-OcD">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-X1-OcD">
                                 <rect key="frame" x="20" y="85" width="374" height="720"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-fm-nFk">
@@ -1140,19 +1141,19 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sIH-dp-53r">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dF-Db-OZx">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="XKt-4j-GHG" secondAttribute="trailing" constant="16" id="3St-Dn-YDk"/>
                                                                     <constraint firstItem="XKt-4j-GHG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3dF-Db-OZx" secondAttribute="trailing" constant="8" symbolic="YES" id="6ZC-OH-8iL"/>
@@ -1174,19 +1175,19 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yBB-fA-j9q">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemRedColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fj-pt-Cl1">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="V5U-W5-TII" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7fj-pt-Cl1" secondAttribute="trailing" symbolic="YES" id="00O-J9-2Zo"/>
                                                                     <constraint firstAttribute="trailing" secondItem="V5U-W5-TII" secondAttribute="trailing" constant="29.5" id="9il-W0-3OU"/>
@@ -1207,25 +1208,25 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xS-1k-fyB">
-                                                                        <rect key="frame" x="126.5" y="0.0" width="54.5" height="20.5"/>
+                                                                        <rect key="frame" x="127" y="0.0" width="54" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vfI-DD-mG4">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemYellowColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-8N-m76">
-                                                                        <rect key="frame" x="73" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="73" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="8xS-1k-fyB" firstAttribute="top" secondItem="8Yj-hJ-tG6" secondAttribute="top" id="7nv-jp-H6T"/>
                                                                     <constraint firstItem="vfI-DD-mG4" firstAttribute="top" secondItem="8xS-1k-fyB" secondAttribute="bottom" constant="2" id="Bql-AR-QUb"/>
@@ -1241,25 +1242,25 @@
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbD-RW-3NL">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="62.5" height="20.5"/>
+                                                                        <rect key="frame" x="126" y="0.0" width="62" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ePV-C7-U81">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajO-1N-hQV">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="ajO-1N-hQV" firstAttribute="baseline" secondItem="zbD-RW-3NL" secondAttribute="baseline" id="6uM-zz-iHW"/>
                                                                     <constraint firstItem="ePV-C7-U81" firstAttribute="leading" secondItem="itN-DX-rpM" secondAttribute="leading" constant="18" id="9C1-Bf-IXf"/>
@@ -1298,19 +1299,19 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ID9-y1-bXX">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKw-Uy-xWt">
-                                                                        <rect key="frame" x="73" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="73" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="zKw-Uy-xWt" firstAttribute="leading" secondItem="zXg-o4-P6c" secondAttribute="leading" constant="73" id="0WZ-wa-GOQ"/>
                                                                     <constraint firstItem="4gV-gU-EUh" firstAttribute="baseline" secondItem="zKw-Uy-xWt" secondAttribute="baseline" id="0b2-By-pID"/>
@@ -1332,19 +1333,19 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yf5-KW-wYb">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemRedColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2c8-4d-v9H">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Yf5-KW-wYb" firstAttribute="leading" secondItem="Igh-gT-haI" secondAttribute="leading" constant="18" id="0rl-34-WRR"/>
                                                                     <constraint firstItem="Yf5-KW-wYb" firstAttribute="centerX" secondItem="Igh-gT-haI" secondAttribute="centerX" id="9wa-Qn-14O"/>
@@ -1365,25 +1366,25 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkI-01-07s">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="54.5" height="20.5"/>
+                                                                        <rect key="frame" x="126" y="0.0" width="54" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-6r-ae1">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemYellowColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAK-qt-Dqr">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="lAK-qt-Dqr" firstAttribute="top" secondItem="vdQ-UZ-eVF" secondAttribute="top" id="6xz-cj-9hy"/>
                                                                     <constraint firstAttribute="trailing" secondItem="SkI-01-07s" secondAttribute="trailing" constant="7" id="8F6-UJ-Ij3"/>
@@ -1399,25 +1400,25 @@
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-du-oQq">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="62.5" height="20.5"/>
+                                                                        <rect key="frame" x="126" y="0.0" width="62" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mf8-k9-8Nq">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khi-hc-TqG">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="SxB-du-oQq" secondAttribute="trailing" constant="-1" id="Gp7-gh-P9Y"/>
                                                                     <constraint firstItem="Khi-hc-TqG" firstAttribute="baseline" secondItem="SxB-du-oQq" secondAttribute="baseline" id="NcE-3G-yDy"/>
@@ -1457,19 +1458,19 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9vB-H9-h4M">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtO-t9-kW6">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="LtO-t9-kW6" firstAttribute="baseline" secondItem="PLc-tL-fDw" secondAttribute="baseline" id="0Sm-fM-jhX"/>
                                                                     <constraint firstItem="LtO-t9-kW6" firstAttribute="top" secondItem="LAR-lh-037" secondAttribute="top" id="4ko-l7-u3f"/>
@@ -1491,19 +1492,19 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9E3-CM-zN5">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemRedColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIY-jt-OwT">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="rIY-jt-OwT" firstAttribute="top" secondItem="89I-FP-1Pl" secondAttribute="top" id="7U2-TP-dEz"/>
                                                                     <constraint firstItem="9E3-CM-zN5" firstAttribute="centerX" secondItem="89I-FP-1Pl" secondAttribute="centerX" id="DQ8-91-aQA"/>
@@ -1524,25 +1525,25 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuT-lN-tdH">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="54.5" height="20.5"/>
+                                                                        <rect key="frame" x="126" y="0.0" width="54" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9vX-du-axc">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemYellowColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-aR-RyJ">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="9vX-du-axc" firstAttribute="centerX" secondItem="gUK-4V-zZI" secondAttribute="centerX" id="0WY-2E-6gu"/>
                                                                     <constraint firstItem="9vX-du-axc" firstAttribute="top" secondItem="1t9-aR-RyJ" secondAttribute="bottom" constant="2" id="1zi-ha-Tha"/>
@@ -1558,25 +1559,25 @@
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-dR-bqz">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="62.5" height="20.5"/>
+                                                                        <rect key="frame" x="126" y="0.0" width="62" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="503-L9-y83">
-                                                                        <rect key="frame" x="18" y="22.5" width="151" height="2"/>
+                                                                        <rect key="frame" x="18" y="22.5" width="151" height="4"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="tintColor" systemColor="systemGreenColor"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V15-Ir-S5K">
-                                                                        <rect key="frame" x="72" y="0.0" width="34.5" height="20.5"/>
+                                                                        <rect key="frame" x="72" y="0.0" width="35.5" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="systemYellowColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="V15-Ir-S5K" firstAttribute="baseline" secondItem="3EQ-dR-bqz" secondAttribute="baseline" id="25b-db-Wv2"/>
                                                                     <constraint firstItem="503-L9-y83" firstAttribute="leading" secondItem="wFW-cz-bqs" secondAttribute="leading" constant="18" id="5CA-f1-LoT"/>
@@ -1598,6 +1599,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="JsI-mI-K15"/>
                         <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Vr9-X1-OcD" firstAttribute="leading" secondItem="JsI-mI-K15" secondAttribute="leading" constant="20" id="4t5-2E-Z4p"/>
@@ -1605,7 +1607,6 @@
                             <constraint firstItem="JsI-mI-K15" firstAttribute="trailing" secondItem="Vr9-X1-OcD" secondAttribute="trailing" constant="20" id="8XA-Pj-qtS"/>
                             <constraint firstItem="JsI-mI-K15" firstAttribute="bottom" secondItem="Vr9-X1-OcD" secondAttribute="bottom" constant="8" id="pde-0a-wDv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JsI-mI-K15"/>
                     </view>
                     <navigationItem key="navigationItem" id="wpp-js-Jii">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="cBi-Nd-bY4"/>
@@ -1660,16 +1661,48 @@
             <point key="canvasLocation" x="1597" y="1570"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1" width="1810" height="1798"/>
-        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
-        <image name="gear" catalog="system" width="64" height="60"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
-        <image name="sunset.fill" catalog="system" width="64" height="48"/>
-    </resources>
+    <designables>
+        <designable name="0Ex-dr-SqE">
+            <size key="intrinsicContentSize" width="189" height="51"/>
+        </designable>
+        <designable name="Dzc-6q-7N8">
+            <size key="intrinsicContentSize" width="189" height="51"/>
+        </designable>
+        <designable name="t4h-Bt-Y1i">
+            <size key="intrinsicContentSize" width="263" height="49"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="byS-TE-isv"/>
         <segue reference="doL-E1-MLx"/>
-        <segue reference="Riq-5S-WwY"/>
+        <segue reference="sp9-6I-02v"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="1" width="1810" height="1798"/>
+        <image name="chart.bar.fill" catalog="system" width="128" height="92"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="sunset.fill" catalog="system" width="128" height="97"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
