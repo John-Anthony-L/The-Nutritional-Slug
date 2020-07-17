@@ -6,24 +6,30 @@ Project Owner: John Lara
 Scrum Master: Vidisha Nevatia,Dylan Salak
 Developers: Sanyam Sachdeva,Roberto Oregon, 
 sprint completion date: Monday, July 20, 2020
-revision number: 0 
+revision number: 1
 revision date: - 
 
 GOAL: - Connect the data in Today to progess page. 
       - Connect the search results with the code
       - Connect SQL to app 
-	    - Clean up the UI
+      - Clean up the UI
 
 
 Task listing, organized by user story:
 
-(10) User story 1: As a busy user, I want to be see my seach results sync with app so that all information in the app sets up according to my chosen food item. 
+(10) User story 1: As a busy user, I want to be see my food results sync with app so that all information in the app sets up according to my chosen food item. 
 
-Task 1: (7) CONNECT SQL RESULTS TO APP 
-Task 2: (5) GET THE SEARCH RESULTS FROM THE SEARCH PAGE 
-TASK 3: (5) ADDING UP THE PROGRESS IN TODAY PAGE 
-Task 4: (3) ADDING THE FOOD TO THE CORRESPONDING MEAL 
-Task 5: (2) FIX THE UI OF THE SEARCH PAGE
+Task 1: (0) CHANGE THE TITLE OF THE SEARCH BAR
+Task 2: (2) ADD NAVIGATION ON SEARCH PAGE RESULTS
+Task 3: (7) CONNECT SQL RESULTS TO APP 
+Task 4: (5) ON SELECTING A FOOD ITEM, PRESSING THE TAB SHOULD TAKE IT BACK TO THE PREVIOUS PAGE
+Task 5: (5) GET THE SEARCH RESULTS FROM THE SEARCH PAGE AND SET RESULTS IN ORDER 
+TASK 6: (5) ADDING UP THE PROGRESS IN TODAY PAGE FROM SEARCH 
+Task 7: (3) ADDING THE FOOD TO THE CORRESPONDING MEAL FROM SEARCH
+TASK 8: (5) ADDING UP THE PROGRESS IN TODAY PAGE FROM CUSTOM ADD 
+Task 9: (3) ADDING THE FOOD TO THE CORRESPONDING MEAL FROM CUSTOM ADD
+Task 10: (5) MAKE FOOD ENTRIES AS A SCROLL VIEW.
+Task 11: (2) FIX THE UI OF THE SEARCH PAGE
 
 Total for user story 1: 19 hours
 
@@ -35,7 +41,7 @@ Task 1: (3) HAVE THE DAILY PROGRESS RESET EVERYDAY
 TASK 2: (3) SHIFT THE DAILY TO THE PROGESS PAGE AT THE END OF THE DAY
 TASK 3: (5) SET THE COLORS FOR EACH DATE
 TASK 4: (5) BE ABLE TO CALCULATE THE NO. OF COLORS FROM THE CALENDAR AND SHOW IN LABEL 
-TASK 5: (2) RESET DATA AT THE END END OF THE MONTH 
+TASK 5: (2) RESET DATA AT THE END OF THE MONTH 
   
 
 Total for user story 2: 10 hours
@@ -44,15 +50,27 @@ Total for user story 2: 10 hours
 
 (5) User story 3: As a user, I want to be see a clean UI, that flows perfectly, so that I can use the app easily.
 
-Task 1: (2) FONT SIZES AND TYPES ARE CONSISTENT THROUGHOUT THE APP
-TASK 2: (2) MAKE SURE THE ENTIRE APP WORKS PROPERLY AFTER EVERYTHING IS IN THE APP
-TASK 3: (5) TEST THE APP WITH DIFFERENT INPUTS AND WORST CASE SCENARIOS
-Total for user story 3: 5 hours
+Task 1: (0) Reduce Launch Screen Time 
+Task 2: (0) One picture on the slide show is cut off - fix that
+Task 2: (3) Reflect Name of the User on Today Page
+Task 3: (2) Be able to show how far the progress label reached
+Taks 4: (5) Create alert for when today limit exceeds 
+Task 5: (5) If new user take the user to the settings page by creating an alert
+Task 6: (5) Add clear button on settings page and clear all NSUserDefaults 
+Task 7: (3) Make UI Changes to the settings page - reduce text size for picker, Add measurements in activity picker, 
+		reduce border size of lets go, change placeholder of height to inches, in search page capitalize letters for meals
+		fix protein contraints, chnage macros color. 
+Task 8: (0) Change color scheme of Breakfast, Lunch, Dinner 
+
+Task 9: (2) FONT SIZES AND TYPES ARE CONSISTENT THROUGHOUT THE APP
+TASK 10: (2) MAKE SURE THE ENTIRE APP WORKS PROPERLY AFTER EVERYTHING IS IN THE APP
+TASK 11: (5) TEST THE APP WITH DIFFERENT INPUTS AND WORST CASE SCENARIOS
+Total for user story 3: 7 hours
 
 
 ----------
 
-Total time for Sprint 3: 34 hours
+Total time for Sprint 3: 36 hours
 
 Team roles: 
 John Lara: Developer, {Project Owner}
@@ -64,13 +82,13 @@ Roberto Oregon: Developer
 Initial task assignment: 
 
 John Lara: 
-Roberto Oregon: 
-Dylan Salak: 
-Sanyam Sachdeva: 
-Vidisha Nevatia: 
+Roberto Oregon: User Story 1 , Task 4
+Dylan Salak: User Story 1, Task 1 
+Sanyam Sachdeva: User Story 3, Task 1,2,3,6
+Vidisha Nevatia: User Story 3, Task 1,2,3,6
 
  
-Initial burnup chart: (uploaded as a secondary file): https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Burnup%20chart.pdf
+Initial burnup chart: (uploaded as a secondary file):https://github.com/John-Anthony-L/The-Nutritional-Slug/blob/master/Sprint%203%20burnup%20chart.pdf
 
 Initial scrum board:  (On Trello) https://trello.com/b/LFxNyiNI/gold-team
 

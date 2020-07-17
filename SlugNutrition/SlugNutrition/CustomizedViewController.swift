@@ -30,6 +30,9 @@ class CustomizedViewController: UIViewController {
     var defaultCals = 0
     var defaultPros = 0
     
+    
+    var product: MealProducts = MealProducts(item_name: "", brand_name: "", nf_calories: 0.0, nf_total_fat: 0.0, nf_total_carbohydrate: 0.0, nf_protein: 0.0)
+    
      override func viewDidLoad() {
          super.viewDidLoad()
         updateSaveButtonState()
@@ -53,10 +56,12 @@ class CustomizedViewController: UIViewController {
      func updateCarbsValue()
      {
           defaultCarbs = Int(carbsSlider.value)
+        product.nf_total_carbohydrate = Double(carbsSlider.value)
          carbsTextField.text = "\(defaultCarbs)"
          let defaults = UserDefaults.standard
          defaults.set(defaultCarbs, forKey: "defaultCarbs")
          defaults.synchronize()
+        
      }
     @IBAction func CarbstextFieldDidChange(textField: UITextField) {
         if let stringValue = textField.text{
@@ -70,6 +75,7 @@ class CustomizedViewController: UIViewController {
      func updateFatsValue()
      {
          defaultFats = Int(fatSlider.value)
+        product.nf_total_fat = Double(fatSlider.value)
           fatTextField.text = "\(defaultFats)"
           let defaults = UserDefaults.standard
           defaults.set(defaultFats, forKey: "defaultFats")
@@ -88,6 +94,7 @@ class CustomizedViewController: UIViewController {
      func updateCalsValue()
          {
              defaultCals = Int(caloriesSlider.value)
+            product.nf_calories = Double(caloriesSlider.value)
               caloriesTextField.text = "\(defaultCals)"
               let defaults = UserDefaults.standard
               defaults.set(defaultCals, forKey: "defaultCals")
@@ -106,6 +113,7 @@ class CustomizedViewController: UIViewController {
     func updateProsValue()
     {
         defaultPros = Int(proteinSlider.value)
+        product.nf_protein = Double(proteinSlider.value)
          proteinTextField.text = "\(defaultPros)"
          let defaults = UserDefaults.standard
          defaults.set(defaultPros, forKey: "defaultPros")
@@ -124,15 +132,20 @@ class CustomizedViewController: UIViewController {
     @IBAction func textEditingChanged(_sender: UITextField)
        {
            updateSaveButtonState()
+            
        }
     
     func updateSaveButtonState() {
            let foodText = nameTextField.text ?? ""
            let brandText = brandTextField.text ?? ""
            saveButton.isEnabled = !foodText.isEmpty && !brandText.isEmpty
+        
        }
     
     @IBAction func saveButton(_ sender: UIButton) {
+        product.item_name = nameTextField.text ?? ""
+        product.brand_name = brandTextField.text ?? ""
+        breakfastList.append(product)
     }
     
 

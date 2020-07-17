@@ -8,6 +8,8 @@
 
 import UIKit
 
+var breakfastList: [MealProducts] = []
+
 class customViewController: UIViewController {
 
     @IBOutlet var userNameLabel: UILabel!
@@ -33,6 +35,13 @@ class customViewController: UIViewController {
     var fat:Double = 0.0
     var pros:Double = 0.0
     let controller:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingsViewController") as UIViewController
+    
+    @IBOutlet weak var breakfastProducts: UILabel!
+    
+    
+    //var product1: MealProducts = MealProducts(item_name: defaultName, brand_name: defaultBrand, nf_calories: Double(defaultCals), nf_total_fat: Double(defaultFats), nf_total_carbohydrate: Double(defaultCarbs), nf_protein: Double(defaultPros))
+    //var product1: MealProducts = MealProducts(item_name: "generic", brand_name: "meh", nf_calories: 100.0, nf_total_fat: 100.0, nf_total_carbohydrate: 100.0, nf_protein: 100.0, nf_serving_weight_grams: 100.0)
+    var result = ""
     
     
     func calculateCalories(sex: Int, weight: Double, height: Double, age: Int, goal: Int, userActivity: Double ) -> Double {
@@ -78,6 +87,14 @@ class customViewController: UIViewController {
         proteinLabelFunction()
         fatsLabelFunction()
         carbsLabelFunction()
+        
+        breakfastProducts.numberOfLines = 0
+        breakfastProducts.sizeToFit()
+        for products in breakfastList {
+            result += "\n" + products.item_name
+        }
+        print(breakfastList.count)
+        breakfastProducts.text = result
 
         // Do any additional setup after loading the view.
     }
