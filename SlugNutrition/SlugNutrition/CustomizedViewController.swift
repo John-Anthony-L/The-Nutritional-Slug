@@ -29,9 +29,10 @@ class CustomizedViewController: UIViewController {
     var defaultFats = 0.0
     var defaultCals = 0.0
     var defaultPros = 0.0
+    var defaultMeal = 1
     
     
-    var product: MealProducts = MealProducts(item_name: "", brand_name: "", nf_calories: 0.0, nf_total_fat: 0.0, nf_total_carbohydrate: 0.0, nf_protein: 0.0)
+    var product: MealProducts = MealProducts(item_name: "generic", brand_name: "meh", nf_calories: 100.0, nf_total_fat: 100.0, nf_total_carbohydrate: 100.0, nf_protein: 100.0)
     
      override func viewDidLoad() {
          super.viewDidLoad()
@@ -51,6 +52,11 @@ class CustomizedViewController: UIViewController {
     @IBAction func defaultProsChanged(_ sender: UISlider) {
             updateProsValue()
         }
+    
+    @IBAction func mealSegmentedControl(_ sender: UISegmentedControl) {
+        UserDefaults.standard.set(sender.selectedSegmentIndex, forKey: "defaultMeal")
+        UserDefaults.standard.synchronize()
+    }
     
      
      func updateCarbsValue()
@@ -145,7 +151,19 @@ class CustomizedViewController: UIViewController {
     @IBAction func saveButton(_ sender: UIButton) {
         product.item_name = nameTextField.text ?? ""
         product.brand_name = brandTextField.text ?? ""
-        breakfastList.append(product)
+        let defaults = UserDefaults.standard
+        let mealSelected = defaults.integer(forKey: "defaultMeal")
+        
+        if mealSelected == 1{
+            print("breakfast")
+            breakfastList.append(product)
+        }else if mealSelected == 2 {
+            print("lunch")
+            lunchList.append(product)
+        }else if mealSelected == 3 {
+            print("dinner")
+            dinnerList.append(product)
+        }
     }
     
 
