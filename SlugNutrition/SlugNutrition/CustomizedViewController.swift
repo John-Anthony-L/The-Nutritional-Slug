@@ -25,10 +25,10 @@ class CustomizedViewController: UIViewController {
     
     var defaultName = ""
     var defaultBrand = ""
-    var defaultCarbs = 0
-    var defaultFats = 0
-    var defaultCals = 0
-    var defaultPros = 0
+    var defaultCarbs = 0.0
+    var defaultFats = 0.0
+    var defaultCals = 0.0
+    var defaultPros = 0.0
     
     
     var product: MealProducts = MealProducts(item_name: "", brand_name: "", nf_calories: 0.0, nf_total_fat: 0.0, nf_total_carbohydrate: 0.0, nf_protein: 0.0)
@@ -55,7 +55,7 @@ class CustomizedViewController: UIViewController {
      
      func updateCarbsValue()
      {
-          defaultCarbs = Int(carbsSlider.value)
+          defaultCarbs = Double(carbsSlider.value)
         product.nf_total_carbohydrate = Double(carbsSlider.value)
          carbsTextField.text = "\(defaultCarbs)"
          let defaults = UserDefaults.standard
@@ -74,7 +74,7 @@ class CustomizedViewController: UIViewController {
      
      func updateFatsValue()
      {
-         defaultFats = Int(fatSlider.value)
+         defaultFats = Double(fatSlider.value)
         product.nf_total_fat = Double(fatSlider.value)
           fatTextField.text = "\(defaultFats)"
           let defaults = UserDefaults.standard
@@ -93,7 +93,7 @@ class CustomizedViewController: UIViewController {
      
      func updateCalsValue()
          {
-             defaultCals = Int(caloriesSlider.value)
+             defaultCals = Double(caloriesSlider.value)
             product.nf_calories = Double(caloriesSlider.value)
               caloriesTextField.text = "\(defaultCals)"
               let defaults = UserDefaults.standard
@@ -112,7 +112,7 @@ class CustomizedViewController: UIViewController {
 
     func updateProsValue()
     {
-        defaultPros = Int(proteinSlider.value)
+        defaultPros = Double(proteinSlider.value)
         product.nf_protein = Double(proteinSlider.value)
          proteinTextField.text = "\(defaultPros)"
          let defaults = UserDefaults.standard
