@@ -15,10 +15,12 @@ import UIKit
 var GlobalSelectArr = [ProductResponse.ProductDetail?](repeating: nil, count: 1)
 var GlobalCell = [UITableViewCell?](repeating: nil, count: 1)
 
+ import UIKit
+
 class ProductsTableViewController: UITableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
-    
+   
     var listOfProducts = [ProductResponse.ProductDetail]() {
         didSet {
             DispatchQueue.main.async {
@@ -112,7 +114,8 @@ class ProductsTableViewController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.accessoryType = .checkmark
         cell?.textLabel?.text = " \(selectedItem.fields.item_name) "
-
+        UserDefaults.standard.set(cell?.textLabel?.text, forKey: "defaultFood") // saves text field text
+        UserDefaults.standard.synchronize()
         let stuff = """
         Protien:        \(selectedItem.fields.nf_protein)g
         Carbohydrates:  \(selectedItem.fields.nf_total_carbohydrate)g

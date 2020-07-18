@@ -8,31 +8,27 @@
 
 import UIKit
 
-class FoodSearchViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource {
+class FoodSearchViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource{
   
 
     @IBOutlet var mealPickerView: UIPickerView!
-//    @IBOutlet var goalPicker: UIPickerView!
-//     let goalpicker = ["To shred some weight", "To gain weight","To become stronger"]
+    var defaultFood:String = ""
+
     let meal = ["Breakfast", "Lunch", "Dinner"]
     
+    @IBOutlet var foodNameLabel: UILabel!
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
           return 1
       }
+  
       
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
                return meal.count
         }
-//           } else {
-//               return goalpicker.count
-//           }
+
       
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
             return meal[row]
-
-//        else {
-//            return goalpicker[row]
-        
     }
       
     
@@ -40,13 +36,28 @@ class FoodSearchViewController: UIViewController, UIPickerViewDelegate,UIPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.goalPicker.delegate = self
-//        self.goalPicker.dataSource = self
         self.mealPickerView.delegate = self
         self.mealPickerView.dataSource = self
-
-        // Do any additional setup after loading the view.
+}
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = getUserDefaults()
+        foodNameLabel.text = defaults.string(forKey:"defaultFood") ?? ""
     }
     
-
+    override func viewWillDisappear(_ animated: Bool) {
+        UserDefaults.standard.removeObject(forKey: "defaultFood")
+        UserDefaults.standard.synchronize()
+        foodNameLabel.text = ""
+    }
+    
+          func getUserDefaults() -> UserDefaults {
+              let defaults = UserDefaults.standard
+              if (defaults.object(forKey: "defaultFood") == nil) {
+                     // set initial defaults
+                  defaults.set(defaultFood, forKey: "defaultFood")
+                     defaults.synchronize()
+                 }
+                 return defaults
+             }
+          
 }

@@ -44,6 +44,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     var activity: Int = 0
     var selected: String = ""
     
+  
 
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -115,7 +116,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
         self.dailyAcitivityLevelPickerView.dataSource = self
         updateSaveButtonState()
     }
-    
+  
     
     @IBAction func NameTextFieldChanged(_ sender: UITextField) {
         UserDefaults.standard.set(nameTextField.text, forKey: "defaultName") // saves text field text
@@ -125,6 +126,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     
     @IBAction func genderSegmentedControlChanged(_ sender: UISegmentedControl) {
         UserDefaults.standard.set(sender.selectedSegmentIndex, forKey: "defaultGender")
+        UserDefaults.standard.synchronize()
     }
     
     @IBAction func ageTextFieldChanged(_ sender: UITextField) {
@@ -156,12 +158,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate,UIPickerVie
     {
         nameTextField.text = UserDefaults.standard.string(forKey:"defaultName")
         genderSegmentedControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "defaultGender")
-     
-        ageTextField.text =  String(UserDefaults.standard.integer(forKey:"defaultAge"))
+        let age = UserDefaults.standard.integer(forKey:"defaultAge")
+        ageTextField.text = age>0 ? String(age) : ""
+        let weight = UserDefaults.standard.double(forKey:"defaultWeight")
+        weightTextField.text = weight>0 ? String(weight) : ""
         
-        weightTextField.text =  String(UserDefaults.standard.double(forKey:"defaultWeight"))
+        let height = UserDefaults.standard.double(forKey: "defaultHeight")
+        heightTextField.text =  height>0 ? String(height) : ""
         
-        heightTextField.text =  String(UserDefaults.standard.double(forKey: "defaultHeight"))
         goal = UserDefaults.standard.integer(forKey: "defaultGoal")
         self.goalPickerView.selectRow(goal, inComponent: 0, animated: true)
         activity = UserDefaults.standard.integer(forKey: "defaultActivity")
