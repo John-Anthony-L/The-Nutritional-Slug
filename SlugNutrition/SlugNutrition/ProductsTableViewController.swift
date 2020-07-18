@@ -9,6 +9,7 @@
 //  Copyright © 2020 Roberto Oregon. All rights reserved.
 //
 
+
 import UIKit
 
 
@@ -50,7 +51,6 @@ class ProductsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -153,6 +153,19 @@ class ProductsTableViewController: UITableViewController {
  
 
     }
+    
+    func convertValToDouble(name: String) -> Double {
+        let value = "\(name)"
+        var to_numeric = ""
+        for letter in value.unicodeScalars{
+            if 48...57 ~= letter.value{
+                to_numeric.append(String(letter))
+            }
+        }
+        let temp = Double (to_numeric) ?? 0
+        print(temp)
+        return temp
+    }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -200,6 +213,7 @@ class ProductsTableViewController: UITableViewController {
     }
     
     /*
+
     func convertAPIValToInt(name: FormFieldValueType) -> Int {
         let value = "\(name)"
         var to_numeric = ""
@@ -233,10 +247,10 @@ extension ProductsTableViewController : UISearchBarDelegate {
             array[4] = array[4].replacingOccurrences(of: "g", with: " ")
             
             productAdded.item_name = array[0]
-            productAdded.nf_calories = Double(array[1].trimmingCharacters(in: .whitespaces)) as! Double
-            productAdded.nf_total_fat = Double(array[2].trimmingCharacters(in: .whitespaces)) as! Double
-            productAdded.nf_total_carbohydrate = Double(array[3].trimmingCharacters(in: .whitespaces)) as! Double
-            productAdded.nf_protein = Double(array[4].trimmingCharacters(in: .whitespaces)) as! Double
+            productAdded.nf_calories = convertValToDouble(name: array[1])
+            productAdded.nf_total_fat = convertValToDouble(name: array[2])
+            productAdded.nf_total_carbohydrate = convertValToDouble(name: array[3])
+            productAdded.nf_protein = convertValToDouble(name: array[4])
             
             listOfProducts.append(productAdded)
         
