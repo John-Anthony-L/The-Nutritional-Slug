@@ -142,37 +142,37 @@ class customViewController: UIViewController {
         defaultGoalRow = defaults.integer(forKey: "defaultGoal")
         defaultActivityRow = defaults.integer(forKey: "defaultActivity")
         
-        macrosCalculated()
-        incrementProgress(pros: pros)
-        
-        caloriesLabelFunction()
-        proteinLabelFunction()
-        fatsLabelFunction()
-        carbsLabelFunction()
-        
-//        breakfastProducts.numberOfLines = 0
-//        breakfastProducts.sizeToFit()
-//        lunchProducts.numberOfLines = 0
-//        lunchProducts.sizeToFit()
-//        dinnerProducts.numberOfLines = 0
-//        dinnerProducts.sizeToFit()
-        
-        print("brekkie count: ",breakfastList.count)
-        
-        for products in breakfastList {
-            breakfastResult += " " + products.item_name
-        }
-        for products in lunchList {
-            lunchResult += " " + products.item_name
-        }
-        for products in dinnerList {
-            dinnerResult += " " + products.item_name
-        }
-        
-        breakfastProducts.text = String(breakfastResult.prefix(18))
-        lunchProducts.text = String(lunchResult.prefix(18))
-        dinnerProducts.text = String(dinnerResult.prefix(18))
-           
+//        macrosCalculated()
+//        incrementProgress(pros: pros)
+//        
+//        caloriesLabelFunction()
+//        proteinLabelFunction()
+//        fatsLabelFunction()
+//        carbsLabelFunction()
+//
+////        breakfastProducts.numberOfLines = 0
+////        breakfastProducts.sizeToFit()
+////        lunchProducts.numberOfLines = 0
+////        lunchProducts.sizeToFit()
+////        dinnerProducts.numberOfLines = 0
+////        dinnerProducts.sizeToFit()
+//
+//        print("brekkie count: ",breakfastList.count)
+//
+//        for products in breakfastList {
+//            breakfastResult += " " + products.item_name
+//        }
+//        for products in lunchList {
+//            lunchResult += " " + products.item_name
+//        }
+//        for products in dinnerList {
+//            dinnerResult += " " + products.item_name
+//        }
+//
+//        breakfastProducts.text = String(breakfastResult.prefix(18))
+//        lunchProducts.text = String(lunchResult.prefix(18))
+//        dinnerProducts.text = String(dinnerResult.prefix(18))
+//
             // Do any additional setup after loading the view.
         }
 
@@ -188,6 +188,27 @@ class customViewController: UIViewController {
         {
             userNameLabel.text = defaultName.uppercased() + "'S TODAY"
         }
+        macrosCalculated()
+        incrementProgress(pros: pros)
+        
+        caloriesLabelFunction()
+        proteinLabelFunction()
+        fatsLabelFunction()
+        carbsLabelFunction()
+        for products in breakfastList {
+                   breakfastResult += " " + products.item_name
+               }
+               for products in lunchList {
+                   lunchResult += " " + products.item_name
+               }
+               for products in dinnerList {
+                   dinnerResult += " " + products.item_name
+               }
+               
+               breakfastProducts.text = String(breakfastResult.prefix(18))
+               lunchProducts.text = String(lunchResult.prefix(18))
+               dinnerProducts.text = String(dinnerResult.prefix(18))
+                  
         
         /*
         if  breakfast != nil
