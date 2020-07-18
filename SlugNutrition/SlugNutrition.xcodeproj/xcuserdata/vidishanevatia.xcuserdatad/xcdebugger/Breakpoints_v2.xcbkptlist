@@ -30,8 +30,8 @@
             filePath = "SlugNutrition/SettingsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "SettingsViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -50,6 +50,114 @@
             endingLineNumber = "31"
             landmarkName = "CustomizedViewController"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlugNutrition/CustomizedViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "CustomizedViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E - 2e1a2e8f6eb57211"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlugNutrition.CustomizedViewController.proteinSlider.getter : Swift.Optional&lt;__C.UISlider&gt;"
+                  moduleName = "SlugNutrition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vidishanevatia/Desktop/ios_dev/The-Nutritional-Slug/SlugNutrition/SlugNutrition/CustomizedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E - c916b1aa6d3fc205"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlugNutrition.CustomizedViewController.proteinSlider.setter : Swift.Optional&lt;__C.UISlider&gt;"
+                  moduleName = "SlugNutrition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vidishanevatia/Desktop/ios_dev/The-Nutritional-Slug/SlugNutrition/SlugNutrition/CustomizedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E - 663d0f1eb89ed616"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlugNutrition.CustomizedViewController.proteinSlider.modify : Swift.Optional&lt;__C.UISlider&gt;"
+                  moduleName = "SlugNutrition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vidishanevatia/Desktop/ios_dev/The-Nutritional-Slug/SlugNutrition/SlugNutrition/CustomizedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E - 9711bbc4d9be82b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlugNutrition.CustomizedViewController.proteinSlider.modify : Swift.Optional&lt;__C.UISlider&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SlugNutrition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vidishanevatia/Desktop/ios_dev/The-Nutritional-Slug/SlugNutrition/SlugNutrition/CustomizedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E - 44781fa311e35822"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlugNutrition.CustomizedViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SlugNutrition.CustomizedViewController"
+                  moduleName = "SlugNutrition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vidishanevatia/Desktop/ios_dev/The-Nutritional-Slug/SlugNutrition/SlugNutrition/CustomizedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1578">
+               </Location>
+               <Location
+                  uuid = "CFDEBCD5-0BE2-43BC-81F7-15669907CB9E - d928e3e0bd16a665"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SlugNutrition.CustomizedViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SlugNutrition.CustomizedViewController&gt;"
+                  moduleName = "SlugNutrition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vidishanevatia/Desktop/ios_dev/The-Nutritional-Slug/SlugNutrition/SlugNutrition/CustomizedViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1519">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
