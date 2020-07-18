@@ -168,6 +168,7 @@ extension ProductsTableViewController : UISearchBarDelegate {
         GlobalCell[0] = nil
         GlobalSelectArr[0] = nil
         guard let searchBarText = searchBar.text else {return}
+        print(searchBarText)
         let productRequest = ProductRequest(productSearch: searchBarText)
         productRequest.getProducts { [weak self] result in
             switch result {

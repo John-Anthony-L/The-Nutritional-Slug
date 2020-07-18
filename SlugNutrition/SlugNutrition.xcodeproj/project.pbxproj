@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A5322E24C187ED00B623DC /* products.csv in Resources */ = {isa = PBXBuildFile; fileRef = 52A5322D24C187ED00B623DC /* products.csv */; };
 		52A621972284779200127CD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A621962284779200127CD4 /* AppDelegate.swift */; };
 		52A6219C2284779200127CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A6219A2284779200127CD4 /* Main.storyboard */; };
 		52A6219E2284779300127CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A6219D2284779300127CD4 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A5322D24C187ED00B623DC /* products.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = products.csv; path = ../../products.csv; sourceTree = "<group>"; };
 		52A621932284779200127CD4 /* SlugNutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlugNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A621962284779200127CD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A6219B2284779200127CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				52A621AE2284A70200127CD4 /* ProductsTableViewController.swift */,
 				52A621B022855FDD00127CD4 /* Product.swift */,
 				F46A3A0624B29B04002AB77A /* FoodSearchViewController.swift */,
+				52A5322D24C187ED00B623DC /* products.csv */,
 				52A621B22285612B00127CD4 /* ProductRequest.swift */,
 				F464F9FB24BA0EDD00F4AFF7 /* SlidesShowViewController.swift */,
 				F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */,
@@ -239,6 +242,7 @@
 			files = (
 				52A621A12284779300127CD4 /* LaunchScreen.storyboard in Resources */,
 				52A6219E2284779300127CD4 /* Assets.xcassets in Resources */,
+				52A5322E24C187ED00B623DC /* products.csv in Resources */,
 				52A6219C2284779200127CD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

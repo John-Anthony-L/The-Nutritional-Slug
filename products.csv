@@ -1,33 +1,156 @@
-fats, carbs, protein
-  2.5g,  14g,  7g
-  1.5g,  12g,  8g
-  0.5g,  9g,  5g
-  10g,Dietary Fiber,
-  7g,  8g,  2g
-  3g,  13g,  7g
-  7g,  23g,  5g
-  3g,  14g,  9g
-  7g,Dietary Fiber,
-  2g,  18g,  8g
-  8g,  9g,  2g
-  10g,  16g,  6g
-  3g,  18g,  6g
-  0g,  20g,  2g
-  2g,  8g,  3g
-  9g,  16g,  8g
-  2g,Dietary Fiber,
-  3g,  17g,  6g
-  11g,Dietary Fiber,
-  2g,  10g,  1g
-  2g,  20g,  5g
-  9g,  14g,  7g
-  9g,  22g,  4g
-  7g,Dietary Fiber,
-  0g,Dietary Fiber,
-  1.5g,  13g,  6g
-  2g,  13g,  3g
-  9g,  20g,  6g
-  2.5g,  10g,  6g
-  2g,Dietary Fiber,
-  13g,Dietary Fiber,
-  3g,  21g,  5g
+item, calories,fats, carbs, protein
+Thomas Bagels Plain Pre Sliced 6 Count - 20 Oz,270,  1.5g,  53g,  6g
+Fresh Baked Better Cheddar Bagels - 6 Count,350,  6g,  2g,  14g
+Thomas Bagels Mini Plain Pre Sliced 10 Count - 15 Oz,250,  1.5g,  50g,  3g
+Fresh Baked Plain Bagels - 6 Count,290,  1g,  2g,  11g
+Thomas Bagels Everything Pre Sliced 6 Count - 20 Oz,290,  3.5g,  53g,  7g
+Fresh Baked Blueberry Muffins - 4 Count,420,  21g,  1g,  5g
+Fresh Baked Everything Bagels - 6 Count,360,  6g,  4g,  14g
+Thomas Bagels Cinnamon Raisin Pre Sliced 6 Count - 20 Oz,280,  1.5g,  56g,  1g
+Fresh Baked Sesame Seed Bagels - 6 Count,360,  4g,  8g,  14g
+Daves Killer Bread Everything Bagel Organic 5 Count - 16.75 Oz,260,  4.5g,  5g,  12g
+Sara Lee Bagels Deluxe Pre-Sliced Plain - 6-22 Oz,260,  1.5g,  52g,  3g
+Fresh Baked Chocolate Chip Muffins - 4 Count,(-),  0g,  0g,  
+Daves Killer Bread Cinnamon Raisin Remix Bagel Organic 5 Count - 16.75 Oz,270,  3g,  51g,  11g
+Fresh Baked Double Chocolate Muffins 4 Count,660,  37g,  3g,  8g
+Thomas Bagel Thins Everything 8 Count - 13 Oz,110,  1g,  25g,  2g
+Daves Killer Bread Bagel Organic 5 Count - 16.75 Oz,260,  3g,  48g,  5g
+Sara Lee Bagels Deluxe Pre-Sliced Cinnamon Raisin - 6-22 Oz,260,  1.5g,  53g,  11g
+Fresh Baked Mini Blueberry Muffin - 12 Count,100,  5g,  0g,  1g
+Thomas Bagel Thins Plain 8 Count - 13 Oz,110,  1g,  25g,  3g
+Fresh Baked Onion Bagels - 6 Count,310,  2g,  3g,  11g
+Fresh Baked Banana Nut Muffins - 4 Count,450,  23g,  2g,  7g
+Fresh Baked Bran Muffins - 4 Count,420,  20g,  3g,  6g
+Fresh Baked Blueberry Bagels - 6 Count,300,  1g,  3g,  10g
+Sara Lee Bagels Deluxe Pre-Sliced Blueberry - 6-22 Oz,270,  1.5g,  54g,  9g
+Thomas Bagels 100% Whole Wheat Pre Sliced 6 Count - 20 Oz,250,  2g,  51g,  6g
+Sara Lee Deluxe Bagels Everything 6 Count - 20 Oz,270,  4g,  50g,  6g
+Signature SELECT Bagels Blueberry - 18 Oz,240,  1g,  49g,  0g
+Signature SELECT Bagels Plain - 18 Oz,230,  1g,  47g,  0g
+Thomas Nooks & Crannies Bagels Plain - 4 Count,200,  1g,  39g,  0g
+Nature Valley Protein Bars Chewy Peanut Butter Dark Chocolate - 10-1.42 Oz,190,  12g,  15g,  6g
+Nature Valley Granola Bars Crunchy Variety Pack - 6-1.49 Oz,190,  8g,  29g,  12g
+belVita Breakfast Biscuits Cinnamon Brown Sugar - 5-1.76 Oz,230,  8g,  35g,  1g
+Nature Valley Peanut Butter Dark Chocolate XL Protein Chewy Bars - 7-2.12 Oz,300,  18g,  23g,  11g
+belVita Breakfast Biscuits Cranberry Orange - 5-1.76 Oz,230,  8g,  35g,  12g
+Quaker Chewy Granola Bars 25% Less Sugar Chocolate Chip - 8-0.84 Oz,100,  4g,  17g,  5g
+belVita Breakfast Biscuits Banana Bread - 5-1.76 Oz,200,  8g,  32g,  9g
+Nature Valley Granola Bars Crunchy Oats n Honey - 6-1.49 Oz,190,  7g,  2g,  3g
+Natures Bakery Fig Bar Stone Ground Whole Wheat Raspberry - 6-2 Oz,200,  5g,  38g,  10g
+Nature Valley Granola Bars Crunchy Oats n Honey Value Pack - 12-1.49 Oz,190,  7g,  2g,  3g
+Nutri-Grain Soft Baked Breakfast Bars Strawberry - 16-1.3 Oz,130,  3.5gm,  25gm,  12gm
+Nv Crispy Creamy Wafer Bar Pb Choc 5ct - 6.5 Oz,200,  12g,  18g,  0g
+Nature Valley Granola Bars Sweet & Salty Nut Almond - 6-1.2 Oz,160,  7g,  22g,  8g
+Rice Krispies Treats Crispy Marshmallow Squares The Original - 40-0.78 Oz,90,  2gm,  17gm,  8gm
+Rice Krispies Treats Crispy Marshmallow Squares The Original Value Pack - 16-0.78 Oz,90,  2gm,  17gm,  8gm
+Quaker Chewy Granola Bars Chocolate Chip Value Pack - 18-0.84 Oz,100,  3.5g,  17g,  7g
+Nature Valley Granola Bars Sweet & Salty Nut Peanut - 6-1.2 Oz,170,  8g,  20g,  7g
+Nutri-Grain Breakfast Bars Soft Baked Strawberry - 8-1.3 Oz,130,  3.5gm,  25gm,  12gm
+Signature SELECT Cereal Bars Fruit & Grain Strawberry - 8-1.3 Oz,130,  3g,  24g,  12g
+Nature Valley Protein Bars Chewy Peanut Butter Dark Chocolate - 5-1.42 Oz,190,  12g,  15g,  6g
+Special K Pastry Crisps Strawberry - 6-0.88 Oz,100,  2gm,  20gm,  7gm
+Nature Valley Protein Bars Chewy Salted Caramel Nut - 5-1.42 Oz,200,  12g,  14g,  6g
+Quaker Chewy Dipps Granola Bars Chocolatey Covered Chocolate Chip - 6-1.09 Oz,140,  5g,  23g,  13g
+Nature Valley Granola Bars Sweet & Salty Nut Cashew - 6-1.2 Oz,160,  6g,  23g,  9g
+Natures Bakery Fig Bar Stone Ground Whole Wheat Blueberry - 6-2 Oz,200,  5g,  38g,  10g
+belVita Breakfast Biscuits Sandwich Dark Chocolate Creme - 5-1.76 Oz,230,  9g,  36g,  12g
+O Organics Organic Fruit & Grain Bars Strawberry - 6-1.3 Oz,140,  3g,  25g,  15g
+Chicken of the Sea Tuna Chunk Light in Water - 5 Oz,50,  0.5g,  0g,  0g
+Bumble Bee Tuna Albacore Solid White in Water - 5 Oz,60,  0g,  0g,  0g
+Bumble Bee Tuna Albacore Solid White in Water - 12 Oz,60,  0g,  0g,  0g
+Chicken of the Sea Tuna Albacore Solid White in Water - 4-5 Oz,60,  1g,  0g,  0g
+Chicken of the Sea Tuna Chunk Light in Water - 10-5 Oz,50,  0.5g,  0g,  0g
+Signature SELECT Salmon Pink Alaska - 14.75 Oz,100,  4g,  0g,  0g
+Signature SELECT Tuna Chunk Light in Water - 4-5 Oz,50,  0g,  0g,  12g
+Signature SELECT Tuna Chunk Light in Water - 5 Oz,80,  0.5g,  0g,  0g
+StarKist Tuna Chunk Light in Water - 5 Oz,45,  0.5g,  0g,  0g
+Chicken of the Sea Tuna Chunk Light in Water - 12 Oz,50,  0.5g,  0g,  0g
+StarKist Tuna Albacore Solid White in Water - 5 Oz,50,  0.5g,  0g,  0g
+StarKist Tuna Chunk Light in Water - 6.4 Oz,60,  0.5g,  0g,  0g
+Bumble Bee Clams Chopped in Clam Juice - 6.5 Oz,25,  0g,  3g,  0g
+Chicken of the Sea Salmon Pink Chunk Style in Water Skinless & Boneless - 5 Oz,60,  2g,  0g,  10g
+Bumble Bee Tuna Albacore Chunk White in Water - 5 Oz,60,  1g,  0g,  0g
+Geisha Oysters Smoked Fancy in Cottonseed Oil - 3.75 Oz,120,  7g,  2g,  9g
+Chicken of the Sea Tuna Albacore Solid White in Water - 5 Oz,60,  1g,  0g,  0g
+Chicken of the Sea Salmon Pink Sustainably Wild-Caught Skinless & Boneless - 2.5 Oz,70,  2g,  0g,  13g
+Bumble Bee Snack On The Run with Crackers Tuna Salad - 3.5 Oz,220,  19g,  1g,  6g
+Wild Planet Tuna Albacore Wild - 5 Oz,100,  2.5g,  0g,  0g
+StarKist Tuna Chunk Light in Water - 2.6 Oz,70,  0.5g,  0g,  0g
+Genova Tuna Albacore Solid White in Olive Oil - 5 Oz,90,  4g,  0g,  0g
+Bumble Bee Tuna Chunk Light in Water - 5 Oz,50,  0g,  0g,  0g
+Chicken of the Sea Tuna Chunk Light in Oil - 5 Oz,70,  3g,  0g,  0g
+StarKist Tuna Salad Ready-To-Eat Original Deli Style - 3 Oz,100,  3.5g,  3g,  0.5g
+Chicken of the Sea Tuna Albacore Solid White in Water - 12 Oz,60,  1g,  0g,  0g
+Bumble Bee Crabmeat Premium Select Wild Fancy White - 6 Oz,40,  0.5g,  0g,  0g
+StarKist Tuna Albacore White in Water - 2.6 Oz,80,  1.5g,  0g,  0g
+Bumble Bee Salmon Pink Premium Wild - 14.75 Oz,80,  3g,  0g,  0g
+Wild Planet Tuna Skipjack Wild - 5 Oz,60,  0.5g,  0g,  14g
+Best Foods Mayonnaise Real Gluten Free Kosher - 30 Oz,90,  10g,  0g,  0g
+SKIPPY Peanut Butter Spread Creamy - 40 Oz,190,  16g,  6g,  3g
+Heinz Ketchup Tomato - 32 Oz,20,  0g,  0g,  0g
+SKIPPY Peanut Butter Spread Creamy - 28 Oz,190,  16g,  6g,  3g
+Best Foods Mayonnaise Real Squeeze Bottle - 20 Oz,100,  11g,  0g,  0g
+SKIPPY Peanut Butter Spread Creamy - 16.3 Oz,190,  16g,  6g,  3g
+Frenchs Mustard Classic Yellow - 20 Oz,0,  0g,  0g,  0g
+Heinz Ketchup Tomato - 38 Oz,20,  0g,  0g,  0g
+Smuckers Jam Strawberry Seedless - 18 Oz,50,  0g,  0g,  0g
+Skippy Creamy Squeeze - 8-1.15 Oz,190,  16g,  6g,  0g
+Heinz Ketchup Tomato - 20 Oz,20,  0g,  0g,  0g
+SKIPPY Natural Peanut Butter Spread Creamy - 40 Oz,190,  16g,  6g,  3g
+Bonne Maman Preserves Strawberry - 13 Oz,50,  0g,  0g,  0g
+SKIPPY Peanut Butter Spread Super Chunk Extra Crunchy - 40 Oz,190,  16g,  6g,  3g
+Smuckers Jam Blackberry Seedless - 18 Oz,50,  0g,  0g,  0g
+Kraft Real Mayo - 30 FL. Oz.,90,  10g,  0g,  0g
+Smuckers Marmalade Sweet Orange - 18 Oz,50,  0g,  0g,  0g
+Best Foods Mayonnaise Real Kosher - 48 Oz,90,  10g,  0g,  0g
+Kraft Miracle Whip Dressing Original - 30 Fl. Oz.,50,  5g,  0g,  0g
+Signature SELECT Mayonnaise - 30 Fl. Oz.,100,  11g,  0g,  0g
+Best Foods Mayonnaise Light - 30 Oz,35,  3.5g,  0g,  0g
+Smuckers Jam Red Raspberry Seedless - 18 Oz,50,  0g,  0g,  0g
+SKIPPY Peanut Butter Spread Super Chunk Extra Crunchy - 16.3 Oz,190,  16g,  6g,  3g
+Smuckers Preserves Red Raspberry - 18 Oz,50,  0g,  0g,  0g
+Kraft Mayo Mayonnaise Reduced Fat with Olive Oil - 30 Fl. Oz.,50,  5g,  1g,  0g
+Bonne Maman Preserves Raspberry - 13 Oz,50,  0g,  0g,  0g
+Signature SELECT Peanut Butter Creamy - 16 Oz,180,  15g,  8g,  4g
+O Organics Organic Peanut Butter Spread No Stir Creamy - 18 Oz,190,  16g,  7g,  2g
+Smuckers Preserves Sugar Free Strawberry - 12.75 Oz,10,  0g,  3g,  0g
+Best Foods Mayonnaise Dressing Olive Oil - 30 Oz,60,  6g,  0g,  0g
+Signature SELECT Ketchup Tomato - 32 Oz,20,  0g,  4g,  4g
+Smuckers Preserves Strawberry - 18 Oz,50,  0g,  0g,  0g
+OREO Cookies - 25.5 Oz,160,  7g,  25g,  0g
+Oreo Chocolate Sandwich Cookies Double Stuff Family Size - 20 Oz,140,  7g,  21g,  13g
+Chips Ahoy Cookies Original Party Size - 25.3 Oz,160,  8g,  22g,  0g
+Chips Ahoy! Cookies Chocolate Chip Original Family Size - 18.2 Oz,160,  8g,  22g,  11g
+OREO Cookies Double Stuf - 26.7 Oz,140,  7g,  21g,  0g
+Nutter Butter Cookies Sandwich Peanut Butter Family Size! - 16 Oz,130,  5g,  19g,  9g
+Honey Maid Grahams Honey Family Size - 25.6 Oz,130,  3g,  24g,  8g
+Nilla Wafers - 8-11 Oz,140,  6g,  21g,  11g
+Pepperidge Farm Cookies Classic Collection - 13.25 Oz,130,  7g,  17g,  8g
+Chips Ahoy! Chewy Cookies Chocolate Chip Family Size! - 19.5 Oz,140,  6g,  21g,  11g
+Lorna Doone Cookies Shortbread - 10 Oz,140,  7g,  20g,  5g
+Newtons Cookies Fig Fruit Chewy - 10 Oz,100,  2g,  21g,  12g
+OREO Double Stuff Cookies Sandwich Chocolate - 15.35 Oz,140,  7g,  21g,  13g
+Mothers Cookies Circus Animal The Original Pouch - 11 Oz,150,  8g,  20g,  0g
+NABISCO Cookies and Crackers Variety Pack Classic Mix - 20 Count,130,  5g,  20g,  11g
+Pepperidge Farm Milano Cookies Double Chocolate - 7.5 Oz,140,  7g,  17g,  9g
+Pepperidge Farm Sausalito Cookies Chocolate Chunk Crispy Milk Chocolate Macadamia - 7.2 Oz,130,  7g,  17g,  10g
+Tates Bake Shop Cookies Chocolate Chip Walnut - 7 Oz,150,  9g,  16g,  11g
+Fritos Scoops Party Size - 15.5 Oz,160,  10g,  16g,  0g
+OREO Cookies Sandwich Chocolate - 14.3 Oz,160,  7g,  25g,  14g
+Pepperidge Farm Milano Cookies Mint Chocolate - 7 Oz,130,  7g,  16g,  9g
+Pepperidge Farm Cookies Soft Baked Chunk Montauk Milk Chocolate Cookies - 8.6 Oz,140,  6g,  22g,  12g
+Nutter Butter Wafers Peanut Butter - 10.5 Oz,160,  9g,  19g,  8g
+Keebler Cookies Sandies Pecan - 11.3 Oz,170,  10gm,  18gm,  7gm
+Keebler Cookies Fudge Shoppe Fudge Stripes - 11.5 Oz,140,  7gm,  19gm,  9gm
+LU Petit Ecolier Biscuits European Milk Chocolate - 5.29 Oz,130,  6g,  <1g,  2g
+Keebler Snacks Variety Pack Deluxe 12 Count - 12 Oz,140,  7g,  19g,  10g
+Signature SELECT Crackers Animal Original - 30 Oz,120,  2g,  25g,  6g
+Pepperidge Farm Cookies Soft Baked Oatmeal Raisin Santa Cruz - 8.6 Oz,140,  4.5g,  22g,  12g
+LU Pims Biscuits European Orange - 5.29 Oz,100,  3g,  17g,  12g
+Nonnis Biscotti Cioccolati 8 Count - 6.88 Oz,110,  4g,  1g,  2g
+Tates Bake Shop Cookies Oatmeal Raisin - 7 Oz,130,  5g,  19g,  11g
+Marie Callenders Beef Shepherds Pie - 11.5 Oz,300,  13g,  25g,  0g
+Screamin Sicilian Pizza Holy Pepperoni Frozen - 22.3 Oz,330,  20g,  25g,  3g
+El Monterey Signature Enchiladas Chicken - 10.25 Oz,520,  27g,  3g,  22g
+Screamin Sicilian Pizza Supremus Maximus Supreme Frozen - 25 Oz,330,  19g,  27g,  3g
+STOUFFERS Classics Meal Salisbury Steak - 9.625 Oz,360,  17g,  2g,  23g
