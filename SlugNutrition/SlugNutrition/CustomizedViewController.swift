@@ -31,14 +31,21 @@ class CustomizedViewController: UIViewController {
     var defaultPros = 0.0
     var defaultMeal = 1
     
-    
-    var product: MealProducts = MealProducts(item_name: "generic", brand_name: "meh", nf_calories: 100.0, nf_total_fat: 100.0, nf_total_carbohydrate: 100.0, nf_protein: 100.0)
+//
+//    var product: MealProducts = MealProducts(item_name: "generic", brand_name: "meh", nf_calories: 100.0, nf_total_fat: 100.0, nf_total_carbohydrate: 100.0, nf_protein: 100.0)
     
      override func viewDidLoad() {
          super.viewDidLoad()
         updateSaveButtonState()
      }
-     
+    
+    
+    
+    @IBAction func defaultFoodNameChanged(_ sender: UITextField) {
+        UserDefaults.standard.set(nameTextField.text, forKey: "defaultFoodName") // saves text field text
+        UserDefaults.standard.synchronize()
+    }
+    
     
      @IBAction func defaultCarbsChanged(_ sender: UISlider) {
          updateCarbsValue()
@@ -62,7 +69,7 @@ class CustomizedViewController: UIViewController {
      func updateCarbsValue()
      {
           defaultCarbs = Double(carbsSlider.value)
-        product.nf_total_carbohydrate = Double(carbsSlider.value)
+        //product.nf_total_carbohydrate = Double(carbsSlider.value)
          carbsTextField.text = "\(defaultCarbs)"
          let defaults = UserDefaults.standard
          defaults.set(defaultCarbs, forKey: "defaultCarbs")
@@ -81,7 +88,7 @@ class CustomizedViewController: UIViewController {
      func updateFatsValue()
      {
          defaultFats = Double(fatSlider.value)
-        product.nf_total_fat = Double(fatSlider.value)
+       // product.nf_total_fat = Double(fatSlider.value)
           fatTextField.text = "\(defaultFats)"
           let defaults = UserDefaults.standard
           defaults.set(defaultFats, forKey: "defaultFats")
@@ -100,7 +107,7 @@ class CustomizedViewController: UIViewController {
      func updateCalsValue()
          {
              defaultCals = Double(caloriesSlider.value)
-            product.nf_calories = Double(caloriesSlider.value)
+            //product.nf_calories = Double(caloriesSlider.value)
               caloriesTextField.text = "\(defaultCals)"
               let defaults = UserDefaults.standard
               defaults.set(defaultCals, forKey: "defaultCals")
@@ -119,7 +126,7 @@ class CustomizedViewController: UIViewController {
     func updateProsValue()
     {
         defaultPros = Double(proteinSlider.value)
-        product.nf_protein = Double(proteinSlider.value)
+        //product.nf_protein = Double(proteinSlider.value)
          proteinTextField.text = "\(defaultPros)"
          let defaults = UserDefaults.standard
          defaults.set(defaultPros, forKey: "defaultPros")
@@ -149,21 +156,24 @@ class CustomizedViewController: UIViewController {
        }
     
     @IBAction func saveButton(_ sender: UIButton) {
-        product.item_name = nameTextField.text ?? ""
-        product.brand_name = brandTextField.text ?? ""
-        let defaults = UserDefaults.standard
-        let mealSelected = defaults.integer(forKey: "defaultMeal")
+//        product.item_name = nameTextField.text ?? ""
+//        product.brand_name = brandTextField.text ?? ""
+//        let defaults = UserDefaults.standard
+//        defaults.set(defaultPros, forKey: "defaultMeal")
+//        defaults.synchronize()
         
-        if mealSelected == 1{
-            print("breakfast")
-            breakfastList.append(product)
-        }else if mealSelected == 2 {
-            print("lunch")
-            lunchList.append(product)
-        }else if mealSelected == 3 {
-            print("dinner")
-            dinnerList.append(product)
-        }
+//        let mealSelected = UserDefaults.standard.integer(forKey: "defaultMeal")
+        
+//        if mealSelected == 1{
+//            print("breakfast")
+//            breakfastList.append(product)
+//        }else if mealSelected == 2 {
+//            print("lunch")
+//            lunchList.append(product)
+//        }else if mealSelected == 3 {
+//            print("dinner")
+//            dinnerList.append(product)
+//        }
     }
     
 
