@@ -9,12 +9,12 @@
 import Foundation
 
 struct MealProducts:Codable{
-    
+
     var item_name:String
     var brand_name:String
     var nf_calories:Double
     var nf_total_fat:Double
     var nf_total_carbohydrate:Double
     var nf_protein:Double
-  
+
 }

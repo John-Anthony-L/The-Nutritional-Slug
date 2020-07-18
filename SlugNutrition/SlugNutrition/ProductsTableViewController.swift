@@ -173,14 +173,7 @@ extension ProductsTableViewController : UISearchBarDelegate {
         guard let searchBarText = searchBar.text else {return}
         print(searchBarText)
         let productRequest = ProductRequest(productSearch: searchBarText)
-        productRequest.getProducts { [weak self] result in
-            switch result {
-            case .failure(let error):
-                print(error)
-            case .success(let products):
-                self?.listOfProducts = products.hits
-            }
-        }
+        print(csvRows[1])
     }
 }
 
