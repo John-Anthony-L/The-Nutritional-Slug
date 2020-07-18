@@ -12,8 +12,8 @@
 import UIKit
 
 //The GlobalSelectArr[0] contains the value of currently selected food item, it is cleared every time search for a new item
-//var GlobalSelectArr = [ProductResponse.ProductDetail?](repeating: nil, count: 1)
-//var GlobalCell = [UITableViewCell?](repeating: nil, count: 1)
+var GlobalSelectArr = [MealProducts?](repeating: nil, count: 1)
+var GlobalCell = [UITableViewCell?](repeating: nil, count: 1)
 
  import UIKit
 
@@ -74,7 +74,7 @@ class ProductsTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        /*
+        
         var DeSelectedItem = listOfProducts[indexPath.row]
         
         var cell = tableView.cellForRow(at: indexPath)
@@ -87,22 +87,22 @@ class ProductsTableViewController: UITableViewController {
         
         cell?.accessoryType = .none
         
-        let cal_per_hund = convertAPIValToInt(name: DeSelectedItem.fields.nf_calories) / 100
+        //let cal_per_hund = convertAPIValToInt(name: DeSelectedItem.fields.nf_calories) / 100
         
-        cell?.textLabel?.text = "\(DeSelectedItem.fields.item_name)"
+        cell?.textLabel?.text = "\(DeSelectedItem.item_name)"
         cell?.textLabel?.numberOfLines = 1
-        cell?.detailTextLabel?.text = "\(cal_per_hund) kcal per 100 grams) "
+        cell?.detailTextLabel?.text = "\(DeSelectedItem.nf_calories) kcal per serving) "
         cell?.sizeToFit()
 
-        print("\(DeSelectedItem.fields.item_name)")
+        print("\(DeSelectedItem.item_name)")
         print("deselection worked")
-        */
+        
         
     }
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*
+        
         tableView.deselectRow(at: indexPath, animated: true)
 
         //Did the user tap on a selected filter item? If so, do nothing
@@ -111,13 +111,13 @@ class ProductsTableViewController: UITableViewController {
 
         let cell = tableView.cellForRow(at: indexPath)
         cell?.accessoryType = .checkmark
-        cell?.textLabel?.text = " \(selectedItem.fields.item_name) "
+        cell?.textLabel?.text = " \(selectedItem.item_name) "
         UserDefaults.standard.set(cell?.textLabel?.text, forKey: "defaultFood") // saves text field text
         UserDefaults.standard.synchronize()
         let stuff = """
-        Protien:        \(selectedItem.fields.nf_protein)g
-        Carbohydrates:  \(selectedItem.fields.nf_total_carbohydrate)g
-        Fats:           \(selectedItem.fields.nf_total_fat)g
+        Protien:        \(selectedItem.nf_protein)g
+        Carbohydrates:  \(selectedItem.nf_total_carbohydrate)g
+        Fats:           \(selectedItem.nf_total_fat)g
         """
 
         cell?.detailTextLabel?.text = stuff
@@ -136,7 +136,7 @@ class ProductsTableViewController: UITableViewController {
             cell?.alpha = 1.0
         })
         
- */
+ 
 
     }
 
