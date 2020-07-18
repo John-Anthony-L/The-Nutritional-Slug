@@ -12,8 +12,8 @@
 import UIKit
 
 //The GlobalSelectArr[0] contains the value of currently selected food item, it is cleared every time search for a new item
-var GlobalSelectArr = [ProductResponse.ProductDetail?](repeating: nil, count: 1)
-var GlobalCell = [UITableViewCell?](repeating: nil, count: 1)
+//var GlobalSelectArr = [ProductResponse.ProductDetail?](repeating: nil, count: 1)
+//var GlobalCell = [UITableViewCell?](repeating: nil, count: 1)
 
  import UIKit
 
@@ -21,7 +21,7 @@ class ProductsTableViewController: UITableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
    
-    var listOfProducts = [ProductResponse.ProductDetail]() {
+    var listOfProducts = [MealProducts]() {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -29,9 +29,6 @@ class ProductsTableViewController: UITableViewController {
             }
         }
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,17 +64,17 @@ class ProductsTableViewController: UITableViewController {
         
         // ## kcal oer 100g --> Equation is just x = weight_grams/100
         //let serv_per_hund_grams = convertAPIValToInt(name: product.fields.nf_serving_weight_grams) / 100
-        let cal_per_hund = convertAPIValToInt(name: product.fields.nf_calories) / 100
+        //let cal_per_hund = convertAPIValToInt(name: product.fields.nf_calories) / 100
         
-        cell.textLabel?.text = product.fields.item_name
-        cell.detailTextLabel?.text = "\(cal_per_hund) kcal per 100 grams) "
+            cell.textLabel?.text = product.item_name//product.fields.item_name
+            cell.detailTextLabel?.text = "\(product.nf_calories) kcal per serving) "
        
         return cell
     }
     
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
+        /*
         var DeSelectedItem = listOfProducts[indexPath.row]
         
         var cell = tableView.cellForRow(at: indexPath)
@@ -86,7 +83,7 @@ class ProductsTableViewController: UITableViewController {
             cell = GlobalCell[0]
             DeSelectedItem = GlobalSelectArr[0] ?? listOfProducts[indexPath.row]
         }
-
+ 
         
         cell?.accessoryType = .none
         
@@ -99,12 +96,13 @@ class ProductsTableViewController: UITableViewController {
 
         print("\(DeSelectedItem.fields.item_name)")
         print("deselection worked")
-        
+        */
         
     }
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
         tableView.deselectRow(at: indexPath, animated: true)
 
         //Did the user tap on a selected filter item? If so, do nothing
@@ -138,6 +136,7 @@ class ProductsTableViewController: UITableViewController {
             cell?.alpha = 1.0
         })
         
+ */
 
     }
 
@@ -151,7 +150,7 @@ class ProductsTableViewController: UITableViewController {
         tableView.pin(to: view)
      }
     
-    
+    /*
     func convertAPIValToInt(name: FormFieldValueType) -> Int {
         let value = "\(name)"
         var to_numeric = ""
@@ -162,18 +161,39 @@ class ProductsTableViewController: UITableViewController {
         }
         let temp = Int(to_numeric) ?? 0
         return temp
-    }
+    }*/
 }
 
 extension ProductsTableViewController : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        /*
         GlobalCell[0]?.accessoryType = .none
         GlobalCell[0] = nil
         GlobalSelectArr[0] = nil
+ */
         guard let searchBarText = searchBar.text else {return}
         print(searchBarText)
         let productRequest = ProductRequest(productSearch: searchBarText)
-        print(csvRows[1])
+        var productAdded: MealProducts = MealProducts(item_name: "", brand_name: "generic", nf_calories: 0.0, nf_total_fat: 0.0, nf_total_carbohydrate: 0.0, nf_protein: 0.0)
+        
+        for rows in productRows{
+            var array = rows.components(separatedBy: ",")
+            
+            array[2] = array[2].replacingOccurrences(of: "g", with: " ")
+            array[3] = array[3].replacingOccurrences(of: "g", with: " ")
+            array[4] = array[4].replacingOccurrences(of: "g", with: " ")
+            
+            productAdded.item_name = array[0]
+            productAdded.nf_calories = Double(array[1].trimmingCharacters(in: .whitespaces)) as! Double
+            productAdded.nf_total_fat = Double(array[2].trimmingCharacters(in: .whitespaces)) as! Double
+            productAdded.nf_total_carbohydrate = Double(array[3].trimmingCharacters(in: .whitespaces)) as! Double
+            productAdded.nf_protein = Double(array[4].trimmingCharacters(in: .whitespaces)) as! Double
+            
+            listOfProducts.append(productAdded)
+        
+        }
+        //listOfProducts = csvRows
+        
     }
 }
 
