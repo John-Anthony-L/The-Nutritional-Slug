@@ -445,6 +445,11 @@
                         <color key="backgroundColor" red="0.165284127" green="0.20323002339999999" blue="0.25098907949999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Progress" image="chart.bar.fill" catalog="system" id="pGy-5z-xJg"/>
+                    <connections>
+                        <outlet property="badLabel" destination="sUU-qx-vMp" id="18M-NM-eDs"/>
+                        <outlet property="goodLabel" destination="bkz-Jf-Ffk" id="olN-ea-LY6"/>
+                        <outlet property="okayLabel" destination="Oz9-nf-rNp" id="kTJ-JU-XLi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbO-Md-aBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
