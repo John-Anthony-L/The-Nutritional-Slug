@@ -65,7 +65,6 @@ def GetSafewayLink(parital_url_container):
         print('Invalid container, it does not have a link, does not have attribute href')
 
 def GetItemsFromPage(url):
-    my_url = 'https://www.safeway.com/shop/aisles/canned-goods-soups/soups-ramen.3132.html?sort=&page=1'
     page_soup = read_link(url)
     containers = page_soup.findAll("a", {"class": "product-title"})
     len(containers)
@@ -83,18 +82,38 @@ def GetItemsFromPage(url):
             name.append(contain.text)
 
 
-#Test, new data
-a_whole_new_link = 'https://www.safeway.com/shop/aisles.3132.html'
-a_whole_new_soup = read_link(a_whole_new_link)
-a_whole_new_container = a_whole_new_soup.findAll("ul", {"class": "product-subcats"})
-Product_blacklist = ['Baby', 'Coffee', 'Deli', 'Flowers','Fruits & Vegetables', 'Eggs' ,'Meat & Seafood', 'Beef', 'Laundry', 'Care', 'Pet', 'Wine', 'Beer']
-
-for new_container in a_whole_new_container:
-    if new_container.a is not None:
-        Product_genre = new_container.a.text
+def GetSubitemsFromPage(url):
+    page_soup = read_link(url)
+    containers = page_soup.findAll("a",{"class": "siblingAisle"})
+    Product_blacklist = ['Baby', 'Coffee', 'Deli', 'Flowers','Fruits & Vegetables', 'Eggs' ,'Meat & Seafood', 'Beef', 'Laundry', 'Care', 'Pet', 'Wine', 'Beer']
+    
+    for contain in containers:
         test = any([Product_blacklist_item in Product_genre for Product_blacklist_item in Product_blacklist])
         if not test:
-            print(Product_genre)
-            link = GetSafewayLink(new_container.a)
-            print(link)
-            GetItemsFromPage(link)
+            new_link = GetSafewayLink(contain)
+            print(new_link)
+            GetItemsFromPage(new_link)
+
+
+
+a_whole_new_link = 'https://www.safeway.com/shop/aisles.3132.html'
+a_whole_new_soup = read_link(a_whole_new_link)
+a_whole_new_container = a_whole_new_soup.findAll("a", {"class": "text-uppercase view-all-subcats"})
+Product_blacklist = ['Baby', 'Coffee', 'Deli', 'Flowers','Fruits & Vegetables', 'Eggs' ,'Meat & Seafood', 'Beef', 'Laundry', 'Care', 'Pet', 'Wine', 'Beer',]
+
+for contain in a_whole_new_container:
+    print(contain)
+
+
+for new_container in a_whole_new_container:
+    Product_genre = new_container['aria-label']
+    print(Product_genre)
+    test = any([Product_blacklist_item in Product_genre for Product_blacklist_item in Product_blacklist])
+    if not test:
+        link = GetSafewayLink(new_container)
+        print(link)
+        GetSubitemsFromPage(link)
+        
+
+
+
