@@ -1064,7 +1064,11 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-X1-OcD">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                 <rect key="frame" x="20" y="129.5" width="374" height="10230"/>
+=======
+                                <rect key="frame" x="20" y="129.5" width="374" height="739"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                 <rect key="frame" x="20" y="129.5" width="374" height="739"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1142,10 +1146,17 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="27Z-n9-4Fg">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                         <rect key="frame" x="0.0" y="359" width="374" height="9871"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-Gr-rEf">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="2456"/>
+=======
+                                        <rect key="frame" x="0.0" y="205" width="374" height="534"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-Gr-rEf">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="121.5"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                         <rect key="frame" x="0.0" y="205" width="374" height="534"/>
                                         <subviews>
@@ -1158,10 +1169,17 @@
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-hA-pBa">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                 <rect key="frame" x="0.0" y="2472" width="374" height="2455.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-JQ-a2Z">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="811.5"/>
+=======
+                                                <rect key="frame" x="0.0" y="137.5" width="374" height="121.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-JQ-a2Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                 <rect key="frame" x="0.0" y="137.5" width="374" height="121.5"/>
                                                 <subviews>
@@ -1174,15 +1192,21 @@
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-LL-aKV">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                         <rect key="frame" x="0.0" y="821.5" width="374" height="812"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noo-Np-e7v">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="812"/>
 =======
+=======
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                                         <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noo-Np-e7v">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="33.5"/>
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
+=======
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKt-4j-GHG">
@@ -1209,7 +1233,11 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-Vb-BCV">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="812"/>
+=======
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1240,10 +1268,17 @@
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KZg-Si-8aD">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                         <rect key="frame" x="0.0" y="1643.5" width="374" height="812"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-hJ-tG6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="812"/>
+=======
+                                                        <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-hJ-tG6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                         <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
                                                         <subviews>
@@ -1275,7 +1310,11 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itN-DX-rpM">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="812"/>
+=======
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="34"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1308,11 +1347,19 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" id="E9X-VN-c1w">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                 <rect key="frame" x="0.0" y="4943.5" width="374" height="2456"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPy-JG-cNg">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="812"/>
+=======
+                                                <rect key="frame" x="0.0" y="275" width="374" height="121"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPy-JG-cNg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                 <rect key="frame" x="0.0" y="275" width="374" height="121"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1326,10 +1373,17 @@
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-ze-3b6">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                         <rect key="frame" x="0.0" y="822" width="374" height="812"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-o4-P6c">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="812"/>
+=======
+                                                        <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-o4-P6c">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.5"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                         <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
                                                         <subviews>
@@ -1361,7 +1415,11 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-gT-haI">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="812"/>
+=======
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1392,10 +1450,17 @@
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bNo-zb-xqH">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                         <rect key="frame" x="0.0" y="1644" width="374" height="812"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdQ-UZ-eVF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="812"/>
+=======
+                                                        <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdQ-UZ-eVF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                         <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
                                                         <subviews>
@@ -1427,7 +1492,11 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-Yj-gwF">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="812"/>
+=======
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="34"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1461,17 +1530,23 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" id="gBC-wM-HKp">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                 <rect key="frame" x="0.0" y="7415.5" width="374" height="2455.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwf-Z6-SCI">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="811.5"/>
 =======
+=======
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                                 <rect key="frame" x="0.0" y="412" width="374" height="121.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwf-Z6-SCI">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
+=======
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1479,10 +1554,17 @@
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kbB-b5-59k">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                         <rect key="frame" x="0.0" y="821.5" width="374" height="812"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-lh-037">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="812"/>
+=======
+                                                        <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-lh-037">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.5"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                         <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
                                                         <subviews>
@@ -1514,7 +1596,11 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89I-FP-1Pl">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="812"/>
+=======
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1545,15 +1631,21 @@
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-B8-Nm3">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                         <rect key="frame" x="0.0" y="1643.5" width="374" height="812"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-4V-zZI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="812"/>
 =======
+=======
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                                         <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-4V-zZI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
+=======
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuT-lN-tdH">
@@ -1580,7 +1672,11 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFW-cz-bqs">
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="812"/>
+=======
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
                                                                 <rect key="frame" x="187" y="0.0" width="187" height="34"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1617,17 +1713,23 @@
                                 </subviews>
                             </stackView>
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbM-Al-KOg">
                                 <rect key="frame" x="89" y="813" width="246" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="ADD TO DAILY LIST">
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
 =======
+=======
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv7-zp-Bg6">
                                 <rect key="frame" x="15" y="800" width="374" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ADD TO DAILY LIST!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
+=======
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
                                 </state>
                                 <connections>
@@ -1699,6 +1801,10 @@
     </scenes>
     <inferredMetricsTieBreakers>
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
+=======
+        <segue reference="Fwg-KE-OGE"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
         <segue reference="Fwg-KE-OGE"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
@@ -1710,6 +1816,7 @@
         <image name="chart.bar.fill" catalog="system" width="128" height="92"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+<<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
 <<<<<<< HEAD:SlugNutrition/SlugNutrition/Main.storyboard
         <image name="sunset" catalog="system" width="128" height="97"/>
         <systemColor name="groupTableViewBackgroundColor">
@@ -1733,6 +1840,9 @@
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+=======
+        <image name="sunrise.fill" catalog="system" width="128" height="97"/>
+>>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
 =======
         <image name="sunrise.fill" catalog="system" width="128" height="97"/>
 >>>>>>> ceb3d2459feaa095c51a7ee29a85bb4fbce7695a:SlugNutrition/SlugNutrition/Base.lproj/Main.storyboard
