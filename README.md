@@ -1,5 +1,5 @@
 # The Nutritional Slug
-The Nutritional Slug is an ultimate Nutritional Apps. All apps focus on how you should eat. However, this app focuses on what is the healthiest option to eat for 
+The Nutritional Slug is an ultimate Nutritional App. All apps focus on how you should eat. However, this app focuses on what is the healthiest option to eat for 
 what you are craving! This app lets you keep a food log, calculates the macros based on your measumerements, goals and activity levels and  track the macros you 
 have eaten all day and then shows your progress over the month as well!
 
