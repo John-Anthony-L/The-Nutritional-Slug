@@ -41,6 +41,9 @@ class ProductsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.rightBarButtonItem?.isEnabled = false
+        
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.clear
         searchBar.delegate = self
         
         self.tableView.allowsMultipleSelection = true
