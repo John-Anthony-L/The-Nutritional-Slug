@@ -7,9 +7,6 @@ Date : 19 July 2020
 
 List of functions not working correctly
 
-input/action that causes failure: The text field can not input exam double values 
-location of fault (if known): customizedView
-possible action for removal of fault: ?
 
 input/action that causes failure: When you close app completely and open it again - progress in today page is lost 
 location of fault (if known): Values only in struct 
@@ -32,7 +29,11 @@ input/action that causes failure: Once progress reached to its full capacity, th
 location of fault (if known):
 possible action for removal of fault: 
 
-input/action that causes failure: If app is working and setting is cleared - the app keeps the macros level and the name - It doesnot change to deafalt values, 
+input/action that causes failure: If app is working and setting is cleared - the app keeps the macros level and the name - It doesnot change to default values, 
                                   nor asks the user to enter settings value 
 location of fault (if known):
+possible action for removal of fault: 
+
+input/action that causes failure: sliders do not go over 100
+location of fault (if known): customized view
 possible action for removal of fault: 
