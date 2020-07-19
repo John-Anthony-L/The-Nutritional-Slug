@@ -98,6 +98,7 @@ class FoodSearchViewController: UIViewController{
         UserDefaults.standard.removeObject(forKey: "defaultFood")
         UserDefaults.standard.synchronize()
         foodNameLabel.text = ""
+        searchedFoodList = []
     }
     
     func getUserDefaults() -> UserDefaults {
