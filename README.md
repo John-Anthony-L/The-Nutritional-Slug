@@ -5,15 +5,16 @@ what you are craving! This app lets you keep a food log, calculates the macros b
 have eaten all day and then shows your progress over the month as well!
 
 Installation Guide 
-Manually - 
-1.Download source code 
-2.Unzip the downloaded folder
-or 
-Using Terminal: git clone https://github.com/John-Anthony-L/The-Nutritional-Slug.git
-3.Make sure Xcode is Version 11.6 or newer
-3.Open project in Xcode
-4. Set the active scheme on the top left device to either iPhone 11 or connect an iPhone 11.
-5. Run the app.
+
+Manually - <br />
+1.Download source code <br />
+2.Unzip the downloaded folder<br />
+or <br />
+Using Terminal: git clone https://github.com/John-Anthony-L/The-Nutritional-Slug.git <br />
+3.Make sure Xcode is Version 11.6 or newer <br />
+4.Open project in Xcode <br />
+5. Set the active scheme on the top left device to either iPhone 11 or connect an iPhone 11. <br />
+6. Run the app. <br />
 
 User Manual - 
 
