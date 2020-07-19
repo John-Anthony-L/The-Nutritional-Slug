@@ -41,4 +41,4 @@ B. To search for a healthy option for a craving  <br />
     - Press Add to Daily list only once 
     - Press Done <br />
 9. Select Progress Tab to look at the monthly progress <br />
-10. Select Settings Tab to change goals pr activity level or even credentials. <br />
+10. Select Settings Tab to change goals or activity level or even credentials. <br />
