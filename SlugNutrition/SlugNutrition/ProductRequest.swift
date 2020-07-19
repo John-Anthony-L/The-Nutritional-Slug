@@ -1,15 +1,3 @@
-////
-////  ProductRequest.swift
-////  SlugNutrition
-////
-////  THIS .SWIFT FILE IS BASED ON THE CODE PROVIDED BY BRIAN ADVENT
-//// https://www.youtube.com/watch?v=tdxKIPpPDAI
-////
-////  Created by Roberto Oregon on 07.03.20.
-////  Copyright © 2020 Roberto Oregon. All rights reserved.
-////
-//
-
 //  ProductRequest.swift
 //  SlugNutrition
 //
@@ -48,8 +36,6 @@ func cleanRows(file:String)->String{
     var cleanFile = file
     cleanFile = cleanFile.replacingOccurrences(of: "\r", with: "\n")
     cleanFile = cleanFile.replacingOccurrences(of: "\n\n", with: "\n")
-    //        cleanFile = cleanFile.replacingOccurrences(of: ";;", with: "")
-    //        cleanFile = cleanFile.replacingOccurrences(of: ";\n", with: "")
     return cleanFile
 }
 
@@ -74,14 +60,10 @@ struct ProductRequest {
         product_data = cleanRows(file: product_data!)
         csvRows = csv(data: product_data!)
         productRows = [String]()
-
-        //print(csvRows)
         
         for rows in csvRows{
           if rows[0].contains(productSearch){
-                //print(rows)
                 productRows.append(rows[0])
-                //print("==================")
             }
         }
     

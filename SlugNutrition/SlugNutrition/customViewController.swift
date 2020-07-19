@@ -12,6 +12,11 @@ var breakfastList: [MealProducts] = []
 var lunchList: [MealProducts] = []
 var dinnerList: [MealProducts] = []
 
+var CalorieAlert:Bool = false
+var FatAlert:Bool = false
+var CarbAlert:Bool = false
+var ProtienAlert:Bool = false
+
 class customViewController: UIViewController {
 
     @IBOutlet var userNameLabel: UILabel!
@@ -46,6 +51,9 @@ class customViewController: UIViewController {
     var carbs:Double = 0.0
     var fat:Double = 0.0
     var pros:Double = 0.0
+    
+    
+
     
     
 //    var defaultFoodName = ""
@@ -278,7 +286,31 @@ class customViewController: UIViewController {
             }
             return activity
         }
+    
+        func convertStringValToInt(name: String) -> Int {
+        let value = "\(name)"
+        var to_numeric = ""
+        for letter in value.unicodeScalars{
+            if 48...57 ~= letter.value{
+                to_numeric.append(String(letter))
+            }
+        }
+        let temp = Int(to_numeric) ?? 0
+        return temp
+    }
+    
+    //global boolean arrays, only once will it switch
+
+    
+    func DailyMaxValAlert(macro: String){
+        let message = UIAlertController(title: "Put down that Pizza!", message: "You have reached your " + macro + " limit for today", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in print("Ok button tapped") })
         
+        message.addAction(dismiss)
+        self.present(message, animated: true, completion: nil)
+    }
+
+    
     func macrosCalculated() {
         pros = calculateProteins(weight: defaultWeight)
         cals = calculateCalories(sex: defaultGenderIndex,weight: defaultWeight,height: defaultHeight,age: defaultAge,goal: getGoal(), userActivity: getActivity())
@@ -288,18 +320,44 @@ class customViewController: UIViewController {
     
     func caloriesLabelFunction() {
         self.caloriesLabel.text = String(format: "%.0f", CaloriesDailyProgress.progress * Float(cals)) + "/" + String(Int(cals))
+        if CaloriesDailyProgress.progress >= 1 {
+            if !(CalorieAlert) {DailyMaxValAlert(macro: "Calorie")}
+            
+            caloriesLabel.textColor = UIColor.systemRed
+            CalorieAlert = true
+        }
     }
         
     func proteinLabelFunction() {
         self.proteinLabel.text = String(format: "%.0f", ProteinDailyProgress.progress * Float(pros)) + "/" + String(Int(pros))
+        if ProteinDailyProgress.progress >= 1{
+            if !(ProtienAlert) {DailyMaxValAlert(macro: "Protien")}
+        
+            proteinLabel.textColor = UIColor.systemRed
+            ProtienAlert = true
+        }
     }
         
     func fatsLabelFunction() {
         self.fatsLabel.text = String(format: "%.0f", FatsDailyProgress.progress * Float(fat)) + "/" + String(Int(fat))
+        print(FatsDailyProgress.progress)
+        if FatsDailyProgress.progress >= 1 {
+            if !(FatAlert){ DailyMaxValAlert(macro: "Fat") }
+
+            fatsLabel.textColor = UIColor.systemRed
+            FatAlert = true
+            
+        }
     }
         
     func carbsLabelFunction() {
         self.carbsLabel.text = String(format: "%.0f", CarbsDailyProgress.progress * Float(carbs) ) + "/" + String(Int(carbs))
+        if (CarbsDailyProgress.progress >= 1) && !(CarbAlert){
+            if !(CarbAlert) { DailyMaxValAlert(macro: "Carbohydrate")}
+            
+            carbsLabel.textColor = UIColor.systemRed
+            CarbAlert = true
+        }
     }
     
     /*
