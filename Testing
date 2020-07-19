@@ -7,3 +7,15 @@ executable that is created by this automated build process). EXTRA CREDIT for au
 • Unit tests (25 points):  There should be details (can be in a separate file in the directory) provided by each team member about the module and the
 functional testing they have done.
 Each team member picks a module or module and lists the equivalence classes and the test cases selected to cover all equivalence classes.
+
+Dylan - Progress Page 
+
+
+John -  ProductRequest, WebScraping
+
+Roberto -  ProductTableViewController, FoodSearchViewController
+
+Sanyam - CustomViewController 
+
+Vidisha - CustomizedViewCobtroller, SettingsViewController
+
