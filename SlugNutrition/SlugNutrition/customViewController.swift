@@ -278,7 +278,7 @@ class customViewController: UIViewController {
         updateMeal()
         */
         
-        }
+    }   //end of viewWillAppear()
     
     /*
     func updateMeal(){
