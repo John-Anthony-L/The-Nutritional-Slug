@@ -127,7 +127,7 @@ class FoodSearchViewController: UIViewController{
         
         
         if mealSelected == 0{
-            print("breakfast")
+            print(searchedFoodList[0])
             breakfastList.append(searchedFoodList[0])
         }else if mealSelected == 1 {
             print("lunch")
