@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		52A5322E24C187ED00B623DC /* products.csv in Resources */ = {isa = PBXBuildFile; fileRef = 52A5322D24C187ED00B623DC /* products.csv */; };
 		52A621972284779200127CD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A621962284779200127CD4 /* AppDelegate.swift */; };
-		52A6219C2284779200127CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A6219A2284779200127CD4 /* Main.storyboard */; };
 		52A6219E2284779300127CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A6219D2284779300127CD4 /* Assets.xcassets */; };
 		52A621A12284779300127CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A6219F2284779300127CD4 /* LaunchScreen.storyboard */; };
 		52A621AF2284A70200127CD4 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A621AE2284A70200127CD4 /* ProductsTableViewController.swift */; };
 		52A621B32285612B00127CD4 /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A621B22285612B00127CD4 /* ProductRequest.swift */; };
 		6226FF9524C02F63004AF664 /* MealProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226FF9424C02F63004AF664 /* MealProducts.swift */; };
 		623C3A0F24B1D78E00D84CA2 /* customViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C3A0E24B1D78E00D84CA2 /* customViewController.swift */; };
+		C129F49224C4D8BC0052E7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C129F49124C4D8BC0052E7B9 /* Main.storyboard */; };
 		C1DE889D24C0CCEB0074B336 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE889C24C0CCEB0074B336 /* ProgressViewController.swift */; };
 		F40E360E24BA5A8000439B5E /* CustomizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */; };
 		F464F9E224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F464F9C224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m */; };
@@ -43,7 +43,6 @@
 		52A5322D24C187ED00B623DC /* products.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = products.csv; path = ../../products.csv; sourceTree = "<group>"; };
 		52A621932284779200127CD4 /* SlugNutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlugNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A621962284779200127CD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52A6219B2284779200127CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52A6219D2284779300127CD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A621A02284779300127CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52A621A22284779300127CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		52A621B22285612B00127CD4 /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
 		6226FF9424C02F63004AF664 /* MealProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealProducts.swift; sourceTree = "<group>"; };
 		623C3A0E24B1D78E00D84CA2 /* customViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewController.swift; sourceTree = "<group>"; };
+		C129F49124C4D8BC0052E7B9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../Downloads/Main.storyboard; sourceTree = "<group>"; };
 		C1DE889C24C0CCEB0074B336 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedViewController.swift; sourceTree = "<group>"; };
 		F464F9C224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 				F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */,
 				F46A3A0424B2729F002AB77A /* SettingsViewController.swift */,
 				F464F9C124B9FA0D00F4AFF7 /* FSCalendar */,
-				52A6219A2284779200127CD4 /* Main.storyboard */,
 				6226FF9424C02F63004AF664 /* MealProducts.swift */,
+				C129F49124C4D8BC0052E7B9 /* Main.storyboard */,
 				F46A3A0024B2268D002AB77A /* RoundButton.swift */,
 				623C3A0E24B1D78E00D84CA2 /* customViewController.swift */,
 				52A6219D2284779300127CD4 /* Assets.xcassets */,
@@ -244,9 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52A621A12284779300127CD4 /* LaunchScreen.storyboard in Resources */,
+				C129F49224C4D8BC0052E7B9 /* Main.storyboard in Resources */,
 				52A6219E2284779300127CD4 /* Assets.xcassets in Resources */,
 				52A5322E24C187ED00B623DC /* products.csv in Resources */,
-				52A6219C2284779200127CD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +310,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52A6219A2284779200127CD4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52A6219B2284779200127CD4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52A6219F2284779300127CD4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

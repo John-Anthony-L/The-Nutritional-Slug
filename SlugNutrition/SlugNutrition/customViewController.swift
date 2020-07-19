@@ -41,6 +41,8 @@ class customViewController: UIViewController {
     var defaultHeight: Double = 0.0
     var defaultGoalRow:Int = 0
     var defaultActivityRow: Int = 0
+    var defaultDate: Date?  //default date to be used between progress and daily
+    var dateRating: Int = 0
     var selected: String = ""
     var cals:Double = 0.0
     var carbs:Double = 0.0
@@ -141,42 +143,52 @@ class customViewController: UIViewController {
         defaultHeight = defaults.double(forKey: "defaultHeight")
         defaultGoalRow = defaults.integer(forKey: "defaultGoal")
         defaultActivityRow = defaults.integer(forKey: "defaultActivity")
+        defaultDate = defaults.object(forKey:"defaultDate") as? Date
+        dateRating = defaults.integer(forKey:"dateRating")
         
-        macrosCalculated()
-        incrementProgress(pros: pros)
-        
-        caloriesLabelFunction()
-        proteinLabelFunction()
-        fatsLabelFunction()
-        carbsLabelFunction()
-        
-//        breakfastProducts.numberOfLines = 0
-//        breakfastProducts.sizeToFit()
-//        lunchProducts.numberOfLines = 0
-//        lunchProducts.sizeToFit()
-//        dinnerProducts.numberOfLines = 0
-//        dinnerProducts.sizeToFit()
-        
-        print("brekkie count: ",breakfastList.count)
-        
-        for products in breakfastList {
-            breakfastResult += " " + products.item_name
+        //user's first time loading, set the date
+        if defaultDate == nil{
+            defaultDate = Date()
+            UserDefaults.standard.set(defaultDate, forKey: "defaultDate")
+            UserDefaults.standard.synchronize()
         }
-        for products in lunchList {
-            lunchResult += " " + products.item_name
-        }
-        for products in dinnerList {
-            dinnerResult += " " + products.item_name
-        }
-        
-        breakfastProducts.text = String(breakfastResult.prefix(18))
-        lunchProducts.text = String(lunchResult.prefix(18))
-        dinnerProducts.text = String(dinnerResult.prefix(18))
-           
+//        macrosCalculated()
+//        incrementProgress(pros: pros)
+//        
+//        caloriesLabelFunction()
+//        proteinLabelFunction()
+//        fatsLabelFunction()
+//        carbsLabelFunction()
+//
+////        breakfastProducts.numberOfLines = 0
+////        breakfastProducts.sizeToFit()
+////        lunchProducts.numberOfLines = 0
+////        lunchProducts.sizeToFit()
+////        dinnerProducts.numberOfLines = 0
+////        dinnerProducts.sizeToFit()
+//
+//        print("brekkie count: ",breakfastList.count)
+//
+//        for products in breakfastList {
+//            breakfastResult += " " + products.item_name
+//        }
+//        for products in lunchList {
+//            lunchResult += " " + products.item_name
+//        }
+//        for products in dinnerList {
+//            dinnerResult += " " + products.item_name
+//        }
+//
+//        breakfastProducts.text = String(breakfastResult.prefix(18))
+//        lunchProducts.text = String(lunchResult.prefix(18))
+//        dinnerProducts.text = String(dinnerResult.prefix(18))
+//
             // Do any additional setup after loading the view.
         }
 
     override func viewWillAppear(_ animated: Bool) {
+        
+//        let defaults = getUserDefaults()
     
         navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
@@ -188,6 +200,60 @@ class customViewController: UIViewController {
         {
             userNameLabel.text = defaultName.uppercased() + "'S TODAY"
         }
+        
+//        defaultDate = defaults.object(forKey:"defaultDate") as? Date
+        
+        if (dateChanged(lastDate: defaultDate!)){
+            
+            dateRating = rateDay()
+            UserDefaults.standard.set(dateRating, forKey:"dateRating")
+            UserDefaults.standard.synchronize()
+            
+            //reset everything
+            proteinProgress = 0.0
+            carbsProgress = 0.0
+            fatsProgress = 0.0
+            calProgress = 0.0
+            
+            ProteinDailyProgress.progress = proteinProgress
+            CarbsDailyProgress.progress = carbsProgress
+            FatsDailyProgress.progress = fatsProgress
+            CaloriesDailyProgress.progress = calProgress
+            
+            caloriesLabelFunction()
+            proteinLabelFunction()
+            fatsLabelFunction()
+            carbsLabelFunction()
+            
+            breakfastProducts.text = ""
+            lunchProducts.text = ""
+            dinnerProducts.text = ""
+            
+        }else{
+            
+            macrosCalculated()
+            incrementProgress(pros: pros)
+            
+            caloriesLabelFunction()
+            proteinLabelFunction()
+            fatsLabelFunction()
+            carbsLabelFunction()
+            for products in breakfastList {
+                breakfastResult += " " + products.item_name
+            }
+            for products in lunchList {
+                lunchResult += " " + products.item_name
+            }
+            for products in dinnerList {
+                dinnerResult += " " + products.item_name
+            }
+                   
+            breakfastProducts.text = String(breakfastResult.prefix(18))
+            lunchProducts.text = String(lunchResult.prefix(18))
+            dinnerProducts.text = String(dinnerResult.prefix(18))
+            
+        }
+                  
         
         /*
         if  breakfast != nil
@@ -281,6 +347,67 @@ class customViewController: UIViewController {
         self.carbsLabel.text = String(format: "%.0f", CarbsDailyProgress.progress * Float(carbs) ) + "/" + String(Int(carbs))
     }
     
+    func dateChanged(lastDate: Date) -> Bool{
+        let now = Date()
+        var result: Bool = false
+        
+        //if lastDate is today, date hasn't changed so return false
+        if lastDate == now{
+            return result
+        } else {
+            result = true
+            return result
+        }
+    }
+    
+    func rateDay() -> Int{
+        var rating: Int = 0  //return value for rating of the day [1-good, 2-okay, 3-bad]
+
+        let proRating: Int  = progressWithIn(goal:pros, progress:proteinProgress)
+        let carbRating: Int  = progressWithIn(goal:carbs, progress:carbsProgress)
+        let fatRating: Int  = progressWithIn(goal:fat, progress:fatsProgress)
+        let calRating: Int  = progressWithIn(goal:cals, progress:calProgress)
+        
+        let totalRating = proRating + carbRating + fatRating + calRating
+        
+        //if rating = 40, it was a Good day
+        // [4*10 or 3*5+25]
+        if (totalRating == 40){
+            rating = 1
+        }
+        //if rating is somewhere between 40 and 100, it was an Okay day
+        else if (totalRating <= 100){
+            rating = 2
+        }
+        //if rating is greater than 100, the day was Bad
+        else {
+            rating = 3
+        }
+        
+        return rating
+    }
+    
+    func progressWithIn(goal: Double, progress: Float) -> Int{
+        
+        var withIn: Int = 100
+        
+        if (((goal - 25)...(goal + 25)).contains(Double(progress))){
+            if (((goal - 15)...(goal + 15)).contains(Double(progress))){
+                if (((goal - 10)...(goal + 10)).contains(Double(progress))){
+                    if (((goal - 5)...(goal + 5)).contains(Double(progress))){
+                        withIn = 5
+                    }
+                    withIn = 10
+                }
+                withIn = 15
+            }
+            withIn = 25
+        }
+        
+        //progress is withIn [return value] of the goal
+        return withIn
+    }
+    
     /*
     func updateCarbsProg()
     {
@@ -332,6 +459,8 @@ class customViewController: UIViewController {
         defaults.set(defaultHeight, forKey: "defaultHeight")
         defaults.set(defaultGoalRow,forKey: "defaultGoal")
         defaults.set(defaultActivityRow,forKey: "defaultActivity")
+        defaults.set(defaultDate, forKey: "defaultDate")
+        defaults.set(dateRating, forKey: "dateRating")
         defaults.synchronize()
         }
         return defaults

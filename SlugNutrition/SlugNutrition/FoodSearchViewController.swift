@@ -90,7 +90,9 @@ class FoodSearchViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         let defaults = getUserDefaults()
         foodNameLabel.text = defaults.string(forKey:"defaultFood") ?? ""
+        showBrandResults()
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         UserDefaults.standard.removeObject(forKey: "defaultFood")
@@ -158,5 +160,11 @@ class FoodSearchViewController: UIViewController{
             brandCProsLabel.text = String(searchedFoodList[2].nf_protein)
         }
     }
+    
+    @IBAction func searchButtonPressed(_ sender: UIButton) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "pageTwo") as? UITableViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
           
 }

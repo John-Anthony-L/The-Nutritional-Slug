@@ -45,6 +45,7 @@ class ProgressViewController: UIViewController {
     var defaultOkay: Int = 0
     var defaultBad: Int = 0
     var defaultDate: Date?
+    var dateRating: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,18 +54,24 @@ class ProgressViewController: UIViewController {
         defaultOkay = defaults.integer(forKey:"defaultOkay")
         defaultBad = defaults.integer(forKey:"defaultBad")
         defaultDate = defaults.object(forKey:"defaultDate") as? Date
+        dateRating = defaults.integer(forKey:"dateRating")
 
         if (defaultDate == nil){
             //user's first time accessing progress page, so set date to now
             defaultDate = Date()
+            UserDefaults.standard.set(defaultDate, forKey: "defaultDate")
         }
         else{
             updateLabels(lastDate: defaultDate!, good: defaultGood, okay: defaultOkay, bad: defaultBad)
         }
+        
+        //sync new values from above if-else statements
+        UserDefaults.standard.synchronize()
+        
         // Do any additional setup after loading the view.
-        goodLabel.text = String(defaultGood)
-        okayLabel.text = String(defaultOkay)
-        badLabel.text = String(defaultBad)
+        self.goodLabel.text = String(defaultGood)
+        self.okayLabel.text = String(defaultOkay)
+        self.badLabel.text = String(defaultBad)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,12 +90,11 @@ class ProgressViewController: UIViewController {
         if (defaults.object(forKey: "defaultName") == nil) {
             // set initial defaults
             
-            //save as Date
-            defaults.set(defaultDate, forKey: "defaultDate")
-            
             defaults.set(defaultGood, forKey: "defaultGood")
             defaults.set(defaultOkay,forKey: "defaultOkay")
             defaults.set(defaultBad, forKey: "defaultBad")
+            defaults.set(defaultDate, forKey: "defaultDate")
+            defaults.set(dateRating, forKey: "dateRating")
             defaults.synchronize()
         }
         return defaults
@@ -102,7 +108,7 @@ class ProgressViewController: UIViewController {
     
     func updateLabels(lastDate: Date, good: Int, okay: Int, bad: Int){
         
-        let defaults = getUserDefaults()
+        let defaults = UserDefaults.standard
         
         let now = Date()
         
@@ -117,7 +123,6 @@ class ProgressViewController: UIViewController {
             defaults.set(zero, forKey: "defaultBad")
             defaults.set(now, forKey: "defaultDate")
         }
-        
         //if date is the same as the lastDate in userDefaults, do nothing
         else if (lastDate == now){
             print("Date has not changed")
@@ -128,6 +133,16 @@ class ProgressViewController: UIViewController {
             print(days)
             
             //update color for lastDate !!!
+            if dateRating == 1{
+                defaultGood += 1
+            } else if dateRating == 2{
+                defaultOkay += 1
+            } else if dateRating == 3{
+                defaultBad += 1
+            } else {
+                //throw exception?
+                print("ERROR")
+            }
             
             //if there are days between lastDate and now (days where the user didn't open the app),
             //mark those days as red
