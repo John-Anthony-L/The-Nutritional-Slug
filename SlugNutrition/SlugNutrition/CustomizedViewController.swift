@@ -76,7 +76,7 @@ class CustomizedViewController: UIViewController {
     func updateCarbsValue(){
         defaultCarbs = Double(carbsSlider.value)
         product.nf_total_carbohydrate = Double(carbsSlider.value)
-        carbsTextField.text = "\(defaultCarbs)"
+        carbsTextField.text = String(format: "%.2f",defaultCarbs)
         
         let defaults = UserDefaults.standard
         defaults.set(defaultCarbs, forKey: "defaultCarbs")
@@ -86,8 +86,8 @@ class CustomizedViewController: UIViewController {
     
     @IBAction func CarbstextFieldDidChange(textField: UITextField) {
         if let stringValue = textField.text{
-            if let intValue = Int(stringValue){
-                carbsSlider.setValue(Float(intValue), animated: true)
+            if let doubleValue = Double(stringValue){
+                carbsSlider.setValue(Float(Double(doubleValue)), animated: true)
             }
         }
         updateCarbsValue()
@@ -96,7 +96,7 @@ class CustomizedViewController: UIViewController {
      func updateFatsValue(){
         defaultFats = Double(fatSlider.value)
         product.nf_total_fat = Double(fatSlider.value)
-        fatTextField.text = "\(defaultFats)"
+        fatTextField.text = String(format: "%.2f",defaultFats)
         
         let defaults = UserDefaults.standard
         defaults.set(defaultFats, forKey: "defaultFats")
@@ -105,8 +105,8 @@ class CustomizedViewController: UIViewController {
     
     @IBAction func FatstextFieldDidChange(textField: UITextField) {
         if let stringValue = textField.text{
-            if let intValue = Int(stringValue){
-                fatSlider.setValue(Float(intValue), animated: true)
+            if let doubleValue = Double(stringValue){
+                fatSlider.setValue(Float(doubleValue), animated: true)
             }
         }
         updateFatsValue()
@@ -115,7 +115,7 @@ class CustomizedViewController: UIViewController {
      func updateCalsValue(){
         defaultCals = Double(caloriesSlider.value)
         product.nf_calories = Double(caloriesSlider.value)
-        caloriesTextField.text = "\(defaultCals)"
+        caloriesTextField.text = String(format: "%.2f",defaultCals)
         
         let defaults = UserDefaults.standard
         defaults.set(defaultCals, forKey: "defaultCals")
@@ -124,8 +124,8 @@ class CustomizedViewController: UIViewController {
     
    @IBAction func CalstextFieldDidChange(textField: UITextField) {
     if let stringValue = textField.text{
-        if let intValue = Int(stringValue){
-            caloriesSlider.setValue(Float(intValue), animated: true)
+        if let doubleValue = Double(stringValue){
+            caloriesSlider.setValue(Float(doubleValue), animated: true)
         }
     }
     updateCalsValue()
@@ -136,7 +136,7 @@ class CustomizedViewController: UIViewController {
         defaultPros = Double(proteinSlider.value)
         product.nf_protein = Double(proteinSlider.value)
         print("protein: ",String(product.nf_protein))
-         proteinTextField.text = "\(defaultPros)"
+         proteinTextField.text = String(format: "%.2f",defaultPros)
          let defaults = UserDefaults.standard
          defaults.set(defaultPros, forKey: "defaultPros")
          defaults.synchronize()
@@ -144,8 +144,8 @@ class CustomizedViewController: UIViewController {
     
     @IBAction func ProstextFieldDidChange(textField: UITextField) {
            if let stringValue = textField.text{
-               if let intValue = Int(stringValue){
-                   proteinSlider.setValue(Float(intValue), animated: true)
+               if let doubleValue = Double(stringValue){
+                   proteinSlider.setValue(Float(doubleValue), animated: true)
                }
            }
                updateProsValue()
@@ -189,6 +189,6 @@ class CustomizedViewController: UIViewController {
         }
     }
     
-
+   
     
 }

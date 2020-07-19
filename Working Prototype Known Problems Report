@@ -1,0 +1,39 @@
+Working Prototype Known Problems Report 
+Product name: The Nutritional Slug
+Team Name: Gold Team 
+Project Owner: John Lara 
+Team Members: Vidisha Nevatia,Dylan Salak, Sanyam Sachdeva,Roberto Oregon
+Date : 19 July 2020
+
+List of functions not working correctly
+
+
+input/action that causes failure: When you close app completely and open it again - progress in today page is lost 
+location of fault (if known): Values only in struct 
+possible action for removal of fault: Store Values maybe in NSUSerDafaults
+
+input/action that causes failure: After I search something, if I change the name of the product, the values do not reflect the actual values. On pressing enter - 
+                                    the number of products keeps changing.
+location of fault (if known): SearchView
+possible action for removal of fault: ?
+
+input/action that causes failure: On adding item for the same meal again and again - the food list would not show it, however, the progress keeps increasing 
+location of fault (if known):
+possible action for removal of fault: 
+
+input/action that causes failure: On pressing add to daily list repititively, the progress keeps increasing 
+location of fault (if known):
+possible action for removal of fault: 
+
+input/action that causes failure: Once progress reached to its full capacity, the number won't increase more
+location of fault (if known):
+possible action for removal of fault: 
+
+input/action that causes failure: If app is working and setting is cleared - the app keeps the macros level and the name - It doesnot change to default values, 
+                                  nor asks the user to enter settings value 
+location of fault (if known):
+possible action for removal of fault: 
+
+input/action that causes failure: sliders do not go over 100
+location of fault (if known): customized view
+possible action for removal of fault: 

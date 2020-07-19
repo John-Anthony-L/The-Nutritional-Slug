@@ -154,7 +154,7 @@ class customViewController: UIViewController {
         }
 //        macrosCalculated()
 //        incrementProgress(pros: pros)
-//        
+//
 //        caloriesLabelFunction()
 //        proteinLabelFunction()
 //        fatsLabelFunction()
@@ -467,4 +467,5 @@ class customViewController: UIViewController {
     }
     
 }
+
 

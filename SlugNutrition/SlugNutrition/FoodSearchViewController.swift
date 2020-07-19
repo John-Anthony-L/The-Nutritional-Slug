@@ -13,7 +13,6 @@ var searchedFoodList: [MealProducts] = []
 class FoodSearchViewController: UIViewController{
   
 
-    @IBOutlet weak var addToDailyList: UIButton!
     @IBOutlet weak var mealSegmentedControl: UISegmentedControl!
     
     @IBOutlet weak var brandALabel: UILabel!
@@ -41,6 +40,7 @@ class FoodSearchViewController: UIViewController{
     var brandCFood: MealProducts = MealProducts(item_name: "generic", brand_name: "meh", nf_calories: 100.0, nf_total_fat: 100.0, nf_total_carbohydrate: 100.0, nf_protein: 100.0)
     
     var defaultFood:String = ""
+    var mealSelected = 0 
 
     //let meal = ["Breakfast", "Lunch", "Dinner"]
     
@@ -98,6 +98,7 @@ class FoodSearchViewController: UIViewController{
         UserDefaults.standard.removeObject(forKey: "defaultFood")
         UserDefaults.standard.synchronize()
         foodNameLabel.text = ""
+         searchedFoodList = []
     }
     
     func getUserDefaults() -> UserDefaults {
@@ -115,27 +116,33 @@ class FoodSearchViewController: UIViewController{
         UserDefaults.standard.synchronize()
         
         let defaults = UserDefaults.standard
-        let mealSelected = defaults.integer(forKey: "defaultMeal")
+         mealSelected = defaults.integer(forKey: "defaultMeal")
         print("meal int: ",mealSelected)
     }
     
-    @IBAction func addToDailyList(_ sender: UIButton) {
-        let defaults = UserDefaults.standard
-        let mealSelected = defaults.integer(forKey: "defaultMeal")
-        print("mealselected",mealSelected)
-        
-        
-        if mealSelected == 0{
-            print("breakfast")
-            breakfastList.append(searchedFoodList[0])
-        }else if mealSelected == 1 {
-            print("lunch")
-            lunchList.append(searchedFoodList[0])
-        }else if mealSelected == 2 {
-            print("dinner")
-            dinnerList.append(searchedFoodList[0])
-        }
+    @IBAction func addToTarget(_ sender: UIButton) {
+//        let defaults = UserDefaults.standard
+//                mealSelected = defaults.integer(forKey: "defaultMeal")
+//               print("mealselected",mealSelected)
+               
+               
+               if mealSelected == 0{
+                   print("breakfast")
+                   breakfastList.append(searchedFoodList[0])
+               }else if mealSelected == 1 {
+                   print("lunch")
+                   lunchList.append(searchedFoodList[0])
+               }else if mealSelected == 2 {
+                   print("dinner")
+                   dinnerList.append(searchedFoodList[0])
+               }
+//        let controller:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "customViewController") as UIViewController
+//         self.present(controller, animated: true, completion: nil)
     }
+    
+    
+    
+    
     func showBrandResults(){
         
         if searchedFoodList.count > 1 {
