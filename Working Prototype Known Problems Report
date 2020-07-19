@@ -37,3 +37,6 @@ possible action for removal of fault:
 input/action that causes failure: sliders do not go over 100
 location of fault (if known): customized view
 possible action for removal of fault: 
+
+List of suggested user stories/acceptance criteria for actual acceptance test:
+
