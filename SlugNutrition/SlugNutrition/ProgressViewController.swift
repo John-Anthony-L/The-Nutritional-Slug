@@ -164,7 +164,7 @@ class ProgressViewController: UIViewController {
             print("ERROR")
         }
         
-        //implement a notification observer for UIApplicationSignificantTimeChangeNotification
+        //implement a notification observer for UIApplicationSignificantTimeChangeNotification ???
     }
     
     /*
