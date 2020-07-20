@@ -19,7 +19,7 @@ possible action for removal of fault: Add the clear button - which creates new b
 
 input/action that causes failure: On adding item for the same meal again and again - the food list would not show it, however, the progress keeps increasing 
 location of fault (if known): Today Tab
-possible action for removal of fault: Create a list of table to add the entire food log. 
+possible action for removal of fault: Create a list of table to add the entire food log.
 
 input/action that causes failure: On pressing add to daily list repititively, the progress keeps increasing 
 location of fault (if known):
@@ -32,7 +32,7 @@ possible action for removal of fault: Allow to create overflow
 input/action that causes failure: If app is working and setting is cleared - the app keeps the macros level and the name - It doesnot change to default values, 
                                   nor asks the user to enter settings value 
 location of fault (if known):
-possible action for removal of fault: Reset the entire app or lock user until they enter values. 
+possible action for removal of fault: Reset the entire app or lock user until they enter values.
 
 input/action that causes failure: sliders do not go over 100
 location of fault (if known): customized view
