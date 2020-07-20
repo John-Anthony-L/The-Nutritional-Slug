@@ -106,7 +106,6 @@
 		52A6218A2284779200127CD4 = {
 			isa = PBXGroup;
 			children = (
-				F464F9F524B9FC1100F4AFF7 /* SlugNutrition-Bridging-Header.h */,
 				52A621952284779200127CD4 /* SlugNutrition */,
 				52A621942284779200127CD4 /* Products */,
 			);
@@ -123,6 +122,7 @@
 		52A621952284779200127CD4 /* SlugNutrition */ = {
 			isa = PBXGroup;
 			children = (
+				F464F9F524B9FC1100F4AFF7 /* SlugNutrition-Bridging-Header.h */,
 				52A621962284779200127CD4 /* AppDelegate.swift */,
 				C1DE889C24C0CCEB0074B336 /* ProgressViewController.swift */,
 				52A621AE2284A70200127CD4 /* ProductsTableViewController.swift */,
@@ -133,6 +133,10 @@
 				C129F49424C54C1A0052E7B9 /* Main.storyboard */,
 				F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */,
 				F46A3A0424B2729F002AB77A /* SettingsViewController.swift */,
+				F464F9DD24B9FA0D00F4AFF7 /* FSCalendar.h */,
+				F464F9D024B9FA0D00F4AFF7 /* FSCalendar.m */,
+				F464F9CC24B9FA0D00F4AFF7 /* FSCalendarAppearance.h */,
+				F464F9E124B9FA0D00F4AFF7 /* FSCalendarAppearance.m */,
 				F464F9C124B9FA0D00F4AFF7 /* FSCalendar */,
 				6226FF9424C02F63004AF664 /* MealProducts.swift */,
 				F46A3A0024B2268D002AB77A /* RoundButton.swift */,
@@ -157,11 +161,9 @@
 				F464F9C924B9FA0D00F4AFF7 /* FSCalendarCalculator.h */,
 				F464F9CA24B9FA0D00F4AFF7 /* FSCalendarHeaderView.h */,
 				F464F9CB24B9FA0D00F4AFF7 /* FSCalendarConstants.h */,
-				F464F9CC24B9FA0D00F4AFF7 /* FSCalendarAppearance.h */,
 				F464F9CD24B9FA0D00F4AFF7 /* FSCalendarTransitionCoordinator.h */,
 				F464F9CE24B9FA0D00F4AFF7 /* FSCalendarCell.m */,
 				F464F9CF24B9FA0D00F4AFF7 /* FSCalendarStickyHeader.m */,
-				F464F9D024B9FA0D00F4AFF7 /* FSCalendar.m */,
 				F464F9D124B9FA0D00F4AFF7 /* FSCalendarCollectionViewLayout.m */,
 				F464F9D224B9FA0D00F4AFF7 /* FSCalendarWeekdayView.m */,
 				F464F9D324B9FA0D00F4AFF7 /* FSCalendarCollectionView.h */,
@@ -174,11 +176,9 @@
 				F464F9DA24B9FA0D00F4AFF7 /* FSCalendarCalculator.m */,
 				F464F9DB24B9FA0D00F4AFF7 /* FSCalendarHeaderView.m */,
 				F464F9DC24B9FA0D00F4AFF7 /* FSCalendarStickyHeader.h */,
-				F464F9DD24B9FA0D00F4AFF7 /* FSCalendar.h */,
 				F464F9DE24B9FA0D00F4AFF7 /* FSCalendarCell.h */,
 				F464F9DF24B9FA0D00F4AFF7 /* FSCalendarTransitionCoordinator.m */,
 				F464F9E024B9FA0D00F4AFF7 /* Info.plist */,
-				F464F9E124B9FA0D00F4AFF7 /* FSCalendarAppearance.m */,
 			);
 			path = FSCalendar;
 			sourceTree = "<group>";
@@ -454,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertooregon.SlugNutrition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SlugNutrition-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlugNutrition/SlugNutrition-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,7 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertooregon.SlugNutrition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SlugNutrition-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlugNutrition/SlugNutrition-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

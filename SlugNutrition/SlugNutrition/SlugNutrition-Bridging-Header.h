@@ -9,5 +9,7 @@
 #ifndef SlugNutrition_Bridging_Header_h
 #define SlugNutrition_Bridging_Header_h
 
+#import "FSCalendar.h"
+#import "FSCalendarAppearance.h"
 
 #endif /* SlugNutrition_Bridging_Header_h */
