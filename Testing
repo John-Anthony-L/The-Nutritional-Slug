@@ -1,0 +1,24 @@
+ a list of the tests you have performed for each unit and for the entire system. 
+For acceptance test, you will choose a number of tests from the system test to demonstrate the functionality of the system. Automated build and unit tests. 
+FOR EXTRA CREDIT, your project can be automatically built (using Jenkins/Hudson, and unit tests automatically run. It is possible to run the product
+executable that is created by this automated build process). EXTRA CREDIT for automatic building and testing.
+
+
+• Unit tests (25 points):  There should be details (can be in a separate file in the directory) provided by each team member about the module and the
+functional testing they have done.
+Each team member picks a module or module and lists the equivalence classes and the test cases selected to cover all equivalence classes.
+
+Dylan - Progress Page
+
+
+John -  ProductRequest, WebScraping
+
+
+Roberto -  ProductTableViewController, FoodSearchViewController
+
+
+Sanyam - CustomViewController
+
+
+Vidisha - CustomizedViewCobtroller, SettingsViewController
+
