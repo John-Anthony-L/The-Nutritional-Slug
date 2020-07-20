@@ -1,0 +1,147 @@
+System and Unit Test Report
+Product name: The Nutritional Slug
+Team Name: Gold Team 
+Project Owner: John Lara 
+Developers: Vidisha Nevatia,Dylan Salak, Sanyam Sachdeva,Roberto Oregon
+Date: 19 July 2020
+
+System Test scenarios :
+
+A. User story 1 from sprint 1: As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose 
+                                from and eat the healthiest option available
+
+Scenario:
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'
+3. select ‘Press me to search’
+4. select the magnifying glass 
+5. type <Pizza>
+• user should see a list of items with the names and macros on there 
+6. select the top most item
+7. Press back
+• user should be able to see the top 3 results with the lowest macros in ascending order 
+
+B. User story 2 from sprint 1: As a user of the app itself, I want to be able to easily navigate through an intuitive user interface so that I know 
+                              where to search for food, look at my progress, see my daily nutritional goals, and to be able to calculate my required macronutrients.
+Scenario: 
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'
+• User is able to see the Today tab 
+3. select 'Progress' Tab
+• User is able to see the Progress tab
+4. select 'Settings' Tab
+• User is able to see the Settings tab
+5.select the 'Today' tab
+6. Select 'Breakfast', 'Lunch' or 'Dinner' on the today page
+• the user is able see the page where they can add in cutom values of their food
+7. Push the page down
+• User is able to see the 'Today' tab again
+8. select  ‘Press me to search’
+9. select the magnifying glass 
+• User is able to see the search page where they can search for a food to find healthiest option  
+10. press back from navigation bar 
+• User can view the page to add searched food item to the today page
+                             
+C. User Story 1 from Sprint 2: As a health-conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so
+                              that I know exactly what my target daily intake should be. 
+Scenario:
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'  
+3. Directed staright to settings page 
+4.  
+- Type Name: <Vidi>
+- Selected Gender: <Female>
+- Type Age: <20>
+- Type Weight: <125>
+- Type Height: <64>
+- Choose goal: <Maintain>
+- Choose daily activity level - <Sedentary : Little/No exercise">
+- Press Lets go
+• The User should be directed to the today page and will be able to see the macros target on the right side of each progress bar
+
+D. User Story 2 from Sprint 2: As a product tester, I need to be able to see that the search function works with most, if not all, searches.
+
+Scenario: 
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'
+3. select ‘Press me to search’
+4. select the magnifying glass 
+5. type <Pizza>
+• user should see a list of items with the names and macros on there 
+    
+E. User Story 3 from Sprint 2: As a user, I want to be able to select brands and add to my daily diet.
+
+Scenario:
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'
+3. Select 'Breakfast', 'Lunch' or 'Dinner' on the today page
+• the user is able see the page where they can add in cutom values of their food
+4.
+- type name: <waffles>
+- type brand: <eggo>
+- select meal: <breakfast>
+- type carbs: <16>
+- type fat: <1.2>
+- type cals: <80>
+- type proteins: <2.2>
+5. Press 'let's go'
+• the user is able see the progress of their macros they have consumed so far and the food item they just added
+
+    
+F. User Story 1 from Sprint 3: As a busy user, I want to be see my food results sync with app so that all information in the app sets up according to
+                                my chosen food item.
+                                
+Scenario:
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'
+3. select ‘Press me to search’
+4. select the magnifying glass 
+5. type <Pizza>
+• user should see a list of items with the names and macros on there 
+6. select the top most item
+7. Press back
+• user should be able to see the name of the selectedfood item under what are you craving for and the results in ascending order of macros
+8. Select <Lunch> under meal
+9. Select 'Add to daily list'
+10. Select 'Done' on navigation bar on top right
+• the user is able see the progress of their macros they have consumed so far and the food item they just added
+
+G. User Story 2 from Sprint 3: As a health-conscious user, I need to be able to see that the progress of my daily targets, to stay motivated.
+
+Scenario:
+1. start The Nutritinal Slug app 
+2. select ‘let's get healthy'
+• The user is able to see an alert when progress crosses target and target font changes to red and stops adding more numbers 
+3. Select progress tab
+• User is able to see the progress throughout the month - green for good days, yellow for average days and, red for bad days
+• User is also able able to see the count of the numbers of the green, yellow and red days in that month
+    
+F. User Story 3 from Sprint 3: As a user, I want to be see a clean UI, that flows perfectly, so that I can use the app easily.
+
+Scenario:
+1. start The Nutritinal Slug app
+• User is able to see a launch screen followed by a slieshow of what our app realy does 
+2. select ‘let's get healthy'
+• User is able to see the Today tab which says 'User's Today' and is taken to the settings page automatically
+3.  
+- Type Name: <Vidi>
+- Selected Gender: <Female>
+- Type Age: <20>
+- Type Weight: <125>
+- Type Height: <64>
+- Choose goal: <Maintain>
+- Choose daily activity level - <Sedentary : Little/No exercise">
+- Press Lets go
+• The User should be directed to the today page and will be able to see <Vidi>'s Today
+3. select 'Progress' Tab
+• User is able to see the Progress tab
+4.select the 'Today' tab
+5. Select 'Breakfast', 'Lunch' or 'Dinner' on the today page
+• the user is able see the page where they can add in cutom values of their food
+6. Push the page down
+• User is able to see the 'Today' tab again
+7. select  ‘Press me to search’
+8. select the magnifying glass 
+• User is able to see the search page where they can search for a food to find healthiest option  
+9. press back from navigation bar 
+• User can view the page to add searched food item to the today page
