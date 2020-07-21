@@ -15,6 +15,40 @@ John -  ProductRequest, WebScraping
 
 
 Roberto -  ProductTableViewController, FoodSearchViewController
+ProductTableViewController:
+UserStory:
+As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest option available
+
+Testing:
+User Story Fulfillment:
+ Once a user has begun the search and transitioned to this page from the previous one, display a search bar and empty table of cells
+ Allow the user to enter a string and query our database (csv) for items containing that string
+ Read results from our database
+ Display the results onto the screen in a list format for the user
+ Allow the user to select an item and see its associated macronutrients
+ Once a selection has been made, send the selected items information to the FoodSearchViewController page
+
+Test Patterns included:
+ Test Spy: print statements sent to the console to identify and verify values being stored and passed to the functions
+ Test Stub: created a list of indirect inputs to enter into the searchbar
+ 
+Function testing: 
+To accomplish the user story, created 3 functions:
+ searchBarButtonClicked( searchBar: UISearchBar)
+  After a user has entered a string into the searchbar and clicked the search button, a product request is sent that returns a list of products. The searched 
+  for items were based on a list of known working product searches.The products were then put into a second list to display for the user. Test spy console 
+  statements were used to verify the contents of the returned list and to verify that their attributes were properly added as well. If attributes were not 
+  added correctly (for ex: carb varlue were missing) then the test spy console statements were used to check each value as they were entered.
+ Override func tableview()  // selection and de-selection
+  After the list was populated, the objects in the list were displayed for the user to see. Selection was also implemented to allow the user to view the 
+  macronutrients of each item if they were selected by touching the item on screen. If the selection did not show the macronutrients, then, using console 
+  statements, the object was checked to verify that it was the selected object and that it had its associated macro attributes. Next, the cell was checked 
+  to ensure that it would properly expand to display the macro nutrients. 
+ resultsToSearchPage()
+  After an item was selected and added to a list of the top 3 food products, this function sent the objects to the previous search page. If the previous page 
+  did not receive the item, the function was checked to make sure that it was called appropriately, that it appended the objects to its list, and finally that 
+  it actually stored the objects in the correct order. 
+
 
 FoodSearchViewController:
 UserStory:
