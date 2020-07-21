@@ -1,24 +1,161 @@
- a list of the tests you have performed for each unit and for the entire system. 
-For acceptance test, you will choose a number of tests from the system test to demonstrate the functionality of the system. Automated build and unit tests. 
-FOR EXTRA CREDIT, your project can be automatically built (using Jenkins/Hudson, and unit tests automatically run. It is possible to run the product
-executable that is created by this automated build process). EXTRA CREDIT for automatic building and testing.
-
-
-• Unit tests (25 points):  There should be details (can be in a separate file in the directory) provided by each team member about the module and the
-functional testing they have done.
-Each team member picks a module or module and lists the equivalence classes and the test cases selected to cover all equivalence classes.
-
+___________________________________________________________________________________________________________________________________________________
 Dylan - Progress Page
 
-
+___________________________________________________________________________________________________________________________________________________
 John -  ProductRequest, WebScraping
 
+WebScraping:
+User Story:
+As a user I would like to be able to see the catalog of items that the Store Safeway has.
 
+Testing:
+
+User Story Fulfillment:
+ The program gets a csv file containing the entire catalog of items from safeway. It does this by Web-Scraping all the food data out of their website
+
+Test Patterns included:
+Test Spy:  
+print statements to verify that the correct items were pulled and correct websites were being accessed, as well as a test .csv that collected all the  items I   used
+
+Test Stub: Used a single page to pull the values, as well as dummy variables to verify correct push into csv
+
+Functional Testing:
+ To accomplish this user story, created 4 functions
+
+	read_link(url):
+Once the user gives the url, it is converted into a clickable link, by adding the HTTP//Safeway.com in order to access the page, it returns a fully accessible link.
+Was tested with numerous individual pages on safeway’s website. 
+
+	GetItemsFromPage(url):
+ As in all future functions for webscraping, it finds a specific div and class name in the page and saves all of those instances in a list.
+ This function is to read all links to the Item’s subpages
+
+	GetSubitemsFromPage(url):
+ This function is to go into the individual pages that have the name, and product information.
+ Tested by using a print statement and manually verified to make sure it connected to the right subpages
+
+	Get_Data_from_item_page(page):
+This function intakes all the data and saves the correct containers, one with the product name, another with the product information. Then it searches for the  correct information. Since there are only two possible ways that the table is formatted we added if statement to correctly pull the information. It then returns  a .csv file with the information that was saved which is formated by two helper functions FomatInfo(String macro), CalorieInfo(String calorie)
+The way This was tested was by using only one page, then by using five different pages, unfortunately there was no way of testing with custom information without myself creating a HTML document formatted in nearly the exact same way as the original page.
+
+
+___________________________________________________________________________________________________________________________________________________
 Roberto -  ProductTableViewController, FoodSearchViewController
+ProductTableViewController:
+UserStory:
+As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest option available
 
+Testing:
+User Story Fulfillment:
+ Once a user has begun the search and transitioned to this page from the previous one, display a search bar and empty table of cells
+ Allow the user to enter a string and query our database (csv) for items containing that string
+ Read results from our database
+ Display the results onto the screen in a list format for the user
+ Allow the user to select an item and see its associated macronutrients
+ Once a selection has been made, send the selected items information to the FoodSearchViewController page
 
+Test Patterns included:
+ Test Spy: print statements sent to the console to identify and verify values being stored and passed to the functions
+ Test Stub: created a list of indirect inputs to enter into the searchbar
+ 
+Function testing: 
+To accomplish the user story, created 3 functions:
+ searchBarButtonClicked( searchBar: UISearchBar)
+  After a user has entered a string into the searchbar and clicked the search button, a product request is sent that returns a list of products. The searched 
+  for items were based on a list of known working product searches.The products were then put into a second list to display for the user. Test spy console 
+  statements were used to verify the contents of the returned list and to verify that their attributes were properly added as well. If attributes were not 
+  added correctly (for ex: carb varlue were missing) then the test spy console statements were used to check each value as they were entered.
+ Override func tableview()  // selection and de-selection
+  After the list was populated, the objects in the list were displayed for the user to see. Selection was also implemented to allow the user to view the 
+  macronutrients of each item if they were selected by touching the item on screen. If the selection did not show the macronutrients, then, using console 
+  statements, the object was checked to verify that it was the selected object and that it had its associated macro attributes. Next, the cell was checked 
+  to ensure that it would properly expand to display the macro nutrients. 
+ resultsToSearchPage()
+  After an item was selected and added to a list of the top 3 food products, this function sent the objects to the previous search page. If the previous page 
+  did not receive the item, the function was checked to make sure that it was called appropriately, that it appended the objects to its list, and finally that 
+  it actually stored the objects in the correct order. 
+
+___________________________________________________________________________________________________________________________________________________
+
+FoodSearchViewController:
+UserStory:
+As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest 
+option available
+
+Testing:
+User Story Fulfillment::
+ Allow a User to search for food items
+ Once an item has been selected, allow the user to see how it compares to other potential items
+ Save the description and values for the selected item
+ Add the item to their daily food list
+	
+Test Patterns included:
+ Test Spy: print statements sent to the console to identify and verify values being stored and passed to the functions
+ Test Stub: created a list of indirect inputs to enter into the search bar
+	
+Function testing: 
+To accomplish the user story, created 3 functions and one object list:
+ searchButtonPressed(sender: UIButton)
+  This function/button would send the user to the ProductTableViewController page. Testing was straightforward, only had to make sure that the app transitioned 
+  to the correct page. Ran app, clicked the button and if it did not transition to the correct page, checked the xCode segue route and corrected it.
+ searchedFoodList: [MealProducts]
+  This was a list of objects that stored the values from the search list. The values were then displayed for the user to see. To test, a “test spy” was 
+  implemented to display the values of the list objects to the console. If the List was not populating correctly, the ProductTableViewController page was 
+  checked - since that was where the list obtained its values. If the list was correct
+ showBrandResults()
+  This function would take the values stored and display them on the screen for the user to see.To test, indirect inputs were used to create a list of objects 
+  then the app was run to verify that their values were displaying and displayed correctly. If the values were not displaying, then the function was checked 
+  to ensure that values were sent to the correct UILabel. If values were not displaying correctly (ex: protein should be 30g, but instead 25g was displayed) 
+  then the code was checked and, if necessary, restructured to display the correct value from the correct source. Test spy print statements to the console 
+  helped to verify that the correct source object was being used while the app display verified if the correct values were being displayed.
+ addToTarget()
+  This function would take the selected food item stored in the searchedFoodList and send it to the daily page where the food item would increment progress 
+  and be listed in its meal section (breakfast, lunch, or dinner). Test spy console prints were used to verify that the correct meal section was selected and 
+  then it was added to the list of foods on the daily page. If the item did not get sent properly (either it was in the wrong section or didn’t show up at all), 
+  the function was checked to make sure that it activated when the button was clicked and the console prints were verified to work on all meal sections.
+
+___________________________________________________________________________________________________________________________________________________
 Sanyam - CustomViewController
 
+___________________________________________________________________________________________________________________________________________________
+SettingsViewController
 
-Vidisha - CustomizedViewCobtroller, SettingsViewController
+___________________________________________________________________________________________________________________________________________________
+Vidisha - CustomizedViewCobtroller
+
+Customized View Control 
+User Story: As a user, I want to be able to select brands and add to my daily diet.
+ 
+User story fulfillment - Be able to input values 
+		       Be able to send those values to the Today tab 
+ 
+Test Patters included: 
+manual testing by seeing the results are getting updated
+Tests Stubs: created random values to test it 
+
+Function Testing : 
+Functions created to accomplish user story: 
+defaultFoodNameChanged() // save food name
+// save update values of macros and be able to send it to today tab  
+defaultCarbsChanged()
+defaultFatsChanged()
+defaultCalsChanged()
+defaultProsChanged()
+mealSegmentedControl()
+updateCarbsValue()
+CarbstextFieldDidChange()
+updateFatsValue()
+FatstextFieldDidChange()
+updateCalsValue()
+CalstextFieldDidChange()
+updateProsValue()
+ProstextFieldDidChange()
+// save the values  
+saveButton()
+___________________________________________________________________________________________________________________________________________________
+ 
+ 
+ 
+
+
 

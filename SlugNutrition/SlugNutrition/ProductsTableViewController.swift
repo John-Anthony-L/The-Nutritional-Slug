@@ -125,7 +125,7 @@ class ProductsTableViewController: UITableViewController {
         UserDefaults.standard.set(cell?.textLabel?.text, forKey: "defaultFood") // saves text field text
         UserDefaults.standard.synchronize()
         let stuff = """
-        Protien:        \(selectedItem.nf_protein)g
+        Protein:        \(selectedItem.nf_protein)g
         Carbohydrates:  \(selectedItem.nf_total_carbohydrate)g
         Fats:           \(selectedItem.nf_total_fat)g
         """

@@ -38,6 +38,15 @@ input/action that causes failure: sliders do not go over 100
 location of fault (if known): customized view
 possible action for removal of fault: Adding a custom button to input exact number of macros if more than 100
 
+input/action that causes failure: warnings in UI and the UI only works properly with iphone 11 right now
+location of fault (if known): customized view
+possible action for removal of fault:  Fixing all warnings and making it compatible to all model sizes
+
+input/action that causes failure: progress does not function like it is supposed to 
+location of fault (if known): progressViewController
+possible action for removal of fault: Setting the code for the progress properly. Did not have enough time for it!
+
+
 List of suggested user stories/acceptance criteria for actual acceptance test:
 
 
