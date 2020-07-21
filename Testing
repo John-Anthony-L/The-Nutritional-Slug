@@ -16,6 +16,42 @@ John -  ProductRequest, WebScraping
 
 Roberto -  ProductTableViewController, FoodSearchViewController
 
+FoodSearchViewController:
+UserStory:
+As a health conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest 
+option available
+
+Testing:
+User Story Fulfillment::
+ Allow a User to search for food items
+ Once an item has been selected, allow the user to see how it compares to other potential items
+ Save the description and values for the selected item
+ Add the item to their daily food list
+	
+Test Patterns included:
+ Test Spy: print statements sent to the console to identify and verify values being stored and passed to the functions
+ Test Stub: created a list of indirect inputs to enter into the search bar
+	
+Function testing: 
+To accomplish the user story, created 3 functions and one object list:
+ searchButtonPressed(sender: UIButton)
+  This function/button would send the user to the ProductTableViewController page. Testing was straightforward, only had to make sure that the app transitioned 
+  to the correct page. Ran app, clicked the button and if it did not transition to the correct page, checked the xCode segue route and corrected it.
+ searchedFoodList: [MealProducts]
+  This was a list of objects that stored the values from the search list. The values were then displayed for the user to see. To test, a “test spy” was 
+  implemented to display the values of the list objects to the console. If the List was not populating correctly, the ProductTableViewController page was 
+  checked - since that was where the list obtained its values. If the list was correct
+ showBrandResults()
+  This function would take the values stored and display them on the screen for the user to see.To test, indirect inputs were used to create a list of objects 
+  then the app was run to verify that their values were displaying and displayed correctly. If the values were not displaying, then the function was checked 
+  to ensure that values were sent to the correct UILabel. If values were not displaying correctly (ex: protein should be 30g, but instead 25g was displayed) 
+  then the code was checked and, if necessary, restructured to display the correct value from the correct source. Test spy print statements to the console 
+  helped to verify that the correct source object was being used while the app display verified if the correct values were being displayed.
+ addToTarget()
+  This function would take the selected food item stored in the searchedFoodList and send it to the daily page where the food item would increment progress 
+  and be listed in its meal section (breakfast, lunch, or dinner). Test spy console prints were used to verify that the correct meal section was selected and 
+  then it was added to the list of foods on the daily page. If the item did not get sent properly (either it was in the wrong section or didn’t show up at all), 
+  the function was checked to make sure that it activated when the button was clicked and the console prints were verified to work on all meal sections.
 
 Sanyam - CustomViewController
 
