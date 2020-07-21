@@ -13,6 +13,41 @@ Dylan - Progress Page
 
 John -  ProductRequest, WebScraping
 
+WebScraping:
+User Story:
+As a user I would like to be able to see the catalog of items that the Store Safeway has.
+
+Testing:
+
+User Story Fulfillment:
+ The program gets a csv file containing the entire catalog of items from safeway. It does this by Web-Scraping all the food data out of their website
+
+Test Patterns included:
+Test Spy:  
+print statements to verify that the correct items were pulled and correct websites were being accessed, as well as a test .csv that collected all the  items I   used
+
+Test Stub: Used a single page to pull the values, as well as dummy variables to verify correct push into csv
+
+Functional Testing:
+ To accomplish this user story, created 4 functions
+
+	read_link(url):
+Once the user gives the url, it is converted into a clickable link, by adding the HTTP//Safeway.com in order to access the page, it returns a fully accessible link.
+Was tested with numerous individual pages on safeway’s website. 
+
+	GetItemsFromPage(url):
+ As in all future functions for webscraping, it finds a specific div and class name in the page and saves all of those instances in a list.
+ This function is to read all links to the Item’s subpages
+
+	GetSubitemsFromPage(url):
+ This function is to go into the individual pages that have the name, and product information.
+ Tested by using a print statement and manually verified to make sure it connected to the right subpages
+
+	Get_Data_from_item_page(page):
+This function intakes all the data and saves the correct containers, one with the product name, another with the product information. Then it searches for the  correct information. Since there are only two possible ways that the table is formatted we added if statement to correctly pull the information. It then returns  a .csv file with the information that was saved which is formated by two helper functions FomatInfo(String macro), CalorieInfo(String calorie)
+The way This was tested was by using only one page, then by using five different pages, unfortunately there was no way of testing with custom information without myself creating a HTML document formatted in nearly the exact same way as the original page.
+
+
 
 Roberto -  ProductTableViewController, FoodSearchViewController
 ProductTableViewController:
