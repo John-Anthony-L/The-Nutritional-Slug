@@ -22,14 +22,14 @@ location of fault (if known): Today Tab
 possible action for removal of fault: Create a list of table to add the entire food log.
 
 input/action that causes failure: On pressing add to daily list repititively, the progress keeps increasing 
-location of fault (if known):
+location of fault (if known): Search view
 possible action for removal of fault: Add a flag to check
 
 input/action that causes failure: Once progress reached to its full capacity, the number won't increase more
-location of fault (if known):
+location of fault (if known): Today page
 possible action for removal of fault: Allow to create overflow
 
-input/action that causes failure: If app is working and setting is cleared - the app keeps the macros level and the name - It doesnot change to default values, 
+input/action that causes failure: If app is working and setting is cleared - the app keeps the macros level and the name - It does not change to default values, 
                                   nor asks the user to enter settings value 
 location of fault (if known):
 possible action for removal of fault: Reset the entire app or lock user until they enter values.
@@ -58,4 +58,29 @@ possible action for removal of fault: Have to fix this by giving proper start va
 
 List of suggested user stories/acceptance criteria for actual acceptance test:
 
-
+  - As a user I want to:
+  
+      - Search for a food product and choose between brands based on their macros
+          -> Functional search returns list of brands
+          -> Tapping a brand expands to show show macros
+          -> Pressing "Back" saves my choice
+          
+      - Be able to intuitively navigate between pages in the app
+          -> Tabs at the bottom of the screen for each page
+          -> First time user is automatically taken to the settings page
+          
+      - Input my statistics and have the app calculate my macro goals based on my current weight to find out my target macro intake
+          -> Functional settings page
+          -> Integrate a macro calculator based on a person's age, height, weight, and daily exercise
+          
+      - See a log of the brands I have chosen to eat for Breakfast, Lunch, and Dinner today
+          -> Choosing a food for a meal saves that food under the appropriate meal in the today page
+          
+      - Enter a custom food item instead of searching for a brand
+          -> Tapping on the meals in the today page brings up a custom food page
+          -> Allow user to input food name and macros (through sliders)
+          
+      - See how a chosen food affects my progress towards my macro goals
+          -> When I choose a food, through either the search or custom page, the macros are sent to the today page
+          -> When macros are sent to the today page, they are added towards the macro goal for that day
+          -> This progress is shown visually through bar graphs
