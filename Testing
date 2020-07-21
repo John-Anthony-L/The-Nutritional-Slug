@@ -124,8 +124,43 @@ To accomplish the user story, created 3 functions and one object list:
   the function was checked to make sure that it activated when the button was clicked and the console prints were verified to work on all meal sections.
 
 ___________________________________________________________________________________________________________________________________________________
-Sanyam - CustomViewController
+Sanyam - CustomViewController, SettingsViewController
 
 ___________________________________________________________________________________________________________________________________________________
-Vidisha - CustomizedViewCobtroller, SettingsViewController
+Vidisha - CustomizedViewCobtroller
+
+Customized View Control 
+User Story: As a user, I want to be able to select brands and add to my daily diet.
+ 
+User story fulfillment - Be able to input values 
+		       Be able to send those values to the Today tab 
+ 
+Test Patters included: 
+manual testing by seeing the results are getting updated
+Tests Stubs: created random values to test it 
+
+Function Testing : 
+Functions created to accomplish user story: 
+defaultFoodNameChanged() // save food name
+// save update values of macros and be able to send it to today tab  
+defaultCarbsChanged()
+defaultFatsChanged()
+defaultCalsChanged()
+defaultProsChanged()
+mealSegmentedControl()
+updateCarbsValue()
+CarbstextFieldDidChange()
+updateFatsValue()
+FatstextFieldDidChange()
+updateCalsValue()
+CalstextFieldDidChange()
+updateProsValue()
+ProstextFieldDidChange()
+// save the values  
+saveButton()
+ 
+ 
+ 
+
+
 
