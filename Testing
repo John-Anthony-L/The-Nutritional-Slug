@@ -1,6 +1,35 @@
 ___________________________________________________________________________________________________________________________________________________
 Dylan - Progress Page
 
+User Story:
+As a health-conscious user, I need to be able to see the progress of my daily targets and monthly record, to stay motivated.
+
+Testing:
+
+User Story Fulfillment:
+   - The last access date is saved in UserDefaults to be compared to the current date whenever the user accesses the app
+   - Daily Progress is reset at the beginning of a new day
+   - Before Daily Progress is reset, the day is given a rating which is sent to the progress page
+   - The Progress page can count the amount of good, okay, and bad days
+   - Progress is reset after a month
+
+Test Patterns included:
+   Test Spy: Print statements to verify the expected outputs based on certain inputs for dates and date ratings.
+   Test Stub: Hard-coded in test cases for different execution paths based on different dates, ratings, and label counts.
+
+Functional Testing:
+To accomplish this user story, we created 5 functions:
+
+	daysBetween():
+ 
+	updateLabels():
+	
+	dateChanged():
+	
+	progressWithIn():
+	
+	rateDay():
+
 ___________________________________________________________________________________________________________________________________________________
 John -  ProductRequest, WebScraping
 
