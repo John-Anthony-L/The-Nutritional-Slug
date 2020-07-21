@@ -115,10 +115,7 @@ To accomplish the user story, created 3 functions and one object list:
   the function was checked to make sure that it activated when the button was clicked and the console prints were verified to work on all meal sections.
 
 ___________________________________________________________________________________________________________________________________________________
-Sanyam - CustomViewController
-
-___________________________________________________________________________________________________________________________________________________
-SettingsViewController
+Sanyam - CustomViewController, SettingsViewController
 
 
 Custom View Control 
@@ -150,7 +147,7 @@ Functions created to accomplish user story:
 DailyMaxValAlert() //show alert when macros exceed limit 
  
  
- 
+ ___________________________________________________________________________________________________________________________________________________
  
 Settings View Control 
 User Story: STORY 1: As a health-conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest option available
