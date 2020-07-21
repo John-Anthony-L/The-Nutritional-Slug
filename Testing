@@ -8,9 +8,10 @@ executable that is created by this automated build process). EXTRA CREDIT for au
 functional testing they have done.
 Each team member picks a module or module and lists the equivalence classes and the test cases selected to cover all equivalence classes.
 
+___________________________________________________________________________________________________________________________________________________
 Dylan - Progress Page
 
-
+___________________________________________________________________________________________________________________________________________________
 John -  ProductRequest, WebScraping
 
 WebScraping:
@@ -48,7 +49,7 @@ This function intakes all the data and saves the correct containers, one with th
 The way This was tested was by using only one page, then by using five different pages, unfortunately there was no way of testing with custom information without myself creating a HTML document formatted in nearly the exact same way as the original page.
 
 
-
+___________________________________________________________________________________________________________________________________________________
 Roberto -  ProductTableViewController, FoodSearchViewController
 ProductTableViewController:
 UserStory:
@@ -122,8 +123,9 @@ To accomplish the user story, created 3 functions and one object list:
   then it was added to the list of foods on the daily page. If the item did not get sent properly (either it was in the wrong section or didn’t show up at all), 
   the function was checked to make sure that it activated when the button was clicked and the console prints were verified to work on all meal sections.
 
+___________________________________________________________________________________________________________________________________________________
 Sanyam - CustomViewController
 
-
+___________________________________________________________________________________________________________________________________________________
 Vidisha - CustomizedViewCobtroller, SettingsViewController
 
