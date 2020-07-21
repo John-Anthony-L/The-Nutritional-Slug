@@ -1,6 +1,5 @@
 //
 //  AppDelegate.swift
-//  HolidayCalendar
 //
 //  Created by Roberto Oregon on 07.03.20.
 //  Copyright © 2020 Roberto Oregon. All rights reserved.
