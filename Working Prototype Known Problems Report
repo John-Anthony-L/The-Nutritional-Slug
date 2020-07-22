@@ -46,9 +46,6 @@ input/action that causes failure: progress does not function like it is supposed
 location of fault (if known): progressViewController
 possible action for removal of fault: Setting the code for the progress properly. Did not have enough time for it!
 
-input/action that causes failure: settings page does not pop upon opening the app - need to move to a different tab and come back to have it work 
-location of fault (if known): viewWillAppear 
-possible action for removal of fault: Putting it in viewDidLoad should help - but creating errors right now for some reason
 
 input/action that causes failure: When app launches for the first time, arbitary values come up and progress is already done for protein 0/0, so alert pops up too
 location of fault (if known):  
