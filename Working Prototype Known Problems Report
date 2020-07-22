@@ -54,6 +54,49 @@ input/action that causes failure: When app launches for the first time, arbitary
 location of fault (if known):  
 possible action for removal of fault: Have to fix this by giving proper start values 
 
+input/action that causes failure: If the user goes to the search page and selects "Add to daily list" without searching for anything, the app will crash.
+location of fault (if known):
+possible action for removal of fault: setting restrictions to button
+
+Input/action that causes failure: custom food macros do not allow users to enter 2+ digit numbers ( can’t add 99, only enters 9.0)
+location of fault (if known):
+possible action for removal of fault:
+
+Input/action that causes failure: settings values allow user to enter characters instead of numbers, makes the daily values incorrect
+location of fault (if known): settings page
+possible action for removal of fault: restrict allowable values
+
+Input/action that causes failure: settings values allow user to enter negative numbers.
+location of fault (if known): settings page
+possible action for removal of fault: restrict allowable values
+
+input/action that causes failure: protein alert is mispelled.
+location of fault (if known):
+possible action for removal of fault: change the alert to correctly spell it
+
+Input/action that causes failure: if user puts in arbitrarily large numbers into settings for height weight or age, app crashes and will keep crashing on restart.
+location of fault (if known): settings page
+possible action for removal of fault: restrict allowable values
+
+Input/action that causes failure: if user tries to press lets go in settings after only adjusting gender, goal, and/or daily activity level, lets go button won’t work
+location of fault (if known): settings page
+possible action for removal of fault: change button settings
+
+Input/action that causes failure: if an item is search for and the user searches again, the results stack on the list rather than clearing the list.
+location of fault (if known): tableviewsearchcontroller
+possible action for removal of fault: check how lists are populated and how they are reset
+
+Input/action that causes failure: in custom food items, user can add spaces as a name and values for macros will increment daily progress
+location of fault (if known): 
+possible action for removal of fault: restrict custom item input and allowable values
+
+Input/action that causes failure: if user selects custom food item, they can’t cancel or go back without pressing “lets go” button
+location of fault (if known):
+possible action for removal of fault: add navigation to the page
+
+Input/action that causes failure: grey navigation bar disappears after selecting search and then going into the table search then back
+location of fault (if known):
+possible action for removal of fault: change navigation bar settings
 
 
 List of suggested user stories/acceptance criteria for actual acceptance test:
