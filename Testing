@@ -1,6 +1,38 @@
 ___________________________________________________________________________________________________________________________________________________
 Dylan - Progress Page
 
+User Story:
+As a health-conscious user, I need to be able to see the progress of my daily targets and monthly record, to stay motivated.
+
+Testing:
+
+User Story Fulfillment:
+   - The last access date is saved in UserDefaults to be compared to the current date whenever the user accesses the app
+   - Daily Progress is reset at the beginning of a new day
+   - Before Daily Progress is reset, the day is given a rating which is sent to the progress page
+   - The Progress page can count the amount of good, okay, and bad days
+   - Progress is reset after a month
+
+Test Patterns included:
+   Test Spy: Print statements to verify the expected outputs based on certain inputs for dates and date ratings.
+   Test Stub: Hard-coded in test cases for different execution paths based on different dates, ratings, and label counts.
+
+Functional Testing:
+To accomplish this user story, we created 5 functions:
+
+	daysBetween(): Calculates number of days between two dates. Tested by verifying output through print statements
+ 
+	updateLabels(): If the date has changed, it updates the progress page labels based on the rating of the last access date. Also resets the labels to zero  
+			if the month has changed. Tested through feeding different dates, date rating, and label values as input.
+	
+	dateChanged(): Checks if the date has changed by comparing the last access date and the current date. Tested through inputting different access dates.
+	
+	progressWithIn(): Takes as input a macro goal and the progress towards that goal. It then calculates how close the progress is to the goal and returns
+			a range of which that progress is within the goal. Tested through different goal and progress values. 
+	
+	rateDay(): Rates the progress of one day based on the progressWithIn return values from all the macro progress. 
+		   Tested through different goal and progress values.
+
 ___________________________________________________________________________________________________________________________________________________
 John -  ProductRequest, WebScraping
 
@@ -115,10 +147,57 @@ To accomplish the user story, created 3 functions and one object list:
   the function was checked to make sure that it activated when the button was clicked and the console prints were verified to work on all meal sections.
 
 ___________________________________________________________________________________________________________________________________________________
-Sanyam - CustomViewController
+Sanyam - CustomViewController, SettingsViewController
 
-___________________________________________________________________________________________________________________________________________________
-SettingsViewController
+
+Custom View Control 
+User Story:  As a health-conscious user, I want to be able to calculate the Macronutrients based on personal goals and current weight so that I know exactly what my target daily intake should be.
+
+Testing :
+
+
+User Story Fulfillment :
+Calculate macros
+Update the progress with macros 
+Shows alert if macros exceeded
+Update food list 
+Update user’s name 
+
+Test Patters included: 
+ Test Spy:  Have print statements 
+Tests Stubs: created random values to test it 
+
+Function Testing : 
+Functions created to accomplish user story: 
+
+ macrosCalculated() // To calculate macros
+ incrementProgress(pros: pros) // Increment macros on the progress views page 
+ caloriesLabelFunction() // update calories progress label
+ proteinLabelFunction()  // update protein progress label
+ fatsLabelFunction()  // update fats progress label
+ carbsLabelFunction()  // update carbs progress label
+DailyMaxValAlert() //show alert when macros exceed limit 
+ 
+ 
+ ___________________________________________________________________________________________________________________________________________________
+ 
+Settings View Control 
+User Story: STORY 1: As a health-conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest option available
+ 
+User story fulfillment -  Be able to input values 
+		       Send values to update the Macros target 
+		     Be able to rest values
+		   Be able to retain values after the closing of the app 
+
+Test Patters included: 
+ Manual Testing 
+
+Function Testing : 
+Functions created to accomplish user story:
+clearBarButtonPressed()// Resets all values
+update SaveButton() // can only press save when all values are entered else wont be able to calculate properly 
+And the rest is to take values and save it  
+ 
 
 ___________________________________________________________________________________________________________________________________________________
 Vidisha - CustomizedViewCobtroller
