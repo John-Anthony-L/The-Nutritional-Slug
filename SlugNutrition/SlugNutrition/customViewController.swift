@@ -17,7 +17,6 @@ var FatAlert:Bool = false
 var CarbAlert:Bool = false
 var ProtienAlert:Bool = false
 
-
 class customViewController: UIViewController {
 
     @IBOutlet var userNameLabel: UILabel!
@@ -25,10 +24,6 @@ class customViewController: UIViewController {
     @IBOutlet weak var FatsDailyProgress: UIProgressView!
     @IBOutlet weak var ProteinDailyProgress: UIProgressView!
     @IBOutlet weak var CaloriesDailyProgress: UIProgressView!
-    
-//    @IBOutlet var breakfastFood: UILabel!
-//    @IBOutlet var lunchFood: UILabel!
-//    @IBOutlet var dinnerFood: UILabel!
     
     @IBOutlet weak var caloriesLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
@@ -47,23 +42,13 @@ class customViewController: UIViewController {
     var defaultHeight: Double = 0.0
     var defaultGoalRow:Int = 0
     var defaultActivityRow: Int = 0
+    var defaultDate: Date?  //default date to be used between progress and daily
+    var dateRating: Int = 0
     var selected: String = ""
     var cals:Double = 0.0
     var carbs:Double = 0.0
     var fat:Double = 0.0
     var pros:Double = 0.0
-    
-    
-//    var defaultFoodName = ""
-//    var defaultCarbs = 0.0
-//    var defaultFats = 0.0
-//    var defaultCals = 0.0
-//    var defaultPros = 0.0
-//    var defaultMeal:Int?
-//    var carbs: Double = 0.0
-//    var breakfast: String?
-//    var lunch: String?
-//    var dinner: String?
     
     @IBOutlet weak var breakfastProducts: UILabel!
     @IBOutlet weak var lunchProducts: UILabel!
@@ -147,40 +132,17 @@ class customViewController: UIViewController {
         defaultHeight = defaults.double(forKey: "defaultHeight")
         defaultGoalRow = defaults.integer(forKey: "defaultGoal")
         defaultActivityRow = defaults.integer(forKey: "defaultActivity")
+        defaultDate = defaults.object(forKey:"defaultDate") as? Date
+        dateRating = defaults.integer(forKey:"dateRating")
         
-        macrosCalculated()
-        incrementProgress(pros: pros)
-        
-        caloriesLabelFunction()
-        proteinLabelFunction()
-        fatsLabelFunction()
-        carbsLabelFunction()
-//
-//        breakfastProducts.numberOfLines = 0
-//        breakfastProducts.sizeToFit()
-//        lunchProducts.numberOfLines = 0
-//        lunchProducts.sizeToFit()
-//        dinnerProducts.numberOfLines = 0
-//        dinnerProducts.sizeToFit()
-
-        print("brekkie count: ",breakfastList.count)
-
-        for products in breakfastList {
-            breakfastResult += " " + products.item_name
-        }
-        for products in lunchList {
-            lunchResult += " " + products.item_name
-        }
-        for products in dinnerList {
-            dinnerResult += " " + products.item_name
+        //user's first time loading, set the date
+        if defaultDate == nil{
+            defaultDate = Date()
+            UserDefaults.standard.set(defaultDate, forKey: "defaultDate")
+            UserDefaults.standard.synchronize()
         }
 
-        breakfastProducts.text = String(breakfastResult.prefix(18))
-        lunchProducts.text = String(lunchResult.prefix(18))
-        dinnerProducts.text = String(dinnerResult.prefix(18))
-//
-            // Do any additional setup after loading the view.
-        }
+    }
 
     override func viewWillAppear(_ animated: Bool) {
     
@@ -194,99 +156,87 @@ class customViewController: UIViewController {
         {
             userNameLabel.text = defaultName.uppercased() + "'S TODAY"
         }
-//        macrosCalculated()
-//        incrementProgress(pros: pros)
-//
-//        caloriesLabelFunction()
-//        proteinLabelFunction()
-//        fatsLabelFunction()
-//        carbsLabelFunction()
-//        for products in breakfastList {
-//                   breakfastResult += " " + products.item_name
-//               }
-//               for products in lunchList {
-//                   lunchResult += " " + products.item_name
-//               }
-//               for products in dinnerList {
-//                   dinnerResult += " " + products.item_name
-//               }
-//
-//               breakfastProducts.text = String(breakfastResult.prefix(18))
-//               lunchProducts.text = String(lunchResult.prefix(18))
-//               dinnerProducts.text = String(dinnerResult.prefix(18))
-//
         
-        /*
-        if  breakfast != nil
-        {
-            breakfastFood.text = breakfast
+        //if the date has changed since last access date, rate the last day and reset daily progress
+        if (dateChanged(lastDate: defaultDate!)){
+            
+            dateRating = rateDay()
+            UserDefaults.standard.set(dateRating, forKey:"dateRating")
+            UserDefaults.standard.synchronize()
+            
+            //reset everything
+            proteinProgress = 0.0
+            carbsProgress = 0.0
+            fatsProgress = 0.0
+            calProgress = 0.0
+            
+            ProteinDailyProgress.progress = proteinProgress
+            CarbsDailyProgress.progress = carbsProgress
+            FatsDailyProgress.progress = fatsProgress
+            CaloriesDailyProgress.progress = calProgress
+            
+            caloriesLabelFunction()
+            proteinLabelFunction()
+            fatsLabelFunction()
+            carbsLabelFunction()
+            
+            breakfastProducts.text = ""
+            lunchProducts.text = ""
+            dinnerProducts.text = ""
+            
+        }else{
+            
+            macrosCalculated()
+            incrementProgress(pros: pros)
+            
+            caloriesLabelFunction()
+            proteinLabelFunction()
+            fatsLabelFunction()
+            carbsLabelFunction()
+            for products in breakfastList {
+                breakfastResult += " " + products.item_name
+            }
+            for products in lunchList {
+                lunchResult += " " + products.item_name
+            }
+            for products in dinnerList {
+                dinnerResult += " " + products.item_name
+            }
+                   
+            breakfastProducts.text = String(breakfastResult.prefix(18))
+            lunchProducts.text = String(lunchResult.prefix(18))
+            dinnerProducts.text = String(dinnerResult.prefix(18))
+            
         }
-        if lunch != nil
-        {
-            lunchFood.text = lunch
-        }
-        if dinner != nil
-        {
-            dinnerFood.text = dinner
-        }
-        let defaults = getUserDefaults()
-        defaultFoodName = defaults.string(forKey: "defaultFoodName") ?? ""
-        defaultMeal = defaults.integer(forKey: "defaultMeal")
-        defaultCarbs = defaults.double(forKey: "defaultCarbs")
-        defaultFats = defaults.double(forKey: "defaultFats")
-        defaultCals = defaults.double(forKey: "defaultCals")
-        defaultPros = defaults.double(forKey: "defaultPros")
-        updateMeal()
-        */
-        
-        }
-    
-    /*
-    func updateMeal(){
-        if (UserDefaults.standard.object(forKey: "defaultFoodName") != nil) {
-            updateCarbsProg()
-            updateCalsProg()
-            updateFatsProg()
-            updateProsProg()
-            updateFood()
-        }
-    }
- */
-        
-        
+    }   //end of viewWillAppear()
 
-//        override func viewWillDisappear(_ animated: Bool) {
-//            self.navigationController?.setNavigationBarHidden(false, animated: animated)
-//            super.viewWillDisappear(animated)
-//        }
-        func getGoal() -> Int{
-            var goal:Int
-            switch defaultGoalRow
-            {
+    func getGoal() -> Int{
+        var goal:Int
+        switch defaultGoalRow
+        {
             case 0 : goal = 0
             case 1 : goal = 300
             case 2 :  goal = -300
             default : goal = 0
-            }
-            return goal
         }
+        return goal
+    }
         
-        func getActivity() -> Double{
-            var activity:Double
-            switch defaultActivityRow
-            {
+    func getActivity() -> Double{
+        var activity:Double
+        switch defaultActivityRow
+        {
             case 0 : activity = 1.2
             case 1 :  activity = 1.375
             case 2 :  activity = 1.55
             case 3 :  activity = 1.725
             case 4 :  activity = 1.9
             default : activity = 0
-            }
-            return activity
         }
+        return activity
+    }
     
-    
-        func convertStringValToInt(name: String) -> Int {
+    func convertStringValToInt(name: String) -> Int {
         let value = "\(name)"
         var to_numeric = ""
         for letter in value.unicodeScalars{
@@ -299,7 +249,6 @@ class customViewController: UIViewController {
     }
 
     //global boolean arrays, only once will it switch
-
     func DailyMaxValAlert(macro: String){
         let message = UIAlertController(title: "Put down that Pizza!", message: "You have reached your " + macro + " limit for today", preferredStyle: .alert)
         let dismiss = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in print("Ok button tapped") })
@@ -307,8 +256,6 @@ class customViewController: UIViewController {
         message.addAction(dismiss)
         self.present(message, animated: true, completion: nil)
     }
-
-
         
     func macrosCalculated() {
         pros = calculateProteins(weight: defaultWeight)
@@ -360,46 +307,80 @@ class customViewController: UIViewController {
                }
     }
     
-    /*
-    func updateCarbsProg()
-    {
-        CarbsDailyProgress.progress = CarbsDailyProgress.progress + Float(defaultCarbs)/Float(Double(carbs))
-        carbsLabelFunction()
-    }
-    func updateCalsProg()
-    {
-        CaloriesDailyProgress.progress = CaloriesDailyProgress.progress + Float(defaultCals)/Float(Double(cals))
-        caloriesLabelFunction()
+    //function compares last access date to current date to see if the day has changed
+    //Input: last access date
+    //Output: boolean value (true if dateChanged, false if not)
+    func dateChanged(lastDate: Date) -> Bool{
+        let now = Date()
+        var result: Bool = false
         
+        let lastDateDay = Calendar.current.dateComponents([.day], from: lastDate)
+        let nowDay = Calendar.current.dateComponents([.day], from: now)
+        
+        //if lastDate is today, date hasn't changed so return false
+        if (lastDateDay == nowDay){
+            return result
+        } else {
+            result = true
+            return result
+        }
     }
     
-    func updateFatsProg()
-    {
-        FatsDailyProgress.progress = FatsDailyProgress.progress + Float(defaultFats)/Float(Double(fat))
-               fatsLabelFunction()
+    //function rates the progress made within a day
+    //Input: no input, uses global vars
+    //Output: Integer value [1 - Good, 2 - Okay, 3 - Bad]
+    func rateDay() -> Int{
+        var rating: Int = 0  //return value for rating of the day [1-good, 2-okay, 3-bad]
+
+        let proRating: Int  = progressWithIn(goal:pros, progress:proteinProgress)
+        let carbRating: Int  = progressWithIn(goal:carbs, progress:carbsProgress)
+        let fatRating: Int  = progressWithIn(goal:fat, progress:fatsProgress)
+        let calRating: Int  = progressWithIn(goal:cals, progress:calProgress)
+        
+        let totalRating = proRating + carbRating + fatRating + calRating
+        
+        //if rating = 40, it was a Good day
+        // (4/4 goals +/- 10, 3/4 goals +/- 5)
+        // [4*10 or 3*5+25]
+        if (totalRating == 40){
+            rating = 1
+        }
+        //if rating is somewhere between 40 and 100, it was an Okay day
+        // (4/4 goals +/- 25, 3/4 goals +/- 15, 2/4 goals +/- 5)
+        else if (totalRating <= 100){
+            rating = 2
+        }
+        //if rating is greater than 100, the day was Bad
+        else {
+            rating = 3
+        }
+        
+        return rating
     }
-    func updateProsProg()
-    {
-        ProteinDailyProgress.progress = ProteinDailyProgress.progress + Float(defaultPros)/Float(Double(pros))
-        proteinLabelFunction()
+    
+    //function calculates how close the user's progress is to their goal for a specified macro
+    //Input: MacroGoal, MacroProgress
+    //Output: The range of +/- the MacroGoal which the MacroProgress is within
+    func progressWithIn(goal: Double, progress: Float) -> Int{
+        
+        var withIn: Int = 100
+        
+        if (((goal - 25)...(goal + 25)).contains(Double(progress))){
+            if (((goal - 15)...(goal + 15)).contains(Double(progress))){
+                if (((goal - 10)...(goal + 10)).contains(Double(progress))){
+                    if (((goal - 5)...(goal + 5)).contains(Double(progress))){
+                        withIn = 5
+                    }
+                    withIn = 10
+                }
+                withIn = 15
+            }
+            withIn = 25
+        }
+        
+        //progress is withIn [return value] of the goal
+        return withIn
     }
-    func updateFood(){
-        if defaultMeal == 0
-        {
-            breakfast = defaultFoodName
-            breakfastFood.text = breakfast
-        }
-        else if defaultMeal == 1
-        {
-            lunch = defaultFoodName
-            lunchFood.text = lunch
-        }
-        else
-        {
-            dinner = defaultFoodName
-            dinnerFood.text = dinner
-        }
-    }*/
     
     func getUserDefaults() -> UserDefaults {
         let defaults = UserDefaults.standard
@@ -411,10 +392,11 @@ class customViewController: UIViewController {
         defaults.set(defaultHeight, forKey: "defaultHeight")
         defaults.set(defaultGoalRow,forKey: "defaultGoal")
         defaults.set(defaultActivityRow,forKey: "defaultActivity")
+        defaults.set(defaultDate, forKey: "defaultDate")
+        defaults.set(dateRating, forKey: "dateRating")
         defaults.synchronize()
         }
         return defaults
     }
     
 }
-

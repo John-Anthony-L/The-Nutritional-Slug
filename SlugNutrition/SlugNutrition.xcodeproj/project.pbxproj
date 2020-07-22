@@ -17,6 +17,7 @@
 		6226FF9524C02F63004AF664 /* MealProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6226FF9424C02F63004AF664 /* MealProducts.swift */; };
 		623C3A0F24B1D78E00D84CA2 /* customViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C3A0E24B1D78E00D84CA2 /* customViewController.swift */; };
 		F40E360E24BA5A8000439B5E /* CustomizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */; };
+		F433290B24C7A23500693F47 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433290A24C7A23500693F47 /* ProgressViewController.swift */; };
 		F464F9E224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F464F9C224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m */; };
 		F464F9E324B9FA0D00F4AFF7 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F464F9C524B9FA0D00F4AFF7 /* FSCalendarDelegationProxy.m */; };
 		F464F9E424B9FA0D00F4AFF7 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F464F9C724B9FA0D00F4AFF7 /* FSCalendarDelegationFactory.m */; };
@@ -51,6 +52,7 @@
 		6226FF9424C02F63004AF664 /* MealProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealProducts.swift; sourceTree = "<group>"; };
 		623C3A0E24B1D78E00D84CA2 /* customViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewController.swift; sourceTree = "<group>"; };
 		F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedViewController.swift; sourceTree = "<group>"; };
+		F433290A24C7A23500693F47 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		F464F9C224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
 		F464F9C324B9FA0D00F4AFF7 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		F464F9C424B9FA0D00F4AFF7 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				52A5322D24C187ED00B623DC /* products.csv */,
 				52A621B22285612B00127CD4 /* ProductRequest.swift */,
 				F464F9FB24BA0EDD00F4AFF7 /* SlidesShowViewController.swift */,
+				F433290A24C7A23500693F47 /* ProgressViewController.swift */,
 				F40E360D24BA5A8000439B5E /* CustomizedViewController.swift */,
 				F46A3A0424B2729F002AB77A /* SettingsViewController.swift */,
 				F464F9C124B9FA0D00F4AFF7 /* FSCalendar */,
@@ -292,6 +295,7 @@
 				F464F9E224B9FA0D00F4AFF7 /* FSCalendarCollectionView.m in Sources */,
 				F46A3A0724B29B04002AB77A /* FoodSearchViewController.swift in Sources */,
 				F40E360E24BA5A8000439B5E /* CustomizedViewController.swift in Sources */,
+				F433290B24C7A23500693F47 /* ProgressViewController.swift in Sources */,
 				F464F9E524B9FA0D00F4AFF7 /* FSCalendarCell.m in Sources */,
 				F464F9EC24B9FA0D00F4AFF7 /* FSCalendarConstants.m in Sources */,
 				F464F9EA24B9FA0D00F4AFF7 /* FSCalendarSeparatorDecorationView.m in Sources */,
