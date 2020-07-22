@@ -20,15 +20,18 @@ Test Patterns included:
 Functional Testing:
 To accomplish this user story, we created 5 functions:
 
-	daysBetween():
+	daysBetween(): Calculates number of days between two dates. Tested by verifying output through print statements
  
-	updateLabels():
+	updateLabels(): If the date has changed, it updates the progress page labels based on the rating of the last access date. Also resets the labels to zero  
+			if the month has changed. Tested through feeding different dates, date rating, and label values as input.
 	
-	dateChanged():
+	dateChanged(): Checks if the date has changed by comparing the last access date and the current date. Tested through inputting different access dates.
 	
-	progressWithIn():
+	progressWithIn(): Takes as input a macro goal and the progress towards that goal. It then calculates how close the progress is to the goal and returns
+			a range of which that progress is within the goal. Tested through different goal and progress values. 
 	
-	rateDay():
+	rateDay(): Rates the progress of one day based on the progressWithIn return values from all the macro progress. 
+		   Tested through different goal and progress values.
 
 ___________________________________________________________________________________________________________________________________________________
 John -  ProductRequest, WebScraping
@@ -194,25 +197,6 @@ Functions created to accomplish user story:
 clearBarButtonPressed()// Resets all values
 update SaveButton() // can only press save when all values are entered else wont be able to calculate properly 
 And the rest is to take values and save it  
- 
- 
-Settings View Control 
-User Story: STORY 1: As a health-conscious user, I want to search for a food product that fits my macros so that I know the variety I can choose from and eat the healthiest option available
- 
-User story fulfillment -  Be able to input values 
-		       Send values to update the Macros target 
-		     Be able to rest values
-		   Be able to retain values after the closing of the app 
- 
-Test Patters included: 
- Manual Testing 
- 
-Function Testing : 
-Functions created to accomplish user story:
-clearBarButtonPressed()// Resets all values
-update SaveButton() // can only press save when all values are entered else wont be able to calculate properly 
-And the rest is to take values and save it  
- 
  
 
 ___________________________________________________________________________________________________________________________________________________
