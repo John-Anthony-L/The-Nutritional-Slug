@@ -14,7 +14,7 @@ class ProgressViewController: UIViewController {
     @IBOutlet weak var okayLabel: UILabel!
     @IBOutlet weak var badLabel: UILabel!
     
-        var defaultGood: Int = 10
+        var defaultGood: Int = 14
         var defaultOkay: Int = 6
         var defaultBad: Int = 3
         var defaultDate: Date?
