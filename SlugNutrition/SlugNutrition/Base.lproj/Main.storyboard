@@ -1068,7 +1068,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vr9-X1-OcD">
-                                <rect key="frame" x="20" y="129.5" width="374" height="739"/>
+                                <rect key="frame" x="20" y="129.5" width="374" height="815"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-fm-nFk">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
@@ -1142,28 +1142,28 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="27Z-n9-4Fg">
-                                        <rect key="frame" x="0.0" y="205" width="374" height="534"/>
+                                        <rect key="frame" x="0.0" y="205" width="374" height="610"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-Gr-rEf">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="140.5"/>
                                                 <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-hA-pBa">
-                                                <rect key="frame" x="0.0" y="137.5" width="374" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="156.5" width="374" height="140.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-JQ-a2Z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-LL-aKV">
-                                                        <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="374" height="40.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noo-Np-e7v">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKt-4j-GHG">
                                                                         <rect key="frame" x="125.5" y="0.0" width="45.5" height="20.5"/>
@@ -1188,7 +1188,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-Vb-BCV">
-                                                                <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="40.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5U-W5-TII">
                                                                         <rect key="frame" x="125.5" y="0.0" width="32" height="20.5"/>
@@ -1215,10 +1215,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KZg-Si-8aD">
-                                                        <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="100.5" width="374" height="40"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-hJ-tG6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xS-1k-fyB">
                                                                         <rect key="frame" x="126.5" y="0.0" width="54.5" height="20.5"/>
@@ -1243,7 +1243,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itN-DX-rpM">
-                                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbD-RW-3NL">
                                                                         <rect key="frame" x="125.5" y="0.0" width="62.5" height="20.5"/>
@@ -1272,20 +1272,20 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" id="E9X-VN-c1w">
-                                                <rect key="frame" x="0.0" y="275" width="374" height="121"/>
+                                                <rect key="frame" x="0.0" y="313" width="374" height="140.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPy-JG-cNg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-ze-3b6">
-                                                        <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="374" height="40.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-o4-P6c">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gV-gU-EUh">
                                                                         <rect key="frame" x="126.5" y="0.0" width="45.5" height="20.5"/>
@@ -1310,7 +1310,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-gT-haI">
-                                                                <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="40.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic1-AV-VTD">
                                                                         <rect key="frame" x="125.5" y="0.0" width="32" height="20.5"/>
@@ -1337,10 +1337,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bNo-zb-xqH">
-                                                        <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="100.5" width="374" height="40"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdQ-UZ-eVF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkI-01-07s">
                                                                         <rect key="frame" x="125.5" y="0.0" width="54.5" height="20.5"/>
@@ -1365,7 +1365,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-Yj-gwF">
-                                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-du-oQq">
                                                                         <rect key="frame" x="125.5" y="0.0" width="62.5" height="20.5"/>
@@ -1395,20 +1395,20 @@
                                                 <viewLayoutGuide key="safeArea" id="91F-o5-bcG"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" id="gBC-wM-HKp">
-                                                <rect key="frame" x="0.0" y="412" width="374" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="469.5" width="374" height="140.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRAND C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwf-Z6-SCI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kbB-b5-59k">
-                                                        <rect key="frame" x="0.0" y="44" width="374" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="374" height="40.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-lh-037">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLc-tL-fDw">
                                                                         <rect key="frame" x="125.5" y="0.0" width="45.5" height="20.5"/>
@@ -1433,7 +1433,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89I-FP-1Pl">
-                                                                <rect key="frame" x="187" y="0.0" width="187" height="33.5"/>
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="40.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-Cu-Vwo">
                                                                         <rect key="frame" x="125.5" y="0.0" width="32" height="20.5"/>
@@ -1460,10 +1460,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-B8-Nm3">
-                                                        <rect key="frame" x="0.0" y="87.5" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="100.5" width="374" height="40"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-4V-zZI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuT-lN-tdH">
                                                                         <rect key="frame" x="125.5" y="0.0" width="54.5" height="20.5"/>
@@ -1488,7 +1488,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFW-cz-bqs">
-                                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-dR-bqz">
                                                                         <rect key="frame" x="125.5" y="0.0" width="62.5" height="20.5"/>
